@@ -1,0 +1,8 @@
+# Preserve the immutable raw layer byte-for-byte so committed sha256s stay reproducible
+# across clones/platforms (no line-ending conversion).
+data/raw/** -text
+
+# Normalize source/config to LF in the repo
+*.py text eol=lf
+*.csv text eol=lf
+*.md text eol=lf

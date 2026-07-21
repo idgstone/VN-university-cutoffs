@@ -1,0 +1,641 @@
+school_id,abbr,source_code,name_repr,in_cs_group,review,n_name_variants,years_seen,years_seen_max
+455,EPU,7510102,Công nghệ kỹ thuật công trình xây dựng,FALSE,,2,2019,2025
+455,EPU,7510201,Công nghệ kỹ thuật cơ khí,FALSE,,2,2019,2025
+455,EPU,7510203,Công nghệ kỹ thuật cơ điện tử,FALSE,,2,2019,2025
+455,EPU,7510407,Công nghệ kỹ thuật hạt nhân,FALSE,,1,2019,2025
+455,EPU,7510406,Công nghệ kỹ thuật môi trường,FALSE,,2,2019,2025
+455,EPU,7510403,Công nghệ kỹ thuật năng lượng,FALSE,,2,2019,2025
+455,EPU,7510205,Công nghệ kỹ thuật ô tô,FALSE,,1,2025,2025
+455,EPU,7510303,Công nghệ kỹ thuật điều khiển và tự động hoá,FALSE,,3,2019,2025
+455,EPU,7510303_CLC,Công nghệ kỹ thuật điều khiển và tự động hoá,FALSE,,1,2019,2019
+455,EPU,7510302,Công nghệ kỹ thuật điện tử - viễn thông,FALSE,,3,2019,2025
+455,EPU,7510302_CLC,Công nghệ kỹ thuật điện tử - viễn thông,FALSE,,1,2019,2019
+455,EPU,7510301,"Công nghệ kỹ thuật điện, điện tử",FALSE,,2,2019,2025
+455,EPU,7510301_CLC,"Công nghệ kỹ thuật điện, điện tử",FALSE,,1,2019,2019
+455,EPU,7480201,Công nghệ thông tin,TRUE,,2,2019,2025
+455,EPU,7340205,Công nghệ tài chính,FALSE,,1,2025,2025
+455,EPU,7510402,Công nghệ vật liệu,FALSE,,1,2025,2025
+455,EPU,7460108,Khoa học dữ liệu,TRUE,,1,2025,2025
+455,EPU,7340302,Kiểm toán,FALSE,,1,2019,2025
+455,EPU,7340301,Kế toán,FALSE,,2,2019,2025
+455,EPU,7340301_CLC,Kế toán,FALSE,,1,2019,2019
+455,EPU,7520107,Kỹ thuật Robot,FALSE,,1,2025,2025
+455,EPU,7480106,Kỹ thuật máy tính,TRUE,,1,2025,2025
+455,EPU,7520115,Kỹ thuật nhiệt,FALSE,,2,2019,2025
+455,EPU,7510605,Logistics và Quản lý chuỗi cung ứng,FALSE,,3,2019,2025
+455,EPU,7380107,Luật kinh tế,FALSE,,1,2025,2025
+455,EPU,7340115,Marketing,FALSE,,1,2025,2025
+455,EPU,7220201,Ngôn ngữ Anh,FALSE,,1,2025,2025
+455,EPU,7510601,Quản lý công nghiệp,FALSE,,2,2019,2025
+455,EPU,7510601_CLC,Quản lý công nghiệp,FALSE,,1,2019,2019
+455,EPU,7510602,Quản lý năng lượng,FALSE,,2,2019,2025
+455,EPU,7810103,Quản trị dịch vụ Du lịch và Lữ hành,FALSE,,3,2020,2025
+455,EPU,7810201,Quản trị khách sạn,FALSE,,1,2025,2025
+455,EPU,7340101,Quản trị kinh doanh,FALSE,,2,2019,2025
+455,EPU,7340101_CLC,Quản trị kinh doanh,FALSE,,1,2019,2019
+455,EPU,7340122,Thương mại Điện tử,FALSE,,3,2019,2025
+455,EPU,7460117,Toán tin,FALSE,,1,2025,2025
+455,EPU,7480107,Trí tuệ nhân tạo,TRUE,,1,2025,2025
+455,EPU,7340201,Tài chính - Ngân hàng,FALSE,,3,2019,2025
+455,EPU,7340201_CLC,Tài chính – Ngân hàng,FALSE,,1,2019,2019
+336,HANU,7480201,Công nghệ Thông tin (dạy bằng tiếng Anh),TRUE,,3,2019,2025
+336,HANU,7480201 CLC,Công nghệ thông tin (dạy bằng tiếng Anh) - CLC,TRUE,,1,2020,2023
+336,HANU,7480201 TT,Công nghệ thông tin (dạy bằng tiếng Anh) - CTTT,TRUE,,2,2024,2025
+336,HANU,7340205,Công nghệ tài chính (dạy bằng tiếng Anh),FALSE,,1,2024,2025
+336,HANU,7340301,Kế toán (dạy bằng tiếng Anh),FALSE,,2,2019,2025
+336,HANU,7340115,Marketing (dạy bằng tiếng Anh),FALSE,,2,2019,2025
+336,HANU,7310111,Nghiên cứu phát triển (dạy bằng tiếng Anh),FALSE,,2,2020,2025
+336,HANU,7220201,Ngôn ngữ Anh,FALSE,,1,2019,2025
+336,HANU,7220201 TT,Ngôn ngữ Anh - CTTT,FALSE,,2,2024,2025
+336,HANU,7220207,Ngôn ngữ Bồ Đào Nha,FALSE,,1,2019,2025
+336,HANU,7220210,Ngôn ngữ Hàn Quốc,FALSE,,1,2019,2025
+336,HANU,7220210 CLC,Ngôn ngữ Hàn Quốc - CLC,FALSE,,2,2019,2023
+336,HANU,7220210 TT,Ngôn ngữ Hàn Quốc - CTTT,FALSE,,1,2025,2025
+336,HANU,7220208,Ngôn ngữ Italia,FALSE,,1,2019,2025
+336,HANU,7220208 CLC,Ngôn ngữ Italia - CLC,FALSE,,2,2019,2023
+336,HANU,7220208 TT,Ngôn ngữ Italia - CTTT,FALSE,,2,2024,2025
+336,HANU,7220202,Ngôn ngữ Nga,FALSE,,1,2019,2025
+336,HANU,7220209,Ngôn ngữ Nhật,FALSE,,1,2019,2025
+336,HANU,7220203,Ngôn ngữ Pháp,FALSE,,1,2019,2025
+336,HANU,7220204,Ngôn ngữ Trung Quốc,FALSE,,1,2019,2025
+336,HANU,7220204 TT,Ngôn ngữ Trung Quốc - CTTT,FALSE,,2,2024,2025
+336,HANU,7220204 CLC,Ngôn ngữ Trung Quốc - Chất lượng cao (CLC),FALSE,,2,2019,2023
+336,HANU,7220206,Ngôn ngữ Tây Ban Nha,FALSE,,1,2019,2025
+336,HANU,7220205,Ngôn ngữ Đức,FALSE,,1,2019,2025
+336,HANU,7810103,Quản trị Dịch vụ Du lịch và Lữ hành (dạy bằng tiếng Anh),FALSE,,3,2019,2025
+336,HANU,7340101,Quản trị Kinh doanh (dạy bằng tiếng Anh),FALSE,,3,2019,2025
+336,HANU,7810103 TT,Quản trị dịch vụ du lịch và lữ hành (dạy bằng tiếng Anh) - CTTT,FALSE,,2,2024,2025
+336,HANU,7810103 CLC,Quản trị dịch vụ du lịch và lữ hành (dạy bằng tiếng Anh)-CLC,FALSE,,2,2020,2023
+336,HANU,7310601,Quốc tế học (dạy bằng tiếng Anh),FALSE,,2,2019,2025
+336,HANU,7320109,Truyền thông doanh nghiệp (dạy bằng tiếng Pháp),FALSE,,3,2019,2025
+336,HANU,7320104,Truyền thông đa phương tiện (dạy bằng tiếng Anh),FALSE,,2,2019,2025
+336,HANU,7340201,Tài chính - Ngân hàng (dạy bằng tiếng Anh),FALSE,,3,2019,2025
+375,HUMG,7850202,"An toàn, Vệ sinh lao động",FALSE,,2,2022,2025
+375,HUMG,7510401_V,Công nghệ kỹ thuật hoá học,FALSE,,1,2019,2019
+375,HUMG,7510401_TT,Công nghệ kỹ thuật hoá học – CTTT,FALSE,,1,2019,2019
+375,HUMG,7510401,Công nghệ kỹ thuật hóa học,FALSE,,2,2019,2025
+375,HUMG,7510301,"Công nghệ kỹ thuật điện, điện tử",FALSE,,2,2022,2025
+375,HUMG,7520606,Công nghệ số trong thăm dò và khai thác tài nguyên thiên nhiên,FALSE,,3,2022,2025
+375,HUMG,7480201,Công nghệ thông tin,TRUE,,1,2019,2025
+375,HUMG,7480201_V,Công nghệ thông tin,TRUE,,1,2019,2019
+375,HUMG,7480201_CLC,"Công nghệ thông tin (chất lượng
+cao)",TRUE,,2,2021,2022
+375,HUMG,7810105,Du lịch địa chất,FALSE,,1,2021,2025
+375,HUMG,7720203,Hoá dược,FALSE,,2,2022,2025
+375,HUMG,7480109,Khoa học dữ liệu,TRUE,,1,2021,2021
+375,HUMG,7460108,Khoa học dữ liệu,TRUE,,1,2022,2025
+375,HUMG,7340301,Kế toán,FALSE,,1,2019,2025
+375,HUMG,7340301_V,Kế toán,FALSE,,1,2019,2019
+375,HUMG,7520107,Kỹ thuật Robot,FALSE,,1,2025,2025
+375,HUMG,7520218,Kỹ thuật Robot và Trí tuệ nhân tạo,FALSE,excluded_by_veto:Robot,2,2022,2024
+375,HUMG,7520103,Kỹ thuật cơ khí,FALSE,,1,2019,2025
+375,HUMG,7520103_V,Kỹ thuật cơ khí,FALSE,,1,2019,2019
+375,HUMG,7520116,Kỹ thuật cơ khí động lực,FALSE,,1,2021,2025
+375,HUMG,7520114,Kỹ thuật cơ điện tử,FALSE,,1,2021,2025
+375,HUMG,7520604,Kỹ thuật dầu khí,FALSE,,1,2019,2025
+375,HUMG,7520604_V,Kỹ thuật dầu khí,FALSE,,1,2019,2019
+375,HUMG,7520301,Kỹ thuật hoá học,FALSE,,4,2020,2025
+375,HUMG,7520605,Kỹ thuật khí thiên nhiên,FALSE,,1,2022,2025
+375,HUMG,7520121,Kỹ thuật không gian,FALSE,,1,2025,2025
+375,HUMG,7520320,Kỹ thuật môi trường,FALSE,,1,2019,2025
+375,HUMG,7520601,Kỹ thuật mỏ,FALSE,,2,2019,2025
+375,HUMG,7520503,Kỹ thuật trắc địa - bản đồ,FALSE,,1,2019,2025
+375,HUMG,7520607,Kỹ thuật tuyển khoáng,FALSE,,1,2019,2025
+375,HUMG,7580212,Kỹ thuật tài nguyên nước,FALSE,,2,2022,2025
+375,HUMG,7520309,Kỹ thuật vật liệu,FALSE,,1,2025,2025
+375,HUMG,7580201,Kỹ thuật xây dựng,FALSE,,1,2019,2025
+375,HUMG,7580201_V,Kỹ thuật xây dựng,FALSE,,1,2019,2019
+375,HUMG,7580205,Kỹ thuật xây dựng công trình giao thông,FALSE,,1,2021,2025
+375,HUMG,7520130,Kỹ thuật ô tô,FALSE,,2,2022,2025
+375,HUMG,7520216,Kỹ thuật điều khiển và tự động hoá,FALSE,,2,2019,2025
+375,HUMG,7520201,Kỹ thuật điện,FALSE,,1,2019,2025
+375,HUMG,7520201_V,Kỹ thuật điện,FALSE,,1,2019,2019
+375,HUMG,7520501,Kỹ thuật địa chất,FALSE,,1,2019,2025
+375,HUMG,7520502,Kỹ thuật địa vật lý,FALSE,,2,2019,2025
+375,HUMG,7220201,Ngôn ngữ Anh,FALSE,,1,2025,2025
+375,HUMG,7220204,Ngôn ngữ Trung Quốc,FALSE,,1,2025,2025
+375,HUMG,7510601,Quản lý công nghiệp,FALSE,,1,2021,2025
+375,HUMG,7580109,Quản lý phát triển đô thị và bất động sản,FALSE,,3,2022,2025
+375,HUMG,7850196,Quản lý tài nguyên khoáng sản,FALSE,,1,2025,2025
+375,HUMG,7850101,Quản lý tài nguyên và môi trường,FALSE,,3,2021,2025
+375,HUMG,7440229,Quản lý và phân tích dữ liệu khoa học,FALSE,,3,2022,2025
+375,HUMG,7580302,Quản lý xây dựng,FALSE,,1,2022,2025
+375,HUMG,7580106,Quản lý đô thị và công trình,FALSE,,1,2025,2025
+375,HUMG,7850103,Quản lý đất đai,FALSE,,1,2019,2025
+375,HUMG,7340101,Quản trị kinh doanh,FALSE,,1,2019,2025
+375,HUMG,7340101_V,Quản trị kinh doanh,FALSE,,1,2019,2019
+375,HUMG,7340201,Tài chính - Ngân hàng,FALSE,,3,2019,2025
+375,HUMG,7340201_V,Tài chính - ngân hàng,FALSE,,1,2019,2019
+375,HUMG,7580204,Xây dựng công trình ngầm thành phố và Hệ thống tàu điện ngầm,FALSE,,4,2021,2025
+375,HUMG,7520505,Đá quý Đá mỹ nghệ,FALSE,,2,2022,2025
+375,HUMG,7440201,Địa chất học,FALSE,,1,2019,2025
+375,HUMG,7580211,Địa kỹ thuật xây dựng,FALSE,,1,2019,2025
+375,HUMG,7480206,Địa tin học,FALSE,,1,2020,2025
+346,HUS,QHT99,Công nghệ Bán dẫn,FALSE,,1,2025,2025
+346,HUS,QHT07,Công nghệ kỹ thuật hoá học,FALSE,,1,2019,2025
+346,HUS,QHT42,Công nghệ kỹ thuật hoá học,FALSE,,3,2019,2022
+346,HUS,QHT05,Công nghệ kỹ thuật hạt nhân,FALSE,,1,2019,2025
+346,HUS,QHT15,Công nghệ kỹ thuật môi trường,FALSE,,1,2019,2025
+346,HUS,QHT46,Công nghệ kỹ thuật môi trường,FALSE,,3,2019,2022
+346,HUS,QHT97,Công nghệ quan trắc và giám sát tài nguyên môi trường,FALSE,,2,2020,2023
+346,HUS,QHT09,Công nghệ sinh học,FALSE,,1,2019,2025
+346,HUS,QHT44,Công nghệ sinh học,FALSE,,3,2019,2022
+346,HUS,QHT43,Hoá dược,FALSE,,2,2019,2025
+346,HUS,QHT06,Hoá học,FALSE,,1,2019,2025
+346,HUS,QHT41,Hoá học,FALSE,,3,2019,2022
+346,HUS,QHT17,Hải dương học,FALSE,,1,2019,2025
+346,HUS,QHT93,Khoa học dữ liệu,TRUE,,1,2020,2025
+346,HUS,QHT98,Khoa học máy tính và thông tin,TRUE,,1,2022,2025
+346,HUS,QHT13,Khoa học môi trường,FALSE,,1,2019,2025
+346,HUS,QHT45,Khoa học môi trường (CTĐT tiên tiến),FALSE,,2,2019,2020
+346,HUS,QHT91,Khoa học thông tin địa không gian,FALSE,,2,2019,2025
+346,HUS,QHT96,Khoa học và công nghệ thực phẩm,FALSE,,2,2020,2025
+346,HUS,QHT04,Khoa học vật liệu,FALSE,,1,2019,2025
+346,HUS,QHT14,Khoa học đất,FALSE,,1,2019,2019
+346,HUS,QHT16,Khí tượng và khí hậu học,FALSE,,1,2019,2025
+346,HUS,QHT94,Kỹ thuật điện tử và tin học,FALSE,,1,2020,2025
+346,HUS,QHT19,Kỹ thuật địa chất,FALSE,,1,2019,2019
+346,HUS,QHT90,Máy tính và khoa học thông tin,TRUE,"OVERRIDE: Máy tính và khoa học thông tin = Computer & Information Science; CS-core, name reordering defeated the rule regex (owner ruling ①). Membership only — NOT an identity claim vs QHT98 (that is Task 2's job).",2,2019,2020
+346,HUS,QHT40,Máy tính và khoa học thông tin (Chất lượng cao),TRUE,"OVERRIDE: CLC variant of QHT90 (Máy tính và khoa học thông tin, chất lượng cao); same CS-core membership.",3,2019,2021
+346,HUS,QHT82,"Môi trường, sức khỏe và an toàn",FALSE,,3,2023,2025
+346,HUS,QHT95,Quản lý phát triển đô thị và bất động sản,FALSE,,2,2020,2025
+346,HUS,QHT20,Quản lý tài nguyên và môi trường,FALSE,,1,2019,2025
+346,HUS,QHT12,Quản lý đất đai,FALSE,,1,2019,2025
+346,HUS,QHT81,Sinh dược học,FALSE,,1,2023,2025
+346,HUS,QHT08,Sinh học,FALSE,,1,2019,2025
+346,HUS,QHT01,Toán học,FALSE,,1,2019,2025
+346,HUS,QHT02,Toán tin,FALSE,,1,2019,2025
+346,HUS,QHT92,Tài nguyên và môi trường nước,FALSE,,2,2019,2025
+346,HUS,QHT03,Vật lý học,FALSE,,1,2019,2025
+346,HUS,QHT18,Địa chất học,FALSE,,1,2019,2025
+346,HUS,QHT10,Địa lý tự nhiên,FALSE,,2,2019,2025
+302,HUST,IT-E15,An toàn không gian số - Cyber Security (CT Tiên tiến),TRUE,check_cyber_variant,3,2021,2025
+302,HUST,IT1,CNTT: Khoa học Máy tính,TRUE,,2,2019,2025
+302,HUST,IT1x,CNTT: Khoa học Máy tính,TRUE,,1,2020,2020
+302,HUST,IT2,CNTT: Kỹ thuật Máy tính,TRUE,,2,2019,2025
+302,HUST,IT2x,CNTT: Kỹ thuật Máy tính,TRUE,,1,2020,2020
+302,HUST,IT2y,CNTT: Kỹ thuật Máy tính,TRUE,,1,2022,2022
+302,HUST,TX1,Công nghệ Dệt - May,FALSE,,4,2019,2025
+302,HUST,ED2,Công nghệ giáo dục,FALSE,,2,2019,2025
+302,HUST,ED2x,Công nghệ giáo dục,FALSE,,1,2020,2020
+302,HUST,ED2y,Công nghệ giáo dục,FALSE,,1,2022,2022
+302,HUST,IT-E7,Công nghệ thông tin (Global ICT),TRUE,,5,2019,2025
+302,HUST,IT-E7x,Công nghệ thông tin (Global ICT),TRUE,,1,2020,2020
+302,HUST,IT-E6,Công nghệ thông tin (Việt - Nhật),TRUE,,5,2019,2025
+302,HUST,IT-E6x,Công nghệ thông tin (Việt - Nhật),TRUE,,1,2020,2020
+302,HUST,IT-E6y,Công nghệ thông tin (Việt - Nhật),TRUE,,1,2022,2022
+302,HUST,IT-EP,Công nghệ thông tin (Việt - Pháp),TRUE,,4,2020,2025
+302,HUST,IT-Epx,Công nghệ thông tin (Việt - Pháp),TRUE,,1,2020,2020
+302,HUST,IT-LTU,Công nghệ thông tin - hợp tác với ĐH La Trobe (Úc),TRUE,,2,2019,2020
+302,HUST,IT-LTUx,Công nghệ thông tin - hợp tác với ĐH La Trobe (Úc),TRUE,,1,2020,2020
+302,HUST,IT-VUW,Công nghệ thông tin - hợp tác với ĐH Victoria Wellington (NeW Zealand),TRUE,,2,2019,2020
+302,HUST,IT-VUWx,Công nghệ thông tin - hợp tác với ĐH Victoria Wellington (NeW Zealand),TRUE,,1,2020,2020
+302,HUST,MS3,Công nghệ vật liệu Polyme và Compozit,FALSE,,1,2023,2025
+302,HUST,ME-GU,Cơ khí - Chế tạo máy - hợp tác với ĐH Griffith (Úc),FALSE,,5,2019,2025
+302,HUST,ME-GUx,Cơ khí - Chế tạo máy - hợp tác với ĐH Griffith (Úc),FALSE,,1,2020,2020
+302,HUST,ME-Guy,Cơ khí - Chế tạo máy - hợp tác với ĐH Griffith (Úc),FALSE,,1,2022,2022
+302,HUST,TE-EP,Cơ khí hàng không (Chương trình Việt - Pháp PFIEV),FALSE,,2,2020,2025
+302,HUST,TE-EPx,Cơ khí hàng không (Chương trình Việt - Pháp PFIEV),FALSE,,1,2020,2020
+302,HUST,TE-Epy,Cơ khí hàng không (Chương trình Việt - Pháp PFIEV),FALSE,,1,2022,2022
+302,HUST,ME-NUT,Cơ điện tử - hợp tác với ĐH Công nghệ Nagaoka (Nhật Bản),FALSE,,4,2019,2025
+302,HUST,ME-LUH,Cơ điện tử - hợp tác với ĐH Leibniz Hannover (Đức),FALSE,,4,2019,2025
+302,HUST,ME-LUHx,Cơ điện tử - hợp tác với ĐH Leibniz Hannover (Đức),FALSE,,1,2020,2020
+302,HUST,ME-LUHy,Cơ điện tử - hợp tác với ĐH Leibniz Hannover (Đức),FALSE,,1,2022,2022
+302,HUST,ME-NUTx,Cơ điện tử - hợp tác với ĐHCN Nagaoka (Nhật Bản),FALSE,,1,2020,2020
+302,HUST,ME-NUTy,Cơ điện tử - hợp tác với ĐHCN Nagaoka (Nhật Bản),FALSE,,1,2022,2022
+302,HUST,CH2,Hoá học,FALSE,,2,2019,2025
+302,HUST,CH2x,Hoá học,FALSE,,1,2020,2020
+302,HUST,CH2y,Hoá học,FALSE,,1,2022,2022
+302,HUST,ET-E9y,"Hệ thống nhúng thông minh và IoT
+(CT tiên tiến)",FALSE,,1,2022,2022
+302,HUST,ET-E9,Hệ thống nhúng thông minh và IoT (CT tiên tiến),FALSE,,5,2019,2025
+302,HUST,ET-E9x,Hệ thống nhúng thông minh và IoT (Ct tiên tiến),FALSE,,1,2020,2020
+302,HUST,IT-GINP,Hệ thống thông tin - ĐH Grenoble (Pháp),TRUE,,1,2019,2019
+302,HUST,MI2,Hệ thống thông tin quản lý,FALSE,"OVERRIDE: Hệ thống thông tin quản lý (MIS): core is management/organizational with information systems as applied tool; distinct from plain Hệ thống thông tin (kept IN). Consistent w/ case-10 business exclusion. Signal: housed in HUST economics/management school, not IT school (owner ruling ②).",2,2019,2025
+302,HUST,MI2x,Hệ thống thông tin quản lý,FALSE,OVERRIDE: Year-suffixed duplicate of MI2 (HUST reuses codes with x/y/z suffixes across years); same exclusion.,1,2020,2020
+302,HUST,MI2y,Hệ thống thông tin quản lý,FALSE,OVERRIDE: Year-suffixed duplicate of MI2; same exclusion.,1,2022,2022
+302,HUST,EE-E18y,"Hệ thống điện và năng lượng tái tạo
+(CT tiên tiến)",FALSE,,1,2022,2022
+302,HUST,EE-E18,Hệ thống điện và năng lượng tái tạo (CT tiên tiến),FALSE,,2,2021,2025
+302,HUST,MS-E3x,KHKT Vật liệu (CT tiên tiến),FALSE,,1,2020,2020
+302,HUST,MS-E3y,KHKT Vật liệu (CT tiên tiến),FALSE,,1,2022,2022
+302,HUST,IT-E10,Khoa học dữ liệu và Trí tuệ nhân tạo (CT tiên tiến),TRUE,,3,2019,2025
+302,HUST,IT-E10x,Khoa học dữ liệu và Trí tuệ nhân tạo (CT tiên tiến),TRUE,,1,2020,2020
+302,HUST,TROY-ITx,Khoa học máy tính - hợp tác với ĐH Troy (Hoa Ký),TRUE,,1,2020,2020
+302,HUST,TROY-IT,Khoa học máy tính - hợp tác với ĐH Troy (Hoa Kỳ),TRUE,,6,2019,2025
+302,HUST,TROY-ITy,Khoa học máy tính - hợp tác với ĐH Troy (Hoa Kỳ),TRUE,,1,2022,2022
+302,HUST,MS-E3,Khoa học và kỹ thuật vật liệu (CT tiên tiến),FALSE,,5,2019,2025
+302,HUST,EM1x,Kinh tế công nghiệp,FALSE,,1,2020,2020
+302,HUST,EM1y,Kinh tế công nghiệp,FALSE,,1,2022,2022
+302,HUST,EM4,Kế toán,FALSE,,1,2019,2025
+302,HUST,EM4x,Kế toán,FALSE,,1,2020,2020
+302,HUST,EM4y,Kế toán,FALSE,,1,2022,2022
+302,HUST,ME2,Kỹ thuật Cơ khí,FALSE,,1,2019,2025
+302,HUST,ME2x,Kỹ thuật Cơ khí,FALSE,,1,2020,2020
+302,HUST,ME2y,Kỹ thuật Cơ khí,FALSE,,1,2022,2022
+302,HUST,TE2,Kỹ thuật Cơ khí động lực,FALSE,,1,2019,2025
+302,HUST,TE2x,Kỹ thuật Cơ khí động lực,FALSE,,1,2020,2020
+302,HUST,TE2y,Kỹ thuật Cơ khí động lực,FALSE,,1,2022,2022
+302,HUST,ME1,Kỹ thuật Cơ điện tử,FALSE,,1,2019,2025
+302,HUST,ME1x,Kỹ thuật Cơ điện tử,FALSE,,1,2020,2020
+302,HUST,ME1y,Kỹ thuật Cơ điện tử,FALSE,,1,2022,2022
+302,HUST,ME-E1,Kỹ thuật Cơ điện tử (CT tiên tiến),FALSE,,3,2019,2025
+302,HUST,ME-E1x,Kỹ thuật Cơ điện tử (CT tiên tiến),FALSE,,1,2020,2020
+302,HUST,ME-E1y,Kỹ thuật Cơ điện tử (CT tiên tiến),FALSE,,1,2022,2022
+302,HUST,TX1x,Kỹ thuật Dệt - May,FALSE,,1,2020,2020
+302,HUST,TX1y,Kỹ thuật Dệt - May,FALSE,,1,2022,2022
+302,HUST,CH1,Kỹ thuật Hoá học,FALSE,,2,2019,2025
+302,HUST,CH1x,Kỹ thuật Hoá học,FALSE,,1,2020,2020
+302,HUST,CH1Y,Kỹ thuật Hoá học,FALSE,,1,2022,2022
+302,HUST,TE3,Kỹ thuật Hàng không,FALSE,,1,2019,2025
+302,HUST,TE3x,Kỹ thuật Hàng không,FALSE,,1,2020,2020
+302,HUST,TE3y,Kỹ thuật Hàng không,FALSE,,1,2022,2022
+302,HUST,CH-E11,Kỹ thuật Hóa dược (CT tiên tiến),FALSE,,3,2019,2025
+302,HUST,CH-E11x,Kỹ thuật Hóa dược (CT tiên tiến),FALSE,,1,2020,2020
+302,HUST,CH-E11y,Kỹ thuật Hóa dược (CT tiên tiến),FALSE,,1,2022,2022
+302,HUST,CH3,Kỹ thuật In,FALSE,,2,2019,2023
+302,HUST,EV1,Kỹ thuật Môi trường,FALSE,,1,2019,2025
+302,HUST,EV1x,Kỹ thuật Môi trường,FALSE,,1,2020,2020
+302,HUST,EV1y,Kỹ thuật Môi trường,FALSE,,1,2022,2022
+302,HUST,HE1,Kỹ thuật Nhiệt,FALSE,,1,2019,2025
+302,HUST,HE1x,Kỹ thuật Nhiệt,FALSE,,1,2020,2020
+302,HUST,HE1y,Kỹ thuật Nhiệt,FALSE,,1,2022,2022
+302,HUST,BF1,Kỹ thuật Sinh học,FALSE,,1,2019,2025
+302,HUST,BF1x,Kỹ thuật Sinh học,FALSE,,1,2020,2020
+302,HUST,BF1y,Kỹ thuật Sinh học,FALSE,,1,2022,2022
+302,HUST,BF2,Kỹ thuật Thực phẩm,FALSE,,1,2019,2025
+302,HUST,BF2x,Kỹ thuật Thực phẩm,FALSE,,1,2020,2020
+302,HUST,BF2y,Kỹ thuật Thực phẩm,FALSE,,1,2022,2022
+302,HUST,BF-E12,Kỹ thuật Thực phẩm (CT tiên tiến),FALSE,,3,2019,2025
+302,HUST,BF-E12x,Kỹ thuật Thực phẩm (CT tiên tiến),FALSE,,1,2020,2020
+302,HUST,BF-E12y,Kỹ thuật Thực phẩm (CT tiên tiến),FALSE,,1,2022,2022
+302,HUST,MS2,Kỹ thuật Vi điện tử và Công nghệ nano,FALSE,,1,2023,2025
+302,HUST,MS1,Kỹ thuật Vật liệu,FALSE,,1,2019,2025
+302,HUST,MS1X,Kỹ thuật Vật liệu,FALSE,,1,2020,2020
+302,HUST,MS1y,Kỹ thuật Vật liệu,FALSE,,1,2022,2022
+302,HUST,ET2,Kỹ thuật Y sinh,FALSE,,1,2023,2025
+302,HUST,ET-E5,Kỹ thuật Y sinh (CT tiên tiến),FALSE,,3,2019,2025
+302,HUST,ET-E5x,Kỹ thuật Y sinh (CT tiên tiến),FALSE,,1,2020,2020
+302,HUST,ET-E5y,Kỹ thuật Y sinh (CT tiên tiến),FALSE,,1,2022,2022
+302,HUST,ET2y,Kỹ thuật Y sinh (mới),FALSE,,1,2022,2022
+302,HUST,PH2,Kỹ thuật hạt nhân,FALSE,,2,2019,2025
+302,HUST,PH2x,Kỹ thuật hạt nhân,FALSE,,1,2020,2020
+302,HUST,PH2y,Kỹ thuật hạt nhân,FALSE,,1,2022,2022
+302,HUST,CH3x,Kỹ thuật in,FALSE,,1,2020,2020
+302,HUST,CH3y,Kỹ thuật in,FALSE,,1,2022,2022
+302,HUST,MS5,Kỹ thuật in,FALSE,,1,2024,2025
+302,HUST,BF-E19,Kỹ thuật sinh học (CT tiên tiến),FALSE,,1,2023,2025
+302,HUST,TE1,Kỹ thuật Ô tô,FALSE,,1,2019,2025
+302,HUST,TE1x,Kỹ thuật Ô tô,FALSE,,1,2020,2020
+302,HUST,TE1y,Kỹ thuật Ô tô,FALSE,,1,2022,2022
+302,HUST,TE-E2,Kỹ thuật Ô tô (CT tiên tiến),FALSE,,3,2019,2025
+302,HUST,TE-E2x,Kỹ thuật Ô tô (CT tiên tiến),FALSE,,1,2020,2020
+302,HUST,TE-E2y,Kỹ thuật Ô tô (CT tiên tiến),FALSE,,1,2022,2022
+302,HUST,EE2,Kỹ thuật Điều khiển - Tự động hoá,FALSE,,5,2019,2025
+302,HUST,EE2x,Kỹ thuật Điều khiển - Tự động hoá,FALSE,,1,2020,2020
+302,HUST,EE2y,Kỹ thuật Điều khiển - Tự động hoá,FALSE,,1,2022,2022
+302,HUST,EE-E8y,"Kỹ thuật Điều khiển - Tự động hoá
+(CT tiên tiến)",FALSE,,1,2022,2022
+302,HUST,EE-E8,Kỹ thuật Điều khiển - Tự động hoá (CT tiên tiến),FALSE,,4,2019,2025
+302,HUST,EE-E8x,Kỹ thuật Điều khiển - Tự động hoá và Hệ thống điện (CT tiên tiến,FALSE,,1,2020,2020
+302,HUST,EE1,Kỹ thuật Điện,FALSE,,2,2019,2025
+302,HUST,ΕΕ1,Kỹ thuật Điện,FALSE,,1,2020,2020
+302,HUST,ΕΕ1x,Kỹ thuật Điện,FALSE,,1,2020,2020
+302,HUST,EE1y,Kỹ thuật Điện,FALSE,,1,2022,2022
+302,HUST,ET1,Kỹ thuật Điện tử - Viễn thông,FALSE,,3,2019,2025
+302,HUST,ET1x,Kỹ thuật Điện tử - Viễn thông,FALSE,,1,2020,2020
+302,HUST,ET1y,Kỹ thuật Điện tử - Viễn thông,FALSE,,1,2022,2022
+302,HUST,ET-E4y,"Kỹ thuật Điện tử - Viễn thông
+(CT tiên tiến)",FALSE,,1,2022,2022
+302,HUST,ET-E4,Kỹ thuật Điện tử - Viễn thông (CT tiên tiến),FALSE,,3,2019,2025
+302,HUST,ET-E4x,Kỹ thuật Điện tử - Viễn thông (CT tiên tiến),FALSE,,1,2020,2020
+302,HUST,EM-E14y,"Logistics và Quản lý chuỗi cung ứng
+(CT tiên tiến)",FALSE,,1,2022,2022
+302,HUST,EM-E14,Logistics và Quản lý chuỗi cung ứng (CT tiên tiến),FALSE,,2,2020,2025
+302,HUST,EM-E14x,Logistics và Quản lý chuỗi cung ứng (CT tiên tiến),FALSE,,1,2020,2020
+302,HUST,EM-E13,Phân tích kinh doanh (CT tiên tiến),FALSE,,4,2019,2025
+302,HUST,EM-E13x,Phân tích kinh doanh (CT tiên tiến),FALSE,,1,2020,2020
+302,HUST,EM-E13y,Phân tích kinh doanh (CT tiên tiến),FALSE,,1,2022,2022
+302,HUST,EV2,Quản lý Tài nguyên và Môi trường,FALSE,,2,2021,2025
+302,HUST,EM2,Quản lý công nghiệp,FALSE,,2,2019,2025
+302,HUST,EM2x,Quản lý công nghiệp,FALSE,,1,2020,2020
+302,HUST,EM2y,Quản lý công nghiệp,FALSE,,1,2022,2022
+302,HUST,EM-NU,Quản lý công nghiệp - Logistics và Quản lý chuỗi cung ứng - ĐH Northampton (Anh),FALSE,,1,2019,2019
+302,HUST,ED3,Quản lý giáo dục,FALSE,,1,2024,2025
+302,HUST,EM1,Quản lý năng lượng,FALSE,,3,2019,2025
+302,HUST,EV2y,Quản lý tài nguyên và môi trường,FALSE,,1,2022,2022
+302,HUST,EM3,Quản trị kinh doanh,FALSE,,2,2019,2025
+302,HUST,EM3x,Quản trị kinh doanh,FALSE,,1,2020,2020
+302,HUST,EM3y,Quản trị kinh doanh,FALSE,,1,2022,2022
+302,HUST,TROY-BA,Quản trị kinh doanh - hợp tác với ĐH Troy (Hoa Kỳ),FALSE,,5,2019,2025
+302,HUST,TROY-BAx,Quản trị kinh doanh - hợp tác với ĐH Troy (Hoa Kỳ),FALSE,,1,2020,2020
+302,HUST,TROY-Bay,Quản trị kinh doanh - hợp tác với ĐH Troy (Hoa Kỳ),FALSE,,1,2022,2022
+302,HUST,EM-VUW,Quản trị kinh doanh - hợp tác với ĐH Victoria Wellington (New Zealand),FALSE,,2,2019,2020
+302,HUST,EM-VUWx,Quản trị kinh doanh - hợp tác với ĐH Victoria Wellington (New Zealand),FALSE,,1,2020,2020
+302,HUST,EE-Epy,"Tin học công nghiệp và Tự động hóa
+(Chương trình Việt - Pháp PFIEV)",FALSE,,1,2022,2022
+302,HUST,EE-EP,Tin học công nghiệp và Tự động hóa (Chương trình Việt - Pháp PFIEV),FALSE,,2,2020,2025
+302,HUST,EE-Epx,Tin học công nghiệp và Tự động hóa (Chương trình Việt - Pháp PFIEV),FALSE,,1,2020,2020
+302,HUST,FL1,Tiếng Anh KHKT và Công nghệ,FALSE,,1,2019,2025
+302,HUST,FL1y,Tiếng Anh KHKT và Công nghệ,FALSE,,1,2022,2022
+302,HUST,FL2,Tiếng Anh chuyên nghiệp quốc tế,FALSE,,2,2019,2025
+302,HUST,FL2y,Tiếng Anh chuyên nghiệp quốc tế,FALSE,,1,2022,2022
+302,HUST,FL3,Tiếng Trung KHKT và Công nghệ,FALSE,,1,2025,2025
+302,HUST,MI1,Toán - Tin,FALSE,,3,2019,2025
+302,HUST,MI1x,Toán - Tin,FALSE,,1,2020,2020
+302,HUST,MI1y,Toán - Tin,FALSE,,1,2022,2022
+302,HUST,ET-E16y,"Truyền thông số và Kỹ thuật đa phương tiện
+(CT tiên tiến)",FALSE,,1,2022,2022
+302,HUST,ET-E16,Truyền thông số và Kỹ thuật đa phương tiện (CT tiên tiến),FALSE,,2,2021,2025
+302,HUST,EM5,Tài chính - Ngân hàng,FALSE,,3,2019,2025
+302,HUST,EM5x,Tài chính - Ngân hàng,FALSE,,1,2020,2020
+302,HUST,EM5y,Tài chính - Ngân hàng,FALSE,,1,2022,2022
+302,HUST,PH3,Vật lý Y khoa,FALSE,,2,2021,2025
+302,HUST,PH1,Vật lý kỹ thuật,FALSE,,2,2019,2025
+302,HUST,PH1x,Vật lý kỹ thuật,FALSE,,1,2020,2020
+302,HUST,PH1y,Vật lý kỹ thuật,FALSE,,1,2022,2022
+302,HUST,PH3y,Vật lý y khoa,FALSE,,1,2022,2022
+302,HUST,ET-LUHY,"Điện tử - Viễn thông - hợp tác với ĐH Leibniz
+Hannover (Đức)",FALSE,,1,2022,2022
+302,HUST,ET-LUH,Điện tử - Viễn thông - hợp tác với ĐH Leibniz Hannover (Đức),FALSE,,5,2019,2025
+302,HUST,ET-LUHx,Điện tử - Viễn thông -hợp tác với ĐH Leibniz Hannover (Đức),FALSE,,1,2020,2020
+308,HaUI,74802021,An toàn thông tin,TRUE,,1,2024,2025
+308,HaUI,7540204,"Công nghệ dệt, may",FALSE,,1,2019,2025
+308,HaUI,7510201,Công nghệ kỹ thuật cơ khí,FALSE,,1,2019,2025
+308,HaUI,7510201TA,Công nghệ kỹ thuật cơ khí (CTĐT bằng tiếng Anh),FALSE,,1,2025,2025
+308,HaUI,7519005,"Công nghệ kỹ thuật cơ điện
+tử ô tô",FALSE,,1,2022,2022
+308,HaUI,7510203,Công nghệ kỹ thuật cơ điện tử,FALSE,,1,2019,2025
+308,HaUI,7510204,Công nghệ kỹ thuật cơ điện tử ô tô,FALSE,,1,2023,2024
+308,HaUI,75102033,Công nghệ kỹ thuật cơ điện tử ô tô,FALSE,,1,2025,2025
+308,HaUI,7510401,Công nghệ kỹ thuật hóa học,FALSE,,2,2019,2025
+308,HaUI,7519003,Công nghệ kỹ thuật khuôn mẫu,FALSE,,1,2020,2024
+308,HaUI,75102012,Công nghệ kỹ thuật khuôn mẫu,FALSE,,1,2025,2025
+308,HaUI,7480108,Công nghệ kỹ thuật máy tính,TRUE,,1,2019,2025
+308,HaUI,7510406,Công nghệ kỹ thuật môi trường,FALSE,,1,2019,2025
+308,HaUI,7510206,Công nghệ kỹ thuật nhiệt,FALSE,,1,2019,2025
+308,HaUI,7510205,Công nghệ kỹ thuật ô tô,FALSE,,1,2019,2025
+308,HaUI,7510205TA,Công nghệ kỹ thuật ô tô (CTĐT bằng tiếng Anh),FALSE,,1,2025,2025
+308,HaUI,7510303,Công nghệ kỹ thuật điều khiển và tự động hóa,FALSE,,2,2019,2025
+308,HaUI,7510302,Công nghệ kỹ thuật điện tử - viễn thông,FALSE,,3,2019,2025
+308,HaUI,7510302TA,Công nghệ kỹ thuật điện tử - viễn thông (CTĐT bằng tiếng Anh),FALSE,,1,2025,2025
+308,HaUI,75103021,Công nghệ kỹ thuật điện tử y sinh,FALSE,,1,2023,2025
+308,HaUI,7510301,"Công nghệ kỹ thuật điện, điện tử",FALSE,,1,2019,2025
+308,HaUI,7510301TA,"Công nghệ kỹ thuật điện, điện tử (CTĐT bằng tiếng Anh)",FALSE,,1,2025,2025
+308,HaUI,7480201,Công nghệ thông tin,TRUE,,1,2019,2025
+308,HaUI,7540101,Công nghệ thực phẩm,FALSE,,1,2019,2025
+308,HaUI,7540203,"Công nghệ vật liệu dệt, may",FALSE,,1,2019,2025
+308,HaUI,7329001,Công nghệ đa phương tiện,FALSE,,1,2022,2022
+308,HaUI,7320113,Công nghệ đa phương tiện,FALSE,,1,2023,2024
+308,HaUI,74802012,Công nghệ đa phương tiện,FALSE,,1,2025,2025
+308,HaUI,7810101,Du lịch,FALSE,,1,2019,2025
+308,HaUI,7810101TA,Du lịch (CTĐT bằng tiếng Anh),FALSE,,1,2025,2025
+308,HaUI,7720203,Hóa dược,FALSE,,1,2023,2025
+308,HaUI,7480104,Hệ thống thông tin,TRUE,,1,2019,2025
+308,HaUI,7480101,Khoa học máy tính,TRUE,,1,2019,2025
+308,HaUI,7480101TA,Khoa học máy tính (CTĐT bằng tiếng Anh),TRUE,,1,2025,2025
+308,HaUI,7310104,Kinh tế đầu tư,FALSE,,1,2019,2025
+308,HaUI,7340302,Kiểm toán,FALSE,,1,2019,2025
+308,HaUI,7340301,Kế toán,FALSE,,1,2019,2025
+308,HaUI,7340301TA,Kế toán (CTĐT bằng tiếng Anh),FALSE,,1,2025,2025
+308,HaUI,7520116,Kỹ thuật cơ khí động lực,FALSE,,1,2023,2025
+308,HaUI,7520118,Kỹ thuật hệ thống công nghiệp,FALSE,,1,2019,2025
+308,HaUI,7480103,Kỹ thuật phần mềm,TRUE,,1,2019,2025
+308,HaUI,75103031,Kỹ thuật sản xuất thông minh,FALSE,,1,2023,2025
+308,HaUI,7510605,Logistics và quản lý chuỗi cung ứng,FALSE,,1,2020,2025
+308,HaUI,7340115,Marketing,FALSE,,1,2019,2025
+308,HaUI,7480102,Mạng máy tính và truyền thông dữ liệu,TRUE,,1,2019,2025
+308,HaUI,7220201,Ngôn ngữ Anh,FALSE,,1,2019,2025
+308,HaUI,7220210,Ngôn ngữ Hàn Quốc,FALSE,,1,2019,2025
+308,HaUI,7220209,Ngôn ngữ Nhật,FALSE,,1,2020,2025
+308,HaUI,7220204,Ngôn ngữ Trung Quốc,FALSE,,1,2019,2025
+308,HaUI,7220204LK,Ngôn ngữ Trung Quốc (LK2+2 với ĐHKHKT Quảng Tây),FALSE,,1,2024,2025
+308,HaUI,7229020,Ngôn ngữ học,FALSE,,1,2023,2025
+308,HaUI,75190071,Năng lượng tái tạo,FALSE,,1,2023,2025
+308,HaUI,7340125,Phân tích dữ liệu kinh doanh,FALSE,,1,2021,2024
+308,HaUI,73401012,Phân tích dữ liệu kinh doanh,FALSE,,1,2025,2025
+308,HaUI,7810103,Quản trị dịch vụ du lịch và lữ hành,FALSE,,1,2019,2025
+308,HaUI,7810103TA,Quản trị dịch vụ du lịch và lữ hành (CTĐT bằng tiếng Anh),FALSE,,1,2025,2025
+308,HaUI,7810201,Quản trị khách sạn,FALSE,,1,2019,2025
+308,HaUI,7810201TA,Quản trị khách sạn (CTĐT bằng tiếng Anh),FALSE,,1,2025,2025
+308,HaUI,7340101,Quản trị kinh doanh,FALSE,,1,2019,2025
+308,HaUI,7810202,Quản trị nhà hàng và dịch vụ ăn uống,FALSE,,2,2022,2025
+308,HaUI,7810202TA,Quản trị nhà hàng và dịch vụ ăn uống (CTĐT bằng tiếng Anh),FALSE,,1,2025,2025
+308,HaUI,7340404,Quản trị nhân lực,FALSE,,1,2019,2025
+308,HaUI,7340406,Quản trị văn phòng,FALSE,,1,2019,2025
+308,HaUI,7510209,Robot và trí tuệ nhân tạo,FALSE,excluded_by_veto:Robot,1,2021,2024
+308,HaUI,75102032,Robot và trí tuệ nhân tạo,FALSE,excluded_by_veto:Robot,1,2025,2025
+308,HaUI,7519004,"Thiết kế cơ khí và kiểu
+dáng công nghiệp",FALSE,,1,2022,2022
+308,HaUI,7510213,Thiết kế cơ khí và kiểu dáng công nghiệp,FALSE,,1,2023,2024
+308,HaUI,75102013,Thiết kế cơ khí và kiểu dáng công nghiệp,FALSE,,1,2025,2025
+308,HaUI,7210404,Thiết kế thời trang,FALSE,,1,2019,2025
+308,HaUI,7310612,Trung Quốc học,FALSE,,1,2022,2025
+308,HaUI,7340201,Tài chính - Ngân hàng,FALSE,,3,2019,2025
+227,PTIT,7480202,An toàn thông tin,TRUE,,1,2019,2025
+227,PTIT,7480202_CLC,An toàn thông tin - Chất lượng cao,TRUE,,1,2025,2025
+227,PTIT,7320101,Báo chí,FALSE,,1,2022,2025
+227,PTIT,7510301,"Công nghệ Kỹ thuật Điện, điện tử",FALSE,,4,2019,2025
+227,PTIT,7340208,Công nghệ Tài chính,FALSE,,1,2021,2021
+227,PTIT,7480201,Công nghệ thông tin,TRUE,,1,2019,2025
+227,PTIT,7480201 _CLC,Công nghệ thông tin (CLC),TRUE,,1,2023,2023
+227,PTIT,7480201_UDU,Công nghệ thông tin (Cử nhân định hướng ứng dụng),TRUE,,1,2024,2025
+227,PTIT,7480201 _UDU,Công nghệ thông tin (định hướng ứng dụng),TRUE,,1,2023,2023
+227,PTIT,7480201_CLC,Công nghệ thông tin - Chương trình chất lượng cao,TRUE,,2,2024,2025
+227,PTIT,7480201_VNH,Công nghệ thông tin Việt - Nhật,TRUE,,1,2024,2025
+227,PTIT,7340205,Công nghệ tài chính (Fintech),FALSE,,1,2022,2025
+227,PTIT,7510301_MBD,"Công nghệ vi mạch bán dẫn (ngành Công nghệ Kỹ thuật Điện, điện tử)",FALSE,,1,2025,2025
+227,PTIT,7329001,Công nghệ đa phương tiện,FALSE,,1,2019,2025
+227,PTIT,7480101,Khoa học máy tính (định hướng Khoa học dữ liệu),TRUE,,2,2022,2025
+227,PTIT,7340301,Kế toán,FALSE,,1,2019,2025
+227,PTIT,7340301_CLC,Kế toán chất lượng cao (chuẩn quốc tế ACCA),FALSE,,1,2024,2025
+227,PTIT,7480102,Kỹ thuật dữ liệu (ngành Mạng máy tính và truyền thông dữ liệu),TRUE,,2,2023,2025
+227,PTIT,7520216,Kỹ thuật Điều khiển và tự động hóa,FALSE,,1,2023,2025
+227,PTIT,7520207,Kỹ thuật Điện tử viễn thông,FALSE,,2,2019,2025
+227,PTIT,7340101_LOG,Logistics và quản trị chuỗi cung ứng (ngành Quản trị kinh doanh),FALSE,,1,2025,2025
+227,PTIT,7340115,Marketing,FALSE,,1,2019,2025
+227,PTIT,7340115_CLC,Marketing (chất lượng cao),FALSE,,2,2024,2025
+227,PTIT,7340115_QHC,Quan hệ công chúng (ngành Marketing),FALSE,,1,2024,2025
+227,PTIT,7340101,Quản trị kinh doanh,FALSE,,1,2019,2025
+227,PTIT,7329001_GAM,Thiết kế và phát triển Game (ngành Công nghệ đa phương tiện),FALSE,,1,2024,2025
+227,PTIT,7340122,Thương mại điện tử,FALSE,,1,2019,2025
+227,PTIT,7320104,Truyền thông đa phương tiện,FALSE,,1,2019,2025
+227,PTIT,7320104_CLC,Truyền thông đa phương tiện - Chương trình đào tạo chất lượng cao,FALSE,,1,2025,2025
+227,PTIT,7480107,Trí tuệ nhân tạo,TRUE,,1,2025,2025
+227,PTIT,7520207_AIoT,Trí tuệ nhân tạo vạn vật (AIoT) (ngành Kỹ thuật Điện tử viễn thông),FALSE,excluded_by_veto:Điện tử,1,2025,2025
+421,TLU,TLA127,An ninh mạng,TRUE,check_cyber_variant,1,2022,2025
+421,TLU,TLA412,Chương trình Công nghệ tài chính,FALSE,,1,2025,2025
+421,TLU,TLA411,Chương trình Kế toán tích hợp chứng chỉ quốc Tế,FALSE,,1,2025,2025
+421,TLU,TLA202,Chương trình tiên tiến ngành Kỹ thuật tài nguyên nước,FALSE,,4,2019,2025
+421,TLU,TLA201,Chương trình tiên tiến ngành Kỹ thuật xây dựng,FALSE,,6,2019,2025
+421,TLU,TLA122,"Công nghệ chế tạo máy (Công nghệ sản xuất tiên tiến, tự động hóa thiết kế cơ khí)",FALSE,,2,2019,2025
+421,TLU,TLA111,Công nghệ kỹ thuật xây dựng,FALSE,,1,2019,2025
+421,TLU,TLA119,Công nghệ sinh học,FALSE,,1,2019,2025
+421,TLU,TLA106,Công nghệ thông tin,TRUE,,3,2019,2025
+421,TLU,TLA116,Hệ thống thông tin,TRUE,,1,2021,2025
+421,TLU,TLA401,Kinh tế,FALSE,,2,2019,2025
+421,TLU,TLA410,Kinh tế số,FALSE,,1,2022,2025
+421,TLU,TLA404,Kinh tế xây dựng,FALSE,,1,2021,2025
+421,TLU,TLA409,Kiểm toán,FALSE,,1,2022,2025
+421,TLU,TLA403,Kế toán,FALSE,,1,2019,2025
+421,TLU,TLA128,Kỹ thuật Robot và Điều khiển thông minh,FALSE,,2,2022,2025
+421,TLU,TLA105,Kỹ thuật cơ khí,FALSE,,6,2019,2025
+421,TLU,TLA120,Kỹ thuật cơ điện tử,FALSE,,2,2019,2025
+421,TLU,TLA107,Kỹ thuật cấp thoát nước,FALSE,,1,2019,2025
+421,TLU,TLA118,Kỹ thuật hóa học,FALSE,,1,2019,2025
+421,TLU,TLA109,Kỹ thuật môi trường,FALSE,,1,2019,2025
+421,TLU,TLA117,Kỹ thuật phần mềm,TRUE,,1,2021,2025
+421,TLU,TLA115,Kỹ thuật trắc địa - bản đồ,FALSE,,1,2019,2019
+421,TLU,TLA102,Kỹ thuật tài nguyên nước,FALSE,,2,2019,2025
+421,TLU,TLA113,"Kỹ thuật xây dựng công trình giao thông (gồm các chương trình: Công nghệ và kỹ thuật xây dựng cầu, đường; Công nghệ và kỹ thuật Đường sắt tốc độ cao và đường sắt đô thị)",FALSE,,3,2019,2025
+421,TLU,TLA104,Kỹ thuật xây dựng dân dụng và công nghiệp (Kỹ thuật xây dựng),FALSE,,3,2019,2025
+421,TLU,TLA123,Kỹ thuật ô tô,FALSE,,3,2019,2025
+421,TLU,TLA121,Kỹ thuật điều khiển và tự động hóa,FALSE,,2,2019,2025
+421,TLU,TLA112,Kỹ thuật điện,FALSE,,3,2019,2025
+421,TLU,TLA124,Kỹ thuật điện tử - viễn thông (gồm các chương trình: Kỹ thuật điện tử -viễn thông; Công nghệ bán dẫn và thiết kế vi mạch),FALSE,,2,2021,2025
+421,TLU,TLA407,Logistics và quản lý chuỗi cung ứng,FALSE,,3,2021,2025
+421,TLU,TLA301,Luật,FALSE,,1,2022,2025
+421,TLU,TLA302,Luật kinh tế,FALSE,,1,2023,2025
+421,TLU,TLA203,Ngôn ngữ Anh,FALSE,,1,2021,2025
+421,TLU,TLA204,Ngôn ngữ Trung Quốc,FALSE,,1,2023,2025
+421,TLU,TLA114,Quản lý xây dựng,FALSE,,1,2019,2025
+421,TLU,TLA406,Quản trị dịch vụ du lịch và lữ hành,FALSE,,2,2021,2025
+421,TLU,TLA402,Quản trị kinh doanh,FALSE,,2,2019,2025
+421,TLU,TLA405,Thương mại điện tử,FALSE,,1,2021,2025
+421,TLU,TLA126,Trí tuệ nhân tạo và khoa học dữ liệu,TRUE,,2,2021,2025
+421,TLU,TLA408,Tài chính - Ngân hàng,FALSE,,1,2022,2025
+421,TLU,TLA103,Tài nguyên nước và môi trường (Thủy văn học),FALSE,,4,2019,2025
+421,TLU,TLA101,Xây dựng và quản lý công trình thủy (Kỹ thuật xây dựng công trình thủy),FALSE,,3,2019,2025
+421,TLU,TLA110,Xây dựng và quản lý hạ tầng đô thị (Kỹ thuật cơ sở hạ tầng),FALSE,,3,2019,2025
+311,UET,CN7,Công nghệ hàng không vũ trụ,FALSE,,2,2019,2025
+311,UET,CN6,Công nghệ kỹ thuật cơ điện tử,FALSE,,4,2019,2025
+311,UET,CN5,Công nghệ kỹ thuật xây dựng,FALSE,,1,2019,2025
+311,UET,CN9,Công nghệ kỹ thuật điện tử - Viễn thông,FALSE,,6,2019,2025
+311,UET,CN10,Công nghệ nông nghiệp,FALSE,,1,2019,2025
+311,UET,CN21,Công nghệ sinh học,FALSE,,1,2025,2025
+311,UET,CN1,Công nghệ thông tin,TRUE,,1,2019,2025
+311,UET,CN16,Công nghệ thông tin định hướng thị trường Nhật Bản,TRUE,,1,2022,2023
+311,UET,CN19,Công nghệ vật liệu,FALSE,,1,2025,2025
+311,UET,CN4,Cơ kỹ thuật,FALSE,,1,2019,2025
+311,UET,CN14,Hệ thống thông tin,TRUE,,1,2022,2025
+311,UET,CN20,Khoa học dữ liệu,TRUE,,1,2025,2025
+311,UET,CN8,Khoa học máy tính,TRUE,,3,2019,2025
+311,UET,CN17,Kỹ thuật Robot,FALSE,,1,2022,2025
+311,UET,CN2,Kỹ thuật máy tính,TRUE,,2,2019,2025
+311,UET,CN13,Kỹ thuật năng lượng,FALSE,,1,2022,2025
+311,UET,CN11,Kỹ thuật điều khiển và tự động hóa,FALSE,,2,2019,2025
+311,UET,CN15,Mạng máy tính và truyền thông dữ liệu,TRUE,,1,2022,2025
+311,UET,CN18,Thiết kế công nghiệp và Đồ họa,FALSE,,2,2024,2025
+311,UET,CN12,Trí tuệ nhân tạo,TRUE,,1,2022,2025
+311,UET,CN3,Vật lý kỹ thuật,FALSE,,1,2019,2025
+330,UTC,7580205-01,Chuyên ngành Cầu đường bộ,FALSE,,1,2020,2020
+330,UTC,7520116-03,Chuyên ngành Kỹ thuật máy động lực,FALSE,,1,2020,2020
+330,UTC,7580205-07,Chuyên ngành Tự động hóa thiết kế cầu đường,FALSE,,1,2020,2020
+330,UTC,7510104,Công nghệ kỹ thuật giao thông,FALSE,,3,2020,2023
+330,UTC,7480201,Công nghệ thông tin,TRUE,,2,2020,2025
+330,UTC,7480201QT,Công nghệ thông tin (Chương trinh chất lượng cao Công nghệ thông tin Việt - Anh),TRUE,,4,2020,2023
+330,UTC,7480201 QT,Công nghệ thông tin (Chương trình CLC Công nghệ thông tin Việt-Anh),TRUE,,2,2024,2025
+330,UTC,7520219,Hệ thống giao thông thông minh,FALSE,,2,2022,2024
+330,UTC,7840101 DS,"Khai thác vận tải (chuyên ngành Khai thác và quản lý đường sắt tốc độ cao, Khai thác và quản lý đường sắt đô thị)",FALSE,,1,2025,2025
+330,UTC,7840101,"Khai thác vận tải (chuyên ngành: Vận tải - Thương mại quốc tế, Quy hoạch và quản lý GTVT đô thị, Vận tải - Kinh tế đường bộ và thành phố, Vận tải đường sắt)",FALSE,,3,2020,2025
+330,UTC,7480101,Khoa học máy tính,TRUE,,1,2022,2025
+330,UTC,7310101,"Kinh tế (chuyên ngành: kinh tế và quản lý đầu tư, kinh tế bưu chính viễn thông)",FALSE,,3,2020,2025
+330,UTC,7840104,"Kinh tế vận tải (chuyên ngành: Kinh tế vận tải ô tô, Kinh tế vận tải hàng không, Kinh tế vận tải đường sắt, Kinh tế vận tải thuỷ bộ)",FALSE,,3,2020,2025
+330,UTC,7580301 QT,Kinh tế xây dựng (Chương trình CLC Kinh tế xây dựng công trình GT Việt-Anh),FALSE,,2,2024,2025
+330,UTC,7580301QT,Kinh tế xây dựng (Chương trình chất lượng cao Kinh tế xây dựng công trinh Giao thông Việt - Anh),FALSE,,4,2020,2023
+330,UTC,7580301,Kinh tế xây dựng (chuyên ngành: Kinh tế và quản lý đầu tư xây dựng),FALSE,,3,2020,2025
+330,UTC,7580101,Kiến trúc,FALSE,,1,2024,2025
+330,UTC,7340301 QT,Kế toán (Chương trình CLC Kế toán tổng hợp Việt-Anh),FALSE,,2,2024,2025
+330,UTC,7340301QT,Kế toán (Chương trình chất lượng cao Kế toán tổng hợp Việt - Anh),FALSE,,3,2020,2023
+330,UTC,7340301,Kế toán (chuyên ngành Kế toán tổng hợp),FALSE,,3,2020,2025
+330,UTC,7580215,Kỹ thuật an toàn giao thông (Ngành tuyển sinh các năm trước: Công nghệ kỹ thuật giao thông - Chuyên ngành: Kỹ thuật an toàn giao thông),FALSE,,2,2024,2025
+330,UTC,7520103QT,Kỹ thuật cơ khi (Chương trình chất lượng cao Cơ khí ô tô Việt - Anh),FALSE,,4,2020,2023
+330,UTC,7520103 QT,Kỹ thuật cơ khí (Chương trình CLC Cơ khí ô tô Việt - Anh),FALSE,,2,2024,2025
+330,UTC,7520103,"Kỹ thuật cơ khí (chuyên ngành: Công nghệ chế tạo cơ khí, Tự động hoá thiết kế cơ khí)",FALSE,,3,2020,2025
+330,UTC,7520116 DS,Kỹ thuật cơ khí động lực (chuyên ngành Kỹ thuật phương tiện đường sắt tốc độ cao),FALSE,,1,2025,2025
+330,UTC,7520116,"Kỹ thuật cơ khí động lực (chuyên ngành: Kỹ thuật phương tiện đường sắt, Máy xây dựng, Kỹ thuật máy động lực)",FALSE,,3,2021,2025
+330,UTC,7580210,Kỹ thuật cơ sở hạ tầng (chuyên ngành: cơ sở hạ tầng kỹ thuật đô thị),FALSE,,2,2022,2025
+330,UTC,7520114,Kỹ thuật cơ điện tử,FALSE,,2,2020,2025
+330,UTC,7480106,"Kỹ thuật máy tính (theo hướng chuyên sâu vi mạch bán dẫn, bao gồm lớp kỹ sư tài năng)",TRUE,,2,2024,2025
+330,UTC,7520320,Kỹ thuật môi trường,FALSE,,2,2020,2025
+330,UTC,7520115,Kỹ thuật nhiệt (chuyên ngành: Kỹ thuật nhiệt lạnh và điều hoà không khí),FALSE,,3,2020,2025
+330,UTC,7520107,Kỹ thuật robot (chuyên ngành Kỹ thuật robot và trí tuệ nhân tạo),FALSE,excluded_by_veto:robot,1,2025,2025
+330,UTC,7520218,Kỹ thuật robot và trí tuệ nhân tạo,FALSE,excluded_by_veto:robot,4,2021,2024
+330,UTC,7580201QT,Kỹ thuật xây dựng (Chương trinh tiên tiến Kỹ thuật xây dựng công trình giao thông),FALSE,,2,2022,2023
+330,UTC,7580201QT-02,Kỹ thuật xây dựng (Chương trình chất lượng cao Vật liệu và Công nghệ Xây dựng Việt – Pháp),FALSE,,2,2020,2021
+330,UTC,7580201 QT,Kỹ thuật xây dựng (Chương trình tiên tiến Kỹ thuật xây dựng công trình GT),FALSE,,2,2024,2025
+330,UTC,7580201QT-01,Kỹ thuật xây dựng (Chương trình tiên tiến Kỹ thuật xây dựng công trình giao thông),FALSE,,2,2020,2021
+330,UTC,7580201,"Kỹ thuật xây dựng (chuyên ngành: Xây dựng dân dụng và công nghiệp, Kết cấu xây dựng, Vật liệu và công nghệ xây dựng)",FALSE,,3,2020,2025
+330,UTC,7580205 QT3,Kỹ thuật xây dựng công trình giao thông (Chương trình CLC Công trình giao thông đô thị Việt-Nhật),FALSE,,1,2025,2025
+330,UTC,7580205 QT2,Kỹ thuật xây dựng công trình giao thông (Chương trình CLC Cầu-Đường bộ Việt-Anh),FALSE,,1,2025,2025
+330,UTC,7580205 QT1,Kỹ thuật xây dựng công trình giao thông (Chương trình CLC Cầu-Đường bộ Việt-Pháp),FALSE,,1,2025,2025
+330,UTC,7580205 DS,Kỹ thuật xây dựng công trình giao thông (chuyên ngành đường sắt tốc độ cao),FALSE,,1,2025,2025
+330,UTC,7580205,"Kỹ thuật xây dựng công trình giao thông (chuyên ngành: Cầu đường bộ, Đường bộ và kỹ thuật giao thông, Cầu và kết cấu, ĐS/ ĐS đô thị, XD sân bay cảng hàng không, Công trình GT đô thị)",FALSE,,2,2021,2025
+330,UTC,7580205QT,"Kỹ thuật xây dựng công trình giao thông (gồm các Chương trinh chất lượng cao: Cầu - Đường bộ Việt • Pháp, cầu - Đường bộ Việt - Anh. Công trinh giao thông đô thị Việt - Nhật)",FALSE,,4,2020,2023
+330,UTC,7580205 QT,"Kỹ thuật xây dựng công trình giao thông (gồm các Chương trình chất lượng cao: Cầu • Đường bộ Việt • Pháp, Cầu - Đường bộ Việt - Anh, Công trình giao thông đô thị Việt -Nhật)",FALSE,,1,2024,2024
+330,UTC,7580202,Kỹ thuật xây dựng công trình thủy,FALSE,,3,2020,2025
+330,UTC,7520130,Kỹ thuật ô tô (bao gồm lớp kỹ sư tài năng),FALSE,,3,2020,2025
+330,UTC,7520216-GTTM,Kỹ thuật điều khiển và tự động hoá (chuyên ngành Hệ thống giao thông thông minh),FALSE,,1,2025,2025
+330,UTC,7520216 DS,Kỹ thuật điều khiển và tự động hoá (chuyên ngành Điều khiển và thông tin tín hiệu đường sắt hiện đại),FALSE,,1,2025,2025
+330,UTC,7520216,Kỹ thuật điều khiển và tự động hoá (chuyên ngành: Tự động hoá),FALSE,,5,2020,2025
+330,UTC,7520201 DS,"Kỹ thuật điện (chuyên ngành Hệ thống điện đường sắt tốc độ cao, đường sắt đô thị)",FALSE,,1,2025,2025
+330,UTC,7520201,"Kỹ thuật điện (chuyên ngành: Trang bị điện trong công nghiệp và GTVT, Hệ thống điện trong giao thông và công nghiệp)",FALSE,,3,2020,2025
+330,UTC,7520207,"Kỹ thuật điện tử - viễn thông (chuyên ngành: Kỹ thuật viễn thông, Kỹ thuật thông tin và truyền thông, Kỹ thuật điện tử và tin học công nghiệp)",FALSE,,3,2020,2025
+330,UTC,7510605,Logistics và quản lý chuỗi cung ứng,FALSE,,4,2020,2025
+330,UTC,GHA-08,Ngành Công nghệ kỹ thuật giao thông (chuyên ngành Kỹ thuật an toàn giao thông),FALSE,,1,2019,2019
+330,UTC,GHA-07,Ngành Công nghệ thông tin,TRUE,,1,2019,2019
+330,UTC,GHA-04,"Ngành Khai thác vận tải (gồm 5 chuyên ngành: Khai thác vận tải đường sắt đô thị, Khai thác vận tải đa phương thức,Vận tải - Thương mại quốc tế, Qui hoạch và quản lý GTVT đô thị, Logistics)",FALSE,,1,2019,2019
+330,UTC,GHA-03,Ngành Kinh tế (chuyên ngành Kinh tế Bưu chính - Viễn thông),FALSE,,1,2019,2019
+330,UTC,GHA-05,"Ngành Kinh tế vận tải (gồm 3 chuyên ngành: Kinh tế vận tải ô tô, Kinh tế vận tải đường sắt, Kinh tế vận tải và du lịch)",FALSE,,1,2019,2019
+330,UTC,GHA-35,Ngành Kinh tế xây dựng (Chương trình chất lượng cao Kinh tế xây dựng công trình Giao thông Việt - Anh),FALSE,,1,2019,2019
+330,UTC,GHA-28,"Ngành Kinh tế xây dựng (gồm 2 chuyên ngành: Kinh tế quản lý khai thác cầu đường, Kinh tế xây dựng công trình giao thông)",FALSE,,1,2019,2019
+330,UTC,GHA-36,Ngành Kế toán (Chương trình chất lượng cao Kế toán tổng hợp Việt - Anh),FALSE,,1,2019,2019
+330,UTC,GHA-02,Ngành Kế toán (chuyên ngành Kế toán tổng hợp),FALSE,,1,2019,2019
+330,UTC,GHA-11,Ngành Kỹ thuật Cơ điện tử (chuyên ngành Cơ điện tử),FALSE,,1,2019,2019
+330,UTC,GHA-10,"Ngành Kỹ thuật cơ khí (gồm 2 chuyên ngành: Công nghệ chế tạo cơ khí, Tự động hóa thiết kế cơ khí)",FALSE,,1,2019,2019
+330,UTC,GHA-13,Ngành Kỹ thuật cơ khí động lực (Chuyên ngành Máy xây dựng),FALSE,,1,2019,2019
+330,UTC,GHA-14,"Ngành Kỹ thuật cơ khí động lực (Nhóm chuyên ngành: Cơ giới hóa xây dựng cầu đường, Cơ khí giao thông công chính, Kỹ thuật máy động lực, Đầu máy - toa xe, Tàu điện - metro)",FALSE,,1,2019,2019
+330,UTC,GHA-09,Ngành Kỹ thuật môi trường (chuyên ngành Kỹ thuật môi trường giao thông),FALSE,,1,2019,2019
+330,UTC,GHA-12,"Ngành Kỹ thuật nhiệt (gồm 2 chuyên ngành: Kỹ thuật nhiệt lạnh, Điều hòa không khí và thông gió công trình xây dựng)",FALSE,,1,2019,2019
+330,UTC,GHA-34,Ngành Kỹ thuật xây dựng (Chương trình chất lượng cao Vật liệu và Công nghệ Xây dựng Việt – Pháp),FALSE,,1,2019,2019
+330,UTC,GHA-33,Ngành Kỹ thuật xây dựng (Chương trình tiên tiến Kỹ thuật xây dựng công trình giao thông),FALSE,,1,2019,2019
+330,UTC,GHA-19,"Ngành Kỹ thuật xây dựng (gồm 4 chuyên ngành: Xây dựng dân dụng và công nghiệp, Kết cấu xây dựng, Kỹ thuật hạ tầng đô thị, Vật liệu và công nghệ xây dựng)",FALSE,,1,2019,2019
+330,UTC,GHA-21,Ngành Kỹ thuật xây dựng công trình giao thông (Chuyên ngành Cầu đường bộ),FALSE,,1,2019,2019
+330,UTC,GHA-32,Ngành Kỹ thuật xây dựng công trình giao thông (Chương trình chất lượng cao Công trình Giao thông đô thị Việt - Nhật),FALSE,,1,2019,2019
+330,UTC,GHA-31,Ngành Kỹ thuật xây dựng công trình giao thông (Chương trình chất lượng cao Cầu - Đường bộ Việt – Anh),FALSE,,1,2019,2019
+330,UTC,GHA-30,Ngành Kỹ thuật xây dựng công trình giao thông (Chương trình chất lượng cao Cầu - Đường bộ Việt – Pháp),FALSE,,1,2019,2019
+330,UTC,GHA-26,"Ngành Kỹ thuật xây dựng công trình giao thông (Nhóm chuyên ngành: Công trình giao thông đô thị, Công trình giao thông công chính )",FALSE,,1,2019,2019
+330,UTC,GHA-23,"Ngành Kỹ thuật xây dựng công trình giao thông (Nhóm chuyên ngành: Cầu hầm, Đường hầm và metro)",FALSE,,1,2019,2019
+330,UTC,GHA-27,"Ngành Kỹ thuật xây dựng công trình giao thông (Nhóm chuyên ngành: Tự động hóa thiết kế cầu đường, Địa kỹ thuật công trình giao thông, Kỹ thuật GIS và trắc địa công trình)",FALSE,,1,2019,2019
+330,UTC,GHA-22,"Ngành Kỹ thuật xây dựng công trình giao thông (Nhóm chuyên ngành: Đường bộ, Kỹ thuật giao thông đường bộ)",FALSE,,1,2019,2019
+330,UTC,GHA-24,"Ngành Kỹ thuật xây dựng công trình giao thông (Nhóm chuyên ngành: Đường sắt, Cầu-Đường sắt, Đường sắt đô thị)",FALSE,,1,2019,2019
+330,UTC,GHA-25,"Ngành Kỹ thuật xây dựng công trình giao thông (Nhóm chuyên ngành: Đường ô tô - Sân bay, Cầu - Đường ô tô - Sân bay)",FALSE,,1,2019,2019
+330,UTC,GHA-20,Ngành Kỹ thuật xây dựng công trình thủy,FALSE,,1,2019,2019
+330,UTC,GHA-15,Ngành Kỹ thuật ô tô (chuyên ngành Cơ khí ô tô),FALSE,,1,2019,2019
+330,UTC,GHA-18,"Ngành Kỹ thuật điều khiển và tự động hoá (gồm 2 chuyên ngành: Kỹ thuật điều khiển và tự động hóa giao thông, Tự động hóa)",FALSE,,1,2019,2019
+330,UTC,GHA-16,"Ngành Kỹ thuật điện (gồm 2 chuyên ngành: Trang bị điện trong công nghiệp và giao thông, Hệ thống điện giao thông và công nghiệp)",FALSE,,1,2019,2019
+330,UTC,GHA-17,"Ngành Kỹ thuật điện tử - viễn thông (gồm 3 chuyên ngành: Kỹ thuật điện tử và tin học công nghiệp, Kỹ thuật thông tin và truyền thông, Kỹ thuật viễn thông)",FALSE,,1,2019,2019
+330,UTC,GHA-29,Ngành Quản lý xây dựng,FALSE,,1,2019,2019
+330,UTC,GHA-01,"Ngành Quản trị kinh doanh (gồm 4 chuyên ngành: Quản trị doanh nghiệp xây dựng, Quản trị doanh nghiệp Bưu chính - Viễn thông, Quản trị kinh doanh giao thông vận tải, Quản trị Logistics)",FALSE,,1,2019,2019
+330,UTC,GHA-06,Ngành Toán ứng dụng (chuyên ngành Toán - Tin ứng dụng),FALSE,,1,2019,2019
+330,UTC,7220201,Ngôn ngữ Anh,FALSE,,1,2024,2025
+330,UTC,7580205-06,"Nhóm chuyên ngành: Công trình giao thông công chính, Công trình giao thông đô thị",FALSE,,1,2020,2020
+330,UTC,7580205-03,"Nhóm chuyên ngành: Cầu hầm, Đường hầm và metro",FALSE,,1,2020,2020
+330,UTC,7520116-02,"Nhóm chuyên ngành: Kỹ thuật phương tiện đường sắt, Tàu điện-metro, Đầu máy - Toa хе",FALSE,,1,2020,2020
+330,UTC,7520116-01,"Nhóm chuyên ngành: Máy xây dựng, Cơ giới hóa xây dựng cầu đường, Cơ khí giao thông công chính",FALSE,,1,2020,2020
+330,UTC,7580205-02,"Nhóm chuyên ngành: Đường bộ, Kỹ thuật giao thông đường bộ",FALSE,,1,2020,2020
+330,UTC,7580205-04,"Nhóm chuyên ngành: Đường sắt, Cầu- Đường sắt, Đường sắt đô thị",FALSE,,1,2020,2020
+330,UTC,7580205-05,"Nhóm chuyên ngành: Đường ô tô và Sân bay, Cầu - Đường ô tô và Sân bay",FALSE,,1,2020,2020
+330,UTC,7580205-08,"Nhóm chuyên ngành: Địa kỹ thuật, Kỹ thuật GIS và trắc địa công trình",FALSE,,1,2020,2020
+330,UTC,7580302,Quản lý xây dựng,FALSE,,2,2020,2025
+330,UTC,7580302 QT,Quản lý xây dựng (Chương trình CLC Quản lý xây dựng Việt - Anh),FALSE,,2,2024,2025
+330,UTC,7580302QT,Quản lý xây dựng (Chương trình chất lượng cao Quản lý xây dựng Việt - Anh),FALSE,,2,2022,2023
+330,UTC,7580106,Quản lý đô thị và công trình,FALSE,,1,2022,2025
+330,UTC,7810103,Quản trị dịch vụ du lịch và lữ hành,FALSE,,3,2020,2025
+330,UTC,7340101,Quản trị kinh doanh,FALSE,,2,2020,2025
+330,UTC,7340110QT,"Quản trị kinh doanh
+(Chương trình chất lượng cao Quản trị kinh doanh Việt - Anh)",FALSE,,1,2022,2022
+330,UTC,7340101 QT,Quản trị kinh doanh (Chương trình CLC Quản trị kinh doanh Việt-Anh),FALSE,,3,2021,2025
+330,UTC,7340101QT,Quản trị kinh doanh (Chương trình chất lượng cao Quản trị kinh doanh Việt - Anh),FALSE,,1,2023,2023
+330,UTC,7460112,Toán ứng dụng (chuyên ngành toán tin ứng dụng),FALSE,,3,2020,2025
+330,UTC,7340201,Tài chính - Ngân hàng,FALSE,,2,2021,2025

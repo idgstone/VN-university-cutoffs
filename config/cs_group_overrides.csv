@@ -1,0 +1,6 @@
+school_id,source_code,in_cs_group,reason
+346,QHT90,TRUE,"Máy tính và khoa học thông tin = Computer & Information Science; CS-core, name reordering defeated the rule regex (owner ruling ①). Membership only — NOT an identity claim vs QHT98 (that is Task 2's job)."
+346,QHT40,TRUE,"CLC variant of QHT90 (Máy tính và khoa học thông tin, chất lượng cao); same CS-core membership."
+302,MI2,FALSE,"Hệ thống thông tin quản lý (MIS): core is management/organizational with information systems as applied tool; distinct from plain Hệ thống thông tin (kept IN). Consistent w/ case-10 business exclusion. Signal: housed in HUST economics/management school, not IT school (owner ruling ②)."
+302,MI2x,FALSE,"Year-suffixed duplicate of MI2 (HUST reuses codes with x/y/z suffixes across years); same exclusion."
+302,MI2y,FALSE,"Year-suffixed duplicate of MI2; same exclusion."

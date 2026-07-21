@@ -1,0 +1,5 @@
+school_id,source_code,year,mark_scale,source_note
+346,QHT93,2023,40,"HUS Khoa học dữ liệu on thang điểm 40 (Toán nhân hệ số 2 + 2 môn còn lại). Source: VNU 2023 announcement vnu.edu.vn/diem-chuan-...-2023-post33562. Normalize to 30 via x0.75."
+346,QHT93,2024,40,"HUS Khoa học dữ liệu on thang điểm 40 (Toán hệ số 2). Source: govt portal xaydungchinhsach.chinhphu.vn HUS 2024. Normalize to 30 via x0.75."
+346,QHT98,2023,40,"HUS Khoa học máy tính và thông tin on thang điểm 40 (Toán hệ số 2). Source: VNU 2023 announcement. Normalize to 30 via x0.75."
+346,QHT98,2024,40,"HUS Khoa học máy tính và thông tin on thang điểm 40 (Toán hệ số 2). Source: govt portal HUS 2024. Normalize to 30 via x0.75."

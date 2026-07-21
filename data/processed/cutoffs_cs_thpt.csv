@@ -1,0 +1,284 @@
+school_id,abbr,school_canonical,source_major_code,raw_major_name,program_variant,year,method,block_group,mark,mark_scale,mark_normalized_30,mark_corrected,at_floor,mark_source_note,source_row_id,source_file
+455,EPU,Trường Đại học Điện lực,7480201,Công nghệ thông tin,base,2019,THPT,"A00, A01, D01, D07",16.5,30,16.5,False,False,,81925,data/raw/thpt/455_2019.json
+455,EPU,Trường Đại học Điện lực,7480201,Công nghệ thông tin,base,2022,THPT,A00;A01;D01;D07,24.4,30,24.4,False,False,,124302,data/raw/thpt/455_2022.json
+455,EPU,Trường Đại học Điện lực,7480201,Công nghệ thông tin,base,2023,THPT,A00;A01;D01;D07,23.25,30,23.25,False,False,,133179,data/raw/thpt/455_2023.json
+455,EPU,Trường Đại học Điện lực,7480201,Công nghệ thông tin,base,2024,THPT,A00;A01;D07;D01,23.0,30,23.0,False,False,,151674,data/raw/thpt/455_2024.json
+455,EPU,Trường Đại học Điện lực,7480201,Công nghệ thông tin,base,2025,THPT,A00; A01; D01; D07,21.9,30,21.9,False,False,,166108,data/raw/thpt/455_2025.json
+455,EPU,Trường Đại học Điện lực,7480201,"Công nghệ thông tin (Gồm 4 chuyên ngành: Công nghệ phần mềm; Quản trị và an ninh mạng; Hệ thống thương mại điện tử, Trí tuệ nhân tạo và thị giác máy tính)",base,2020,THPT,"A00, A01, D01, D07",20.0,30,20.0,False,False,,92110,data/raw/thpt/455_2020.json
+455,EPU,Trường Đại học Điện lực,7480201,"Công nghệ thông tin (Gồm 4 chuyên ngành: Công nghệ phần mềm; Quản trị và an ninh mạng; Hệ thống thương mại điện tử, Trí tuệ nhân tạo và thị giác máy tính)",base,2021,THPT,A00;A01;D01;D07,24.25,30,24.25,False,False,,108571,data/raw/thpt/455_2021.json
+455,EPU,Trường Đại học Điện lực,7460108,Khoa học dữ liệu,base,2025,THPT,A00; A01; D01; D07,16.5,30,16.5,False,False,,166104,data/raw/thpt/455_2025.json
+455,EPU,Trường Đại học Điện lực,7480106,Kỹ thuật máy tính,base,2025,THPT,A00; A01; D01; D07,20.83,30,20.83,False,False,,166106,data/raw/thpt/455_2025.json
+455,EPU,Trường Đại học Điện lực,7480107,Trí tuệ nhân tạo,base,2025,THPT,A00; A01; D01; D07,20.5,30,20.5,False,False,,166107,data/raw/thpt/455_2025.json
+336,HANU,Trường Đại học Hà Nội,7480201,Công nghệ Thông tin (dạy bằng tiếng Anh),english,2025,THPT,A01; D01; X26,26.02,30,26.02,False,False,,196072,data/raw/thpt/336_2025.json
+336,HANU,Trường Đại học Hà Nội,7480201,Công nghệ thông tin,base,2019,THPT,"A01, D01",22.15,30,22.15,False,False,,82006,data/raw/thpt/336_2019.json
+336,HANU,Trường Đại học Hà Nội,7480201,Công nghệ thông tin (dạy bằng tiếng Anh),english,2020,THPT,"A01, D01",24.65,30,24.65,False,False,,92238,data/raw/thpt/336_2020.json
+336,HANU,Trường Đại học Hà Nội,7480201,Công nghệ thông tin (dạy bằng tiếng Anh),english,2021,THPT,A01;D01,26.05,30,26.05,False,False,,108733,data/raw/thpt/336_2021.json
+336,HANU,Trường Đại học Hà Nội,7480201,Công nghệ thông tin (dạy bằng tiếng Anh),english,2022,THPT,A01;D01,25.45,30,25.45,False,False,,122386,data/raw/thpt/336_2022.json
+336,HANU,Trường Đại học Hà Nội,7480201,Công nghệ thông tin (dạy bằng tiếng Anh),english,2023,THPT,A01;D01,24.7,30,24.7,False,False,,134373,data/raw/thpt/336_2023.json
+336,HANU,Trường Đại học Hà Nội,7480201,Công nghệ thông tin (dạy bằng tiếng Anh),english,2024,THPT,A01;D01,24.17,30,24.17,False,False,,151714,data/raw/thpt/336_2024.json
+336,HANU,Trường Đại học Hà Nội,7480201 CLC,Công nghệ thông tin (dạy bằng tiếng Anh) - CLC,english,2020,THPT,D01,23.45,30,23.45,False,False,,92239,data/raw/thpt/336_2020.json
+336,HANU,Trường Đại học Hà Nội,7480201 CLC,Công nghệ thông tin (dạy bằng tiếng Anh) - CLC,english,2021,THPT,A01;D01,25.7,30,25.7,False,False,,108734,data/raw/thpt/336_2021.json
+336,HANU,Trường Đại học Hà Nội,7480201 CLC,Công nghệ thông tin (dạy bằng tiếng Anh) - CLC,english,2022,THPT,A01;D01,24.5,30,24.5,False,False,,122387,data/raw/thpt/336_2022.json
+336,HANU,Trường Đại học Hà Nội,7480201 CLC,Công nghệ thông tin (dạy bằng tiếng Anh) - CLC,english,2023,THPT,A01;D01,24.2,30,24.2,False,False,,134374,data/raw/thpt/336_2023.json
+336,HANU,Trường Đại học Hà Nội,7480201 TT,Công nghệ thông tin (dạy bằng tiếng Anh) - CTTT,english,2025,THPT,A01; D01; X26,24.8,30,24.8,False,False,,196074,data/raw/thpt/336_2025.json
+336,HANU,Trường Đại học Hà Nội,7480201 TT,Công nghệ thông tin (dạy bằng tiếng Anh) - TT,english,2024,THPT,A01;D01,16.7,30,16.7,False,False,,151715,data/raw/thpt/336_2024.json
+375,HUMG,Trường Đại học Mỏ – Địa chất,7480201,Công nghệ thông tin,base,2019,THPT,"A00, A01, C01, D01",15.0,30,15.0,False,True,,84197,data/raw/thpt/375_2019.json
+375,HUMG,Trường Đại học Mỏ – Địa chất,7480201_V,Công nghệ thông tin,base,2019,THPT,"A00, A01, C01, D01",14.0,30,14.0,False,True,,84198,data/raw/thpt/375_2019.json
+375,HUMG,Trường Đại học Mỏ – Địa chất,7480201,Công nghệ thông tin,base,2020,THPT,A00; A01; D01,17.0,30,17.0,False,False,,93235,data/raw/thpt/375_2020.json
+375,HUMG,Trường Đại học Mỏ – Địa chất,7480201,Công nghệ thông tin,base,2021,THPT,A00;A01;D01;D07,20.0,30,20.0,False,False,,109178,data/raw/thpt/375_2021.json
+375,HUMG,Trường Đại học Mỏ – Địa chất,7480201,Công nghệ thông tin,base,2022,THPT,A00;A01;D01;D07,23.0,30,23.0,False,False,,115298,data/raw/thpt/375_2022.json
+375,HUMG,Trường Đại học Mỏ – Địa chất,7480201,Công nghệ thông tin,base,2023,THPT,A00;A01;D01;D07,24.0,30,24.0,False,False,,136832,data/raw/thpt/375_2023.json
+375,HUMG,Trường Đại học Mỏ – Địa chất,7480201,Công nghệ thông tin,base,2024,THPT,A00;A01;D01;D07,23.75,30,23.75,False,False,,152826,data/raw/thpt/375_2024.json
+375,HUMG,Trường Đại học Mỏ – Địa chất,7480201,Công nghệ thông tin,base,2025,THPT,A00; A01; D01; D07; X06; X10; X26; X27,21.5,30,21.5,False,False,,275143,data/raw/thpt/375_2025.json
+375,HUMG,Trường Đại học Mỏ – Địa chất,7480201_CLC,"Công nghệ thông tin (chất lượng
+cao)",base,2022,THPT,A00;A01;D01;D07,23.5,30,23.5,False,False,,115300,data/raw/thpt/375_2022.json
+375,HUMG,Trường Đại học Mỏ – Địa chất,7480201_CLC,Công nghệ thông tin CLC,clc,2021,THPT,A00;A01;D01;D07,22.5,30,22.5,False,False,,109179,data/raw/thpt/375_2021.json
+375,HUMG,Trường Đại học Mỏ – Địa chất,7480109,Khoa học dữ liệu,base,2021,THPT,A00;A01;D01;D07,18.0,30,18.0,False,False,,109177,data/raw/thpt/375_2021.json
+375,HUMG,Trường Đại học Mỏ – Địa chất,7460108,Khoa học dữ liệu,base,2022,THPT,A00;A01;D01;D07,20.5,30,20.5,False,False,,115299,data/raw/thpt/375_2022.json
+375,HUMG,Trường Đại học Mỏ – Địa chất,7460108,Khoa học dữ liệu,base,2023,THPT,A00;A01;D01;D07,23.0,30,23.0,False,False,,136831,data/raw/thpt/375_2023.json
+375,HUMG,Trường Đại học Mỏ – Địa chất,7460108,Khoa học dữ liệu,base,2024,THPT,A00;A01;D01;D07,21.75,30,21.75,False,False,,152831,data/raw/thpt/375_2024.json
+375,HUMG,Trường Đại học Mỏ – Địa chất,7460108,Khoa học dữ liệu,base,2025,THPT,A00; A01; D01; D07; X06; X10; X26; X27,20.0,30,20.0,False,False,,275175,data/raw/thpt/375_2025.json
+346,HUS,Trường Đại học Khoa học Tự nhiên – ĐHQG Hà Nội,QHT93,Khoa học dữ liệu,base,2020,THPT,A00; A01; D07; D08,25.2,30,25.2,False,False,,92281,data/raw/thpt/346_2020.json
+346,HUS,Trường Đại học Khoa học Tự nhiên – ĐHQG Hà Nội,QHT93,Khoa học dữ liệu,base,2021,THPT,A00;A01;D07;D08,26.55,30,26.55,False,False,,107653,data/raw/thpt/346_2021.json
+346,HUS,Trường Đại học Khoa học Tự nhiên – ĐHQG Hà Nội,QHT93,Khoa học dữ liệu,base,2022,THPT,A00;A01;D07;D08,26.45,30,26.45,False,False,,113470,data/raw/thpt/346_2022.json
+346,HUS,Trường Đại học Khoa học Tự nhiên – ĐHQG Hà Nội,QHT93,Khoa học dữ liệu,base,2023,THPT,A00;A01;D07;D08,34.85,40,26.14,False,False,NORMALIZED thang40->30 via x0.75 (assumes near-equal subjects): HUS Khoa học dữ liệu on thang điểm 40 (Toán nhân hệ số 2 + 2 môn còn lại). Source: VNU 2023 announcement vnu.edu.vn/diem-chuan-...-2023-post33562. Normalize to 30 via x0.75.,131672,data/raw/thpt/346_2023.json
+346,HUS,Trường Đại học Khoa học Tự nhiên – ĐHQG Hà Nội,QHT93,Khoa học dữ liệu,base,2024,THPT,A00;A01;D07;D08,35.0,40,26.25,False,False,NORMALIZED thang40->30 via x0.75 (assumes near-equal subjects): HUS Khoa học dữ liệu on thang điểm 40 (Toán hệ số 2). Source: govt portal xaydungchinhsach.chinhphu.vn HUS 2024. Normalize to 30 via x0.75.,150562,data/raw/thpt/346_2024.json
+346,HUS,Trường Đại học Khoa học Tự nhiên – ĐHQG Hà Nội,QHT93,Khoa học dữ liệu,base,2025,THPT,A00; A01; C01; D07; D08; X26,26.0,30,26.0,False,False,,181681,data/raw/thpt/346_2025.json
+346,HUS,Trường Đại học Khoa học Tự nhiên – ĐHQG Hà Nội,QHT98,Khoa học máy tính và thông tin,base,2022,THPT,A00;A01;D07;D08,26.35,30,26.35,False,False,,113469,data/raw/thpt/346_2022.json
+346,HUS,Trường Đại học Khoa học Tự nhiên – ĐHQG Hà Nội,QHT98,Khoa học máy tính và thông tin,base,2023,THPT,A00;A01;D07;D08,34.7,40,26.03,False,False,NORMALIZED thang40->30 via x0.75 (assumes near-equal subjects): HUS Khoa học máy tính và thông tin on thang điểm 40 (Toán hệ số 2). Source: VNU 2023 announcement. Normalize to 30 via x0.75.,131671,data/raw/thpt/346_2023.json
+346,HUS,Trường Đại học Khoa học Tự nhiên – ĐHQG Hà Nội,QHT98,Khoa học máy tính và thông tin,base,2024,THPT,A00;A01;D07;D08,34.7,40,26.03,True,False,"CORRECTED from bronze 34.0 -> 34.7: tuyensinh247 published 34.0 (bronze); corrected to official 34.7 per govt portal xaydungchinhsach.chinhphu.vn (HUS 2024), corroborated by VietnamNet & Dan Tri (all four Toan-group programs scored >34.45 in 2024, which excludes 34.0). | NORMALIZED thang40->30 via x0.75 (assumes near-equal subjects): HUS Khoa học máy tính và thông tin on thang điểm 40 (Toán hệ số 2). Source: govt portal HUS 2024. Normalize to 30 via x0.75.",150561,data/raw/thpt/346_2024.json
+346,HUS,Trường Đại học Khoa học Tự nhiên – ĐHQG Hà Nội,QHT98,Khoa học máy tính và thông tin,base,2025,THPT,A00; A01; C01; D07; D08; X26,25.35,30,25.35,False,False,,181686,data/raw/thpt/346_2025.json
+346,HUS,Trường Đại học Khoa học Tự nhiên – ĐHQG Hà Nội,QHT40,Máy tính và khoa học thông tin,base,2020,THPT,A00; A01; D07; D08,24.8,30,24.8,False,False,,92280,data/raw/thpt/346_2020.json
+346,HUS,Trường Đại học Khoa học Tự nhiên – ĐHQG Hà Nội,QHT90,Máy tính và khoa học thông tin,base,2020,THPT,A00; A01; D07; D08,26.1,30,26.1,False,False,,92279,data/raw/thpt/346_2020.json
+346,HUS,Trường Đại học Khoa học Tự nhiên – ĐHQG Hà Nội,QHT40,Máy tính và khoa học thông tin (Chất lượng cao),clc,2021,THPT,A00;A01;D07;D08,26.6,30,26.6,False,False,,107652,data/raw/thpt/346_2021.json
+346,HUS,Trường Đại học Khoa học Tự nhiên – ĐHQG Hà Nội,QHT90,Máy tính và khoa học thông tin*,base,2019,THPT,"A00, A01, D07, D08",23.5,30,23.5,False,False,,81184,data/raw/thpt/346_2019.json
+346,HUS,Trường Đại học Khoa học Tự nhiên – ĐHQG Hà Nội,QHT40,Máy tính và khoa học thông tin**,base,2019,THPT,"A00, A01, D07, D08",20.75,30,20.75,False,False,,81185,data/raw/thpt/346_2019.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E15,An toàn không gian số - Cyber Security (CT Tiên tiến),advanced,2025,THPT,A00; A01,28.69,30,28.69,False,False,,177869,data/raw/thpt/302_2025.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E15,An toàn không gian số - Cyber Security (CT Tiên tiến),advanced,2025,THPT,B03; C01; C02; X02,28.69,30,28.69,False,False,,177870,data/raw/thpt/302_2025.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E15,An toàn không gian số - Cyber security (CT tiên tiến),advanced,2023,THPT,A00;A01,28.05,30,28.05,False,False,,131249,data/raw/thpt/302_2023.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E15,An toàn không gian số - Cyber security (CT tiên tiến),advanced,2024,THPT,A00;A01,27.9,30,27.9,False,False,,159872,data/raw/thpt/302_2024.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E15,An toàn không gian số* (Chương trình tiên tiến),advanced,2021,THPT,A00;A01,27.44,30,27.44,False,False,,99918,data/raw/thpt/302_2021.json
+302,HUST,Đại học Bách khoa Hà Nội,IT1,CNTT: Khoa học Máy tính,base,2019,THPT,"A00, A01",27.42,30,27.42,False,False,,83968,data/raw/thpt/302_2019.json
+302,HUST,Đại học Bách khoa Hà Nội,IT1,CNTT: Khoa học Máy tính,base,2020,THPT,"A00, A01",29.04,30,29.04,False,False,,96419,data/raw/thpt/302_2020.json
+302,HUST,Đại học Bách khoa Hà Nội,IT1x,CNTT: Khoa học Máy tính,base,2020,THPT,A19,26.27,30,26.27,False,False,,96420,data/raw/thpt/302_2020.json
+302,HUST,Đại học Bách khoa Hà Nội,IT1,CNTT: Khoa học Máy tính,base,2023,THPT,A00;A01,29.42,30,29.42,False,False,,131246,data/raw/thpt/302_2023.json
+302,HUST,Đại học Bách khoa Hà Nội,IT1,CNTT: Khoa học Máy tính,base,2024,THPT,A00;A01,28.53,30,28.53,False,False,,159869,data/raw/thpt/302_2024.json
+302,HUST,Đại học Bách khoa Hà Nội,IT1,CNTT: Khoa học Máy tính,base,2025,THPT,A00; A01,29.19,30,29.19,False,False,,177863,data/raw/thpt/302_2025.json
+302,HUST,Đại học Bách khoa Hà Nội,IT1,CNTT: Khoa học Máy tính,base,2025,THPT,B03; C01; C02; X02,29.19,30,29.19,False,False,,177864,data/raw/thpt/302_2025.json
+302,HUST,Đại học Bách khoa Hà Nội,IT2,CNTT: Kỹ thuật Máy tính,base,2019,THPT,"A00, A01",26.85,30,26.85,False,False,,83969,data/raw/thpt/302_2019.json
+302,HUST,Đại học Bách khoa Hà Nội,IT2,CNTT: Kỹ thuật Máy tính,base,2020,THPT,"A00, A01",28.65,30,28.65,False,False,,96421,data/raw/thpt/302_2020.json
+302,HUST,Đại học Bách khoa Hà Nội,IT2x,CNTT: Kỹ thuật Máy tính,base,2020,THPT,A19,25.63,30,25.63,False,False,,96422,data/raw/thpt/302_2020.json
+302,HUST,Đại học Bách khoa Hà Nội,IT2y,CNTT: Kỹ thuật Máy tính,base,2022,THPT,A00;A01,28.29,30,28.29,False,False,,116295,data/raw/thpt/302_2022.json
+302,HUST,Đại học Bách khoa Hà Nội,IT2,CNTT: Kỹ thuật Máy tính,base,2023,THPT,A00;A01,28.29,30,28.29,False,False,,131247,data/raw/thpt/302_2023.json
+302,HUST,Đại học Bách khoa Hà Nội,IT2,CNTT: Kỹ thuật Máy tính,base,2024,THPT,A00;A01,28.48,30,28.48,False,False,,159870,data/raw/thpt/302_2024.json
+302,HUST,Đại học Bách khoa Hà Nội,IT2,CNTT: Kỹ thuật Máy tính,base,2025,THPT,A00; A01,28.83,30,28.83,False,False,,177865,data/raw/thpt/302_2025.json
+302,HUST,Đại học Bách khoa Hà Nội,IT2,CNTT: Kỹ thuật Máy tính,base,2025,THPT,B03; C01; C02; X02,28.83,30,28.83,False,False,,177866,data/raw/thpt/302_2025.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E10,Chương trình tiên tiến Khoa học dữ liệu và Trí tuệ nhân tạo,advanced,2019,THPT,"A00, A01",27.0,30,27.0,False,False,,83962,data/raw/thpt/302_2019.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E7,Công nghệ Thông tin (Global ICT),joint,2024,THPT,A00;A01,28.01,30,28.01,False,False,,159874,data/raw/thpt/302_2024.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E6,Công nghệ Thông tin (Việt – Nhật),base,2024,THPT,A00;A01;D28,27.35,30,27.35,False,False,,159873,data/raw/thpt/302_2024.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-EP,Công nghệ Thông tin (Việt-Pháp),joint,2024,THPT,A00;A01;D29,27.35,30,27.35,False,False,,159875,data/raw/thpt/302_2024.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E7,Công nghệ Thông tin Global ICT (CT tiên tiến),joint,2023,THPT,A00;A01,28.16,30,28.16,False,False,,131251,data/raw/thpt/302_2023.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E7,Công nghệ Thông tin Global ICT (Chương trình tiên tiến),joint,2021,THPT,A00;A01,27.85,30,27.85,False,False,,99916,data/raw/thpt/302_2021.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E6,Công nghệ Thông tin Việt – Nhật (tăng cường tiếng Nhật),base,2023,THPT,A00;A01;D28,27.64,30,27.64,False,False,,131250,data/raw/thpt/302_2023.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E6,Công nghệ Thông tin Việt-Nhật (Chương trình tiên tiến),joint,2021,THPT,A00;A01;D28,27.4,30,27.4,False,False,,99915,data/raw/thpt/302_2021.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-EP,Công nghệ Thông tin Việt-Pháp (Chương trình tiên tiến),joint,2021,THPT,A00;A01;D29,27.19,30,27.19,False,False,,99919,data/raw/thpt/302_2021.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-EP,Công nghệ Thông tin Việt-Pháp (tăng cường tiếng Pháp),joint,2023,THPT,A00;A01;D29,27.32,30,27.32,False,False,,131252,data/raw/thpt/302_2023.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E7,Công nghệ thông tin (Global ICT),joint,2020,THPT,"A00, A01",28.38,30,28.38,False,False,,96427,data/raw/thpt/302_2020.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E7x,Công nghệ thông tin (Global ICT),joint,2020,THPT,A19,25.14,30,25.14,False,False,,96428,data/raw/thpt/302_2020.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E7,Công nghệ thông tin (Global ICT),joint,2025,THPT,A00; A01,28.66,30,28.66,False,False,,177873,data/raw/thpt/302_2025.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E7,Công nghệ thông tin (Global ICT),joint,2025,THPT,B03; C01; C02; X02,28.66,30,28.66,False,False,,177874,data/raw/thpt/302_2025.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E6,Công nghệ thông tin (Việt - Nhật),joint,2020,THPT,"A00, A01, D28",27.98,30,27.98,False,False,,96425,data/raw/thpt/302_2020.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E6x,Công nghệ thông tin (Việt - Nhật),joint,2020,THPT,A19,24.35,30,24.35,False,False,,96426,data/raw/thpt/302_2020.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E6y,Công nghệ thông tin (Việt - Nhật),joint,2022,THPT,A00;A01,27.25,30,27.25,False,False,,116299,data/raw/thpt/302_2022.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E6,Công nghệ thông tin (Việt - Nhật),joint,2025,THPT,A00; A01; D28,27.97,30,27.97,False,False,,177871,data/raw/thpt/302_2025.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E6,Công nghệ thông tin (Việt - Nhật),joint,2025,THPT,B03; C01; C02; X02,27.97,30,27.97,False,False,,177872,data/raw/thpt/302_2025.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-EP,Công nghệ thông tin (Việt - Pháp),joint,2020,THPT,"A00, A01, D29",27.24,30,27.24,False,False,,96429,data/raw/thpt/302_2020.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-Epx,Công nghệ thông tin (Việt - Pháp),joint,2020,THPT,A19,22.88,30,22.88,False,False,,96430,data/raw/thpt/302_2020.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-EP,Công nghệ thông tin (Việt - Pháp),joint,2025,THPT,A00; A01; D29,27.83,30,27.83,False,False,,177875,data/raw/thpt/302_2025.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-EP,Công nghệ thông tin (Việt - Pháp),joint,2025,THPT,B03; C01; C02; X02,27.83,30,27.83,False,False,,177876,data/raw/thpt/302_2025.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-LTU,Công nghệ thông tin - hợp tác với ĐH La Trobe (Úc),joint,2020,THPT,"A00, A01",26.5,30,26.5,False,False,,96431,data/raw/thpt/302_2020.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-LTUx,Công nghệ thông tin - hợp tác với ĐH La Trobe (Úc),joint,2020,THPT,A19,22.0,30,22.0,False,False,,96432,data/raw/thpt/302_2020.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-VUW,Công nghệ thông tin - hợp tác với ĐH Victoria Wellington (NeW Zealand),joint,2020,THPT,"A00, A01",25.55,30,25.55,False,False,,96433,data/raw/thpt/302_2020.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-VUWx,Công nghệ thông tin - hợp tác với ĐH Victoria Wellington (NeW Zealand),joint,2020,THPT,A19,21.09,30,21.09,False,False,,96434,data/raw/thpt/302_2020.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-LTU,Công nghệ thông tin - ĐH La Trobe (Úc),joint,2019,THPT,"A00, A01, D07",23.25,30,23.25,False,False,,83966,data/raw/thpt/302_2019.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-VUW,Công nghệ thông tin - ĐH Victoria (New Zealand),joint,2019,THPT,"A00, A01, D07",22.0,30,22.0,False,False,,83967,data/raw/thpt/302_2019.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E7,Công nghệ thông tin Global ICT,joint,2019,THPT,"A00, A01",26.0,30,26.0,False,False,,83964,data/raw/thpt/302_2019.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E6,Công nghệ thông tin Việt-Nhật,joint,2019,THPT,"A00, A01",25.7,30,25.7,False,False,,83963,data/raw/thpt/302_2019.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-GINP,Hệ thống thông tin - ĐH Grenoble (Pháp),joint,2019,THPT,"A00, A01, D07, D29",20.0,30,20.0,False,False,,83965,data/raw/thpt/302_2019.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E10,Khoa học Dữ liệu và Trí tuệ nhân tạo (Chương trình tiên tiến),advanced,2021,THPT,A00;A01,28.04,30,28.04,False,False,,99917,data/raw/thpt/302_2021.json
+302,HUST,Đại học Bách khoa Hà Nội,IT1,Khoa học Máy tính,base,2021,THPT,A00;A01,28.43,30,28.43,False,False,,99890,data/raw/thpt/302_2021.json
+302,HUST,Đại học Bách khoa Hà Nội,TROY-IT,Khoa học Máy tính - hợp tác với ĐH Troy (Hoa Kỳ),joint,2024,THPT,A00;A01;D01,21.0,30,21.0,False,False,,159898,data/raw/thpt/302_2024.json
+302,HUST,Đại học Bách khoa Hà Nội,TROY-IT,Khoa học Máy tính - ĐH Troy (Hoa Kỳ),joint,2023,THPT,A00;A01;D01,24.96,30,24.96,False,False,,131274,data/raw/thpt/302_2023.json
+302,HUST,Đại học Bách khoa Hà Nội,TROY-IT,Khoa học Máy tính-Troy (Hoa Kỳ),joint,2021,THPT,A00;A01;D01,25.5,30,25.5,False,False,,99929,data/raw/thpt/302_2021.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E10,Khoa học dữ liệu và Trí tuệ nhân tạo (CT tiên tiến),advanced,2020,THPT,"A00, A01",28.65,30,28.65,False,False,,96423,data/raw/thpt/302_2020.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E10x,Khoa học dữ liệu và Trí tuệ nhân tạo (CT tiên tiến),advanced,2020,THPT,A19,25.28,30,25.28,False,False,,96424,data/raw/thpt/302_2020.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E10,Khoa học dữ liệu và Trí tuệ nhân tạo (CT tiên tiến),advanced,2023,THPT,A00;A01,28.8,30,28.8,False,False,,131248,data/raw/thpt/302_2023.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E10,Khoa học dữ liệu và Trí tuệ nhân tạo (CT tiên tiến),advanced,2024,THPT,A00;A01,28.22,30,28.22,False,False,,159871,data/raw/thpt/302_2024.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E10,Khoa học dữ liệu và Trí tuệ nhân tạo (CT tiên tiến),advanced,2025,THPT,A00; A01,29.39,30,29.39,False,False,,177867,data/raw/thpt/302_2025.json
+302,HUST,Đại học Bách khoa Hà Nội,IT-E10,Khoa học dữ liệu và Trí tuệ nhân tạo (CT tiên tiến),advanced,2025,THPT,B03; C01; C02; X02,29.39,30,29.39,False,False,,177868,data/raw/thpt/302_2025.json
+302,HUST,Đại học Bách khoa Hà Nội,TROY-IT,Khoa học máy tính - hợp tác với ĐH Troy (Hoa Ký),joint,2020,THPT,"A00, A01, D01",25.0,30,25.0,False,False,,96471,data/raw/thpt/302_2020.json
+302,HUST,Đại học Bách khoa Hà Nội,TROY-ITx,Khoa học máy tính - hợp tác với ĐH Troy (Hoa Ký),joint,2020,THPT,A19,19.0,30,19.0,False,False,,96472,data/raw/thpt/302_2020.json
+302,HUST,Đại học Bách khoa Hà Nội,TROY-ITy,Khoa học máy tính - hợp tác với ĐH Troy (Hoa Kỳ),joint,2022,THPT,A00;A01;D01,25.15,30,25.15,False,False,,116341,data/raw/thpt/302_2022.json
+302,HUST,Đại học Bách khoa Hà Nội,TROY-IT,Khoa học máy tính - hợp tác với ĐH Troy (Hoa Kỳ),joint,2025,THPT,A00; A01; B03; C01; C02; X02,21.8,30,21.8,False,False,,177922,data/raw/thpt/302_2025.json
+302,HUST,Đại học Bách khoa Hà Nội,TROY-IT,Khoa học máy tính - hợp tác với ĐH Troy (Hoa Kỳ),joint,2025,THPT,D01,21.3,30,21.3,False,False,,177921,data/raw/thpt/302_2025.json
+302,HUST,Đại học Bách khoa Hà Nội,TROY-IT,Khoa học máy tính - ĐH Troy (Hoa Kỳ),joint,2019,THPT,"A00, A01, D01, D07",20.6,30,20.6,False,False,,83987,data/raw/thpt/302_2019.json
+302,HUST,Đại học Bách khoa Hà Nội,IT2,Kỹ thuật Máy tính,base,2021,THPT,A00;A01,28.1,30,28.1,False,False,,99891,data/raw/thpt/302_2021.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,74802021,An toàn thông tin,base,2024,THPT,A00;A01,24.39,30,24.39,False,False,,151641,data/raw/thpt/308_2024.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,74802021,An toàn thông tin,base,2025,THPT,A00; A01; X06; X07,23.43,30,23.43,False,False,,259909,data/raw/thpt/308_2025.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480108,Công nghệ kỹ thuật máy tính,base,2019,THPT,"A00, A01",20.5,30,20.5,False,False,,85161,data/raw/thpt/308_2019.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480108,Công nghệ kỹ thuật máy tính,base,2020,THPT,"A00, A01",24.0,30,24.0,False,False,,92583,data/raw/thpt/308_2020.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480108,Công nghệ kỹ thuật máy tính,base,2021,THPT,A00;A01,25.1,30,25.1,False,False,,108464,data/raw/thpt/308_2021.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480108,Công nghệ kỹ thuật máy tính,base,2022,THPT,A00;A01,24.7,30,24.7,False,False,,121112,data/raw/thpt/308_2022.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480108,Công nghệ kỹ thuật máy tính,base,2023,THPT,A00;A01,24.3,30,24.3,False,False,,137171,data/raw/thpt/308_2023.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480108,Công nghệ kỹ thuật máy tính,base,2024,THPT,A00;A01,24.55,30,24.55,False,False,,151639,data/raw/thpt/308_2024.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480108,Công nghệ kỹ thuật máy tính,base,2025,THPT,A00; A01; X06; X07,21.85,30,21.85,False,False,,259903,data/raw/thpt/308_2025.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480201,Công nghệ thông tin,base,2019,THPT,"A00, A01",22.8,30,22.8,False,False,,85162,data/raw/thpt/308_2019.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480201,Công nghệ thông tin,base,2020,THPT,"A00, A01",25.6,30,25.6,False,False,,92584,data/raw/thpt/308_2020.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480201,Công nghệ thông tin,base,2021,THPT,A00;A01,26.05,30,26.05,False,False,,108465,data/raw/thpt/308_2021.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480201,Công nghệ thông tin,base,2022,THPT,A00;A01,26.15,30,26.15,False,False,,121113,data/raw/thpt/308_2022.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480201,Công nghệ thông tin,base,2023,THPT,A00;A01,25.19,30,25.19,False,False,,137172,data/raw/thpt/308_2023.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480201,Công nghệ thông tin,base,2024,THPT,A00;A01,25.22,30,25.22,False,False,,151640,data/raw/thpt/308_2024.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480201,Công nghệ thông tin,base,2025,THPT,A00; A01; X06; X07,23.09,30,23.09,False,False,,259906,data/raw/thpt/308_2025.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480104,Hệ thống thông tin,base,2019,THPT,"A00, A01",20.2,30,20.2,False,False,,85160,data/raw/thpt/308_2019.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480104,Hệ thống thông tin,base,2020,THPT,"A00, A01",23.5,30,23.5,False,False,,92582,data/raw/thpt/308_2020.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480104,Hệ thống thông tin,base,2021,THPT,A00;A01,25.25,30,25.25,False,False,,108463,data/raw/thpt/308_2021.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480104,Hệ thống thông tin,base,2022,THPT,A00;A01,25.15,30,25.15,False,False,,121111,data/raw/thpt/308_2022.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480104,Hệ thống thông tin,base,2023,THPT,A00;A01,24.31,30,24.31,False,False,,137170,data/raw/thpt/308_2023.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480104,Hệ thống thông tin,base,2024,THPT,A00;A01,24.44,30,24.44,False,False,,151638,data/raw/thpt/308_2024.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480104,Hệ thống thông tin,base,2025,THPT,A00; A01; X06; X07,21.1,30,21.1,False,False,,259900,data/raw/thpt/308_2025.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480101,Khoa học máy tính,base,2019,THPT,"A00, A01",21.15,30,21.15,False,False,,85157,data/raw/thpt/308_2019.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480101,Khoa học máy tính,base,2020,THPT,"A00, A01",24.7,30,24.7,False,False,,92579,data/raw/thpt/308_2020.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480101,Khoa học máy tính,base,2021,THPT,A00;A01,25.65,30,25.65,False,False,,108460,data/raw/thpt/308_2021.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480101,Khoa học máy tính,base,2022,THPT,A00;A01,25.65,30,25.65,False,False,,121108,data/raw/thpt/308_2022.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480101,Khoa học máy tính,base,2023,THPT,A00;A01,25.05,30,25.05,False,False,,137167,data/raw/thpt/308_2023.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480101,Khoa học máy tính,base,2024,THPT,A00;A01,25.32,30,25.32,False,False,,151635,data/raw/thpt/308_2024.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480101,Khoa học máy tính,base,2025,THPT,A00; A01; X06; X07,23.72,30,23.72,False,False,,259888,data/raw/thpt/308_2025.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480101TA,Khoa học máy tính (CTĐT bằng tiếng Anh),english,2025,THPT,A00; A01; X06; X07,20.45,30,20.45,False,False,,259891,data/raw/thpt/308_2025.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480103,Kỹ thuật phần mềm,base,2019,THPT,"A00, A01",21.05,30,21.05,False,False,,85159,data/raw/thpt/308_2019.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480103,Kỹ thuật phần mềm,base,2020,THPT,"A00, A01",24.3,30,24.3,False,False,,92581,data/raw/thpt/308_2020.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480103,Kỹ thuật phần mềm,base,2021,THPT,A00;A01,25.4,30,25.4,False,False,,108462,data/raw/thpt/308_2021.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480103,Kỹ thuật phần mềm,base,2022,THPT,A00;A01,25.35,30,25.35,False,False,,121110,data/raw/thpt/308_2022.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480103,Kỹ thuật phần mềm,base,2023,THPT,A00;A01,24.54,30,24.54,False,False,,137169,data/raw/thpt/308_2023.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480103,Kỹ thuật phần mềm,base,2024,THPT,A00;A01,24.68,30,24.68,False,False,,151637,data/raw/thpt/308_2024.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480103,Kỹ thuật phần mềm,base,2025,THPT,A00; A01; X06; X07,21.75,30,21.75,False,False,,259897,data/raw/thpt/308_2025.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480102,Mạng máy tính và truyền thông dữ liệu,base,2019,THPT,"A00, A01",19.65,30,19.65,False,False,,85158,data/raw/thpt/308_2019.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480102,Mạng máy tính và truyền thông dữ liệu,base,2020,THPT,"A00, A01",23.1,30,23.1,False,False,,92580,data/raw/thpt/308_2020.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480102,Mạng máy tính và truyền thông dữ liệu,base,2021,THPT,A00;A01,25.05,30,25.05,False,False,,108461,data/raw/thpt/308_2021.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480102,Mạng máy tính và truyền thông dữ liệu,base,2022,THPT,A00;A01,24.65,30,24.65,False,False,,121109,data/raw/thpt/308_2022.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480102,Mạng máy tính và truyền thông dữ liệu,base,2023,THPT,A00;A01,24.17,30,24.17,False,False,,137168,data/raw/thpt/308_2023.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480102,Mạng máy tính và truyền thông dữ liệu,base,2024,THPT,A00;A01,24.35,30,24.35,False,False,,151636,data/raw/thpt/308_2024.json
+308,HaUI,Trường Đại học Công nghiệp Hà Nội,7480102,Mạng máy tính và truyền thông dữ liệu,base,2025,THPT,A00; A01; X06; X07,21.7,30,21.7,False,False,,259894,data/raw/thpt/308_2025.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480202,An toàn thông tin,base,2019,THPT,"A00, A01",23.35,30,23.35,False,False,,81465,data/raw/thpt/227_2019.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480202,An toàn thông tin,base,2020,THPT,A00; A01,26.25,30,26.25,False,False,,92621,data/raw/thpt/227_2020.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480202,An toàn thông tin,base,2021,THPT,A00;A01,26.55,30,26.55,False,False,,99488,data/raw/thpt/227_2021.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480202,An toàn thông tin,base,2022,THPT,A00;A01,26.7,30,26.7,False,False,,114120,data/raw/thpt/227_2022.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480202,An toàn thông tin,base,2023,THPT,A00;A01,26.04,30,26.04,False,False,,132708,data/raw/thpt/227_2023.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480202,An toàn thông tin,base,2024,THPT,A00;A01,25.85,30,25.85,False,False,,150184,data/raw/thpt/227_2024.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480202,An toàn thông tin,base,2025,THPT,A00; A01; X06; X26,25.21,30,25.21,False,False,,184731,data/raw/thpt/227_2025.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480202_CLC,An toàn thông tin - Chất lượng cao,clc,2025,THPT,A00; A01; X06; X26,23.14,30,23.14,False,False,,184740,data/raw/thpt/227_2025.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480201,Công nghệ thông tin,base,2019,THPT,"A00, A01",24.1,30,24.1,False,False,,81464,data/raw/thpt/227_2019.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480201,Công nghệ thông tin,base,2020,THPT,A00; A01,26.65,30,26.65,False,False,,92620,data/raw/thpt/227_2020.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480201,Công nghệ thông tin,base,2021,THPT,A00;A01,26.9,30,26.9,False,False,,99487,data/raw/thpt/227_2021.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480201,Công nghệ thông tin,base,2022,THPT,A00;A01,27.25,30,27.25,False,False,,114119,data/raw/thpt/227_2022.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480201,Công nghệ thông tin,base,2023,THPT,A00;A01,26.59,30,26.59,False,False,,132707,data/raw/thpt/227_2023.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480201,Công nghệ thông tin,base,2024,THPT,A00;A01,26.4,30,26.4,False,False,,150183,data/raw/thpt/227_2024.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480201,Công nghệ thông tin,base,2025,THPT,A00; A01; X06; X26,25.8,30,25.8,False,False,,184785,data/raw/thpt/227_2025.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480201 _CLC,Công nghệ thông tin (CLC),clc,2023,THPT,A00;A01,25.38,30,25.38,False,False,,132712,data/raw/thpt/227_2023.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480201_UDU,Công nghệ thông tin (Cử nhân định hướng ứng dụng),advanced,2024,THPT,A00;A01,24.87,30,24.87,False,False,,150188,data/raw/thpt/227_2024.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480201_UDU,Công nghệ thông tin (Cử nhân định hướng ứng dụng),advanced,2025,THPT,A00; A01; X06; X26,22.2,30,22.2,False,False,,184797,data/raw/thpt/227_2025.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480201 _UDU,Công nghệ thông tin (định hướng ứng dụng),advanced,2023,THPT,A00;A01,23.76,30,23.76,False,False,,132711,data/raw/thpt/227_2023.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480201_CLC,Công nghệ thông tin - Chương trình chất lượng cao,clc,2025,THPT,A00; A01; X06; X26,23.6,30,23.6,False,False,,184794,data/raw/thpt/227_2025.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480201_VNH,Công nghệ thông tin Việt - Nhật,joint,2024,THPT,A00;A01,24.25,30,24.25,False,False,,150187,data/raw/thpt/227_2024.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480201_VNH,Công nghệ thông tin Việt - Nhật,joint,2025,THPT,A00; A01; X06; X26,23.48,30,23.48,False,False,,184812,data/raw/thpt/227_2025.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480201_CLC,Công nghệ thông tin chất lượng cao,clc,2024,THPT,A00;A01;D01,25.43,30,25.43,False,False,,150199,data/raw/thpt/227_2024.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480101,Khoa học máy tính,base,2022,THPT,A00;A01,26.9,30,26.9,False,False,,114121,data/raw/thpt/227_2022.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480101,Khoa học máy tính (định hướng Khoa học dữ liệu),base,2023,THPT,A00;A01,26.55,30,26.55,False,False,,132709,data/raw/thpt/227_2023.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480101,Khoa học máy tính (định hướng Khoa học dữ liệu),base,2024,THPT,A00;A01,26.31,30,26.31,False,False,,150185,data/raw/thpt/227_2024.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480101,Khoa học máy tính (định hướng Khoa học dữ liệu),base,2025,THPT,A00; A01; X06; X26,26.21,30,26.21,False,False,,184848,data/raw/thpt/227_2025.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480102,Kỹ thuật dữ liệu (ngành Mạng máy tính và truyền thông dữ liệu),base,2024,THPT,A00;A01,25.59,30,25.59,False,False,,150186,data/raw/thpt/227_2024.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480102,Kỹ thuật dữ liệu (ngành Mạng máy tính và truyền thông dữ liệu),base,2025,THPT,A00; A01; X06; X26,24.4,30,24.4,False,False,,184891,data/raw/thpt/227_2025.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480102,Mạng máy tính và truyền thông dữ liệu (CT Kỹ thuật dữ liệu),base,2023,THPT,A00;A01,24.88,30,24.88,False,False,,132710,data/raw/thpt/227_2023.json
+227,PTIT,Học viện Công nghệ Bưu chính Viễn thông,7480107,Trí tuệ nhân tạo,base,2025,THPT,A00; A01; X06; X26,25.67,30,25.67,False,False,,184947,data/raw/thpt/227_2025.json
+421,TLU,Trường Đại học Thủy lợi,TLA127,An ninh mạng,base,2022,THPT,A00;A01;D01;D07,25.25,30,25.25,False,False,,125485,data/raw/thpt/421_2022.json
+421,TLU,Trường Đại học Thủy lợi,TLA127,An ninh mạng,base,2023,THPT,A00;A01;D01;D07,24.21,30,24.21,False,False,,135830,data/raw/thpt/421_2023.json
+421,TLU,Trường Đại học Thủy lợi,TLA127,An ninh mạng,base,2024,THPT,A00;A01;D01;D07,24.17,30,24.17,False,False,,153236,data/raw/thpt/421_2024.json
+421,TLU,Trường Đại học Thủy lợi,TLA127,An ninh mạng,base,2025,THPT,A00; A01; D01; D07; C01; X02; X06; X26,22.04,30,22.04,False,False,,282122,data/raw/thpt/421_2025.json
+421,TLU,Trường Đại học Thủy lợi,TLA106,Công nghệ thông tin,base,2021,THPT,A00;A01;D01;D07,25.25,30,25.25,False,False,,109627,data/raw/thpt/421_2021.json
+421,TLU,Trường Đại học Thủy lợi,TLA106,Công nghệ thông tin,base,2022,THPT,A00;A01;D01;D07,26.6,30,26.6,False,False,,125481,data/raw/thpt/421_2022.json
+421,TLU,Trường Đại học Thủy lợi,TLA106,Công nghệ thông tin,base,2023,THPT,A00;A01;D01;D07,25.89,30,25.89,False,False,,135826,data/raw/thpt/421_2023.json
+421,TLU,Trường Đại học Thủy lợi,TLA106,Công nghệ thông tin,base,2024,THPT,A00;A01;D01;D07,25.25,30,25.25,False,False,,153232,data/raw/thpt/421_2024.json
+421,TLU,Trường Đại học Thủy lợi,TLA106,Công nghệ thông tin,base,2025,THPT,A00; A01; D01; D07; C01; X02; X06; X26,23.23,30,23.23,False,False,,282073,data/raw/thpt/421_2025.json
+421,TLU,Trường Đại học Thủy lợi,TLA116,Hệ thống thông tin,base,2021,THPT,A00;A01;D01;D07,24.45,30,24.45,False,False,,109628,data/raw/thpt/421_2021.json
+421,TLU,Trường Đại học Thủy lợi,TLA116,Hệ thống thông tin,base,2022,THPT,A00;A01;D01;D07,25.55,30,25.55,False,False,,125482,data/raw/thpt/421_2022.json
+421,TLU,Trường Đại học Thủy lợi,TLA116,Hệ thống thông tin,base,2023,THPT,A00;A01;D01;D07,24.31,30,24.31,False,False,,135827,data/raw/thpt/421_2023.json
+421,TLU,Trường Đại học Thủy lợi,TLA116,Hệ thống thông tin,base,2024,THPT,A00;A01;D01;D07,24.54,30,24.54,False,False,,153233,data/raw/thpt/421_2024.json
+421,TLU,Trường Đại học Thủy lợi,TLA116,Hệ thống thông tin,base,2025,THPT,A00; A01; D01; D07; C01; X02; X06; X26,21.75,30,21.75,False,False,,282092,data/raw/thpt/421_2025.json
+421,TLU,Trường Đại học Thủy lợi,TLA117,Kỹ thuật phần mềm,base,2021,THPT,A00;A01;D01;D07,24.6,30,24.6,False,False,,109629,data/raw/thpt/421_2021.json
+421,TLU,Trường Đại học Thủy lợi,TLA117,Kỹ thuật phần mềm,base,2022,THPT,A00;A01;D01;D07,25.8,30,25.8,False,False,,125483,data/raw/thpt/421_2022.json
+421,TLU,Trường Đại học Thủy lợi,TLA117,Kỹ thuật phần mềm,base,2023,THPT,A00;A01;D01;D07,24.68,30,24.68,False,False,,135828,data/raw/thpt/421_2023.json
+421,TLU,Trường Đại học Thủy lợi,TLA117,Kỹ thuật phần mềm,base,2024,THPT,A00;A01;D01;D07,24.87,30,24.87,False,False,,153234,data/raw/thpt/421_2024.json
+421,TLU,Trường Đại học Thủy lợi,TLA117,Kỹ thuật phần mềm,base,2025,THPT,A00; A01; D01; D07; C01; X02; X06; X26,21.55,30,21.55,False,False,,282095,data/raw/thpt/421_2025.json
+421,TLU,Trường Đại học Thủy lợi,TLA106,Ngành Công nghệ thông tin; Ngành Kỹ thuật phần mềm; Ngành Hệ thống thông tin,base,2020,THPT,"A00, A01, D01, D07",22.75,30,22.75,False,False,,91782,data/raw/thpt/421_2020.json
+421,TLU,Trường Đại học Thủy lợi,TLA106,Nhóm ngành Công nghệ thông tin (Công nghệ thông tin; Công nghệ thông tin Việt - Nhật; Hệ thống thông tin; Kỹ thuật phần mềm),joint,2019,THPT,"A00, A01, D01, D07",19.5,30,19.5,False,False,,84555,data/raw/thpt/421_2019.json
+421,TLU,Trường Đại học Thủy lợi,TLA126,"Trí tuệ nhân tạo và khoa học dữ
+liệu",base,2022,THPT,A00;A01;D01;D07,25.2,30,25.2,False,False,,125484,data/raw/thpt/421_2022.json
+421,TLU,Trường Đại học Thủy lợi,TLA126,Trí tuệ nhân tạo và khoa học dữ liệu,base,2021,THPT,A00;A01;D01;D07,23.8,30,23.8,False,False,,109630,data/raw/thpt/421_2021.json
+421,TLU,Trường Đại học Thủy lợi,TLA126,Trí tuệ nhân tạo và khoa học dữ liệu,base,2023,THPT,A00;A01;D01;D07,23.9,30,23.9,False,False,,135829,data/raw/thpt/421_2023.json
+421,TLU,Trường Đại học Thủy lợi,TLA126,Trí tuệ nhân tạo và khoa học dữ liệu,base,2024,THPT,A00;A01;D01;D07,24.2,30,24.2,False,False,,153235,data/raw/thpt/421_2024.json
+421,TLU,Trường Đại học Thủy lợi,TLA126,Trí tuệ nhân tạo và khoa học dữ liệu,base,2025,THPT,A00; A01; D01; D07; C01; X02; X06; X26,22.12,30,22.12,False,False,,282119,data/raw/thpt/421_2025.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN1,Công nghệ thông tin,base,2019,THPT,"A00, A01",25.85,30,25.85,False,False,,81266,data/raw/thpt/311_2019.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN1,Công nghệ thông tin,base,2020,THPT,,28.1,30,28.1,False,False,,92636,data/raw/thpt/311_2020.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN1,Công nghệ thông tin,base,2021,THPT,A00;A01,28.75,30,28.75,False,False,,107923,data/raw/thpt/311_2021.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN1,Công nghệ thông tin,base,2022,THPT,A00;A01;D01,29.15,30,29.15,False,False,,113770,data/raw/thpt/311_2022.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN1,Công nghệ thông tin,base,2023,THPT,A00;A01;D01,27.85,30,27.85,False,False,,132335,data/raw/thpt/311_2023.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN1,Công nghệ thông tin,base,2024,THPT,A00;A01;D01,27.8,30,27.8,False,False,,150726,data/raw/thpt/311_2024.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN1,Công nghệ thông tin,base,2025,THPT,A00; A01; X06; X26; D01,28.19,30,28.19,False,False,,276325,data/raw/thpt/311_2025.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN8,Công nghệ thông tin (CLC),clc,2020,THPT,,27.0,30,27.0,False,False,,92645,data/raw/thpt/311_2020.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN8,Công nghệ thông tin (CLC),clc,2021,THPT,A00;A01,27.9,30,27.9,False,False,,107932,data/raw/thpt/311_2021.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN16,Công nghệ thông tin định hướng thị trường Nhật Bản,joint,2022,THPT,A00;A01;D01,27.5,30,27.5,False,False,,113775,data/raw/thpt/311_2022.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN16,Công nghệ thông tin định hướng thị trường Nhật Bản,joint,2023,THPT,A00;A01;D01,27.5,30,27.5,False,False,,132350,data/raw/thpt/311_2023.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN8,Công nghệ thông tin**(CLC theo TT23),clc,2019,THPT,"A00, A01",25.0,30,25.0,False,False,,81275,data/raw/thpt/311_2019.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN14,Hệ thống thông tin,base,2022,THPT,A00;A01;D01,25.0,30,25.0,False,False,,113782,data/raw/thpt/311_2022.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN14,Hệ thống thông tin,base,2023,THPT,A00;A01;D01,26.95,30,26.95,False,False,,132348,data/raw/thpt/311_2023.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN14,Hệ thống thông tin,base,2024,THPT,A00;A01;D01,26.87,30,26.87,False,False,,150731,data/raw/thpt/311_2024.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN14,Hệ thống thông tin,base,2025,THPT,A00; A01; X06; X26; D01,26.38,30,26.38,False,False,,276330,data/raw/thpt/311_2025.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN20,Khoa học dữ liệu,base,2025,THPT,A00; A01; X06; X26; D01,27.38,30,27.38,False,False,,276336,data/raw/thpt/311_2025.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN8,Khoa học máy tính,base,2022,THPT,A00;A01;D01,27.25,30,27.25,False,False,,113785,data/raw/thpt/311_2022.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN8,Khoa học máy tính,base,2023,THPT,A00;A01;D01,27.25,30,27.25,False,False,,132342,data/raw/thpt/311_2023.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN8,Khoa học máy tính,base,2024,THPT,A00;A01;D01,27.58,30,27.58,False,False,,150741,data/raw/thpt/311_2024.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN8,Khoa học máy tính,base,2025,THPT,A00; A01; X06; X26; D01,27.86,30,27.86,False,False,,276343,data/raw/thpt/311_2025.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN2,Kỹ thuật máy tính,base,2022,THPT,A00;A01;D01,27.5,30,27.5,False,False,,113777,data/raw/thpt/311_2022.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN2,Kỹ thuật máy tính,base,2023,THPT,A00;A01;D01,27.25,30,27.25,False,False,,132336,data/raw/thpt/311_2023.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN2,Kỹ thuật máy tính,base,2024,THPT,A00;A01;D01,26.97,30,26.97,False,False,,150735,data/raw/thpt/311_2024.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN2,Kỹ thuật máy tính,base,2025,THPT,A00; A01; X06; X26; D01,27.0,30,27.0,False,False,,276335,data/raw/thpt/311_2025.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN2,Máy tính và Robot,base,2019,THPT,"A00, A01",24.45,30,24.45,False,False,,81267,data/raw/thpt/311_2019.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN2,Máy tính và Robot,base,2020,THPT,,27.25,30,27.25,False,False,,92637,data/raw/thpt/311_2020.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN2,Máy tính và Robot,base,2021,THPT,A00;A01,27.65,30,27.65,False,False,,107924,data/raw/thpt/311_2021.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN15,Mạng máy tính và truyền thông dữ liệu,base,2022,THPT,A00;A01;D01,24.0,30,24.0,False,False,,113783,data/raw/thpt/311_2022.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN15,Mạng máy tính và truyền thông dữ liệu,base,2023,THPT,A00;A01;D01,26.25,30,26.25,False,False,,132349,data/raw/thpt/311_2023.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN15,Mạng máy tính và truyền thông dữ liệu,base,2024,THPT,A00;A01;D01,26.92,30,26.92,False,False,,150732,data/raw/thpt/311_2024.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN15,Mạng máy tính và truyền thông dữ liệu,base,2025,THPT,A00; A01; X06; X26; D01,26.73,30,26.73,False,False,,276331,data/raw/thpt/311_2025.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN12,Trí tuệ nhân tạo,base,2022,THPT,A00;A01;D01,27.0,30,27.0,False,False,,113773,data/raw/thpt/311_2022.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN12,Trí tuệ nhân tạo,base,2023,THPT,A00;A01;D01,27.2,30,27.2,False,False,,132346,data/raw/thpt/311_2023.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN12,Trí tuệ nhân tạo,base,2024,THPT,A00;A01;D01,27.12,30,27.12,False,False,,150729,data/raw/thpt/311_2024.json
+311,UET,Trường Đại học Công nghệ – ĐHQG Hà Nội,CN12,Trí tuệ nhân tạo,base,2025,THPT,A00; A01; X06; X26; D01,27.75,30,27.75,False,False,,276328,data/raw/thpt/311_2025.json
+330,UTC,Trường Đại học Giao thông Vận tải,7480201,Công nghệ thông tin,base,2021,THPT,A00;A01;D07,25.65,30,25.65,False,False,,108622,data/raw/thpt/330_2021.json
+330,UTC,Trường Đại học Giao thông Vận tải,7480201,Công nghệ thông tin,base,2022,THPT,A00;A01;D07,25.9,30,25.9,False,False,,124771,data/raw/thpt/330_2022.json
+330,UTC,Trường Đại học Giao thông Vận tải,7480201,Công nghệ thông tin,base,2023,THPT,A00;A01;D07,25.38,30,25.38,False,False,,136047,data/raw/thpt/330_2023.json
+330,UTC,Trường Đại học Giao thông Vận tải,7480201,Công nghệ thông tin,base,2024,THPT,A00;A01;D07,25.41,30,25.41,False,False,,163956,data/raw/thpt/330_2024.json
+330,UTC,Trường Đại học Giao thông Vận tải,7480201,Công nghệ thông tin,base,2025,THPT,A00; A01; D07; X06,23.7,30,23.7,False,False,,172533,data/raw/thpt/330_2025.json
+330,UTC,Trường Đại học Giao thông Vận tải,7480201QT,"Công nghệ thông tin 
+(Chương trình chất lượng cao Công nghệ thông tin Việt - Anh)",joint,2022,THPT,A00;A01;D07,24.65,30,24.65,False,False,,124772,data/raw/thpt/330_2022.json
+330,UTC,Trường Đại học Giao thông Vận tải,7480201QT,Công nghệ thông tin (Chương trinh chất lượng cao Công nghệ thông tin Việt - Anh),joint,2023,THPT,A00;A01;D07,24.03,30,24.03,False,False,,136048,data/raw/thpt/330_2023.json
+330,UTC,Trường Đại học Giao thông Vận tải,7480201 QT,Công nghệ thông tin (Chương trình CLC Công nghệ thông tin Việt-Anh),joint,2025,THPT,A00; A01; D07; X06,23.1,30,23.1,False,False,,172534,data/raw/thpt/330_2025.json
+330,UTC,Trường Đại học Giao thông Vận tải,7480201QT,Công nghệ thông tin (Chương trình chất lượng cao Công nghệ thông tin Việt - Anh),joint,2021,THPT,A00;A01;D01;D07,25.35,30,25.35,False,False,,108635,data/raw/thpt/330_2021.json
+330,UTC,Trường Đại học Giao thông Vận tải,7480201 QT,Công nghệ thông tin (Chương trình chất lượng cao Công nghệ thông tin Việt - Anh),joint,2024,THPT,A00;A01;D01;D07,24.4,30,24.4,False,False,,163957,data/raw/thpt/330_2024.json
+330,UTC,Trường Đại học Giao thông Vận tải,7480101,Khoa học máy tính,base,2022,THPT,A00;A01;D07,25.25,30,25.25,False,False,,124770,data/raw/thpt/330_2022.json
+330,UTC,Trường Đại học Giao thông Vận tải,7480101,Khoa học máy tính,base,2023,THPT,A00;A01;D07,25.24,30,25.24,False,False,,136046,data/raw/thpt/330_2023.json
+330,UTC,Trường Đại học Giao thông Vận tải,7480101,Khoa học máy tính,base,2024,THPT,A00;A01;D07,25.41,30,25.41,False,False,,163954,data/raw/thpt/330_2024.json
+330,UTC,Trường Đại học Giao thông Vận tải,7480101,Khoa học máy tính,base,2025,THPT,A00; A01; D07; X06,24.35,30,24.35,False,False,,172537,data/raw/thpt/330_2025.json
+330,UTC,Trường Đại học Giao thông Vận tải,7480106,Kỹ thuật máy tính,base,2024,THPT,A00;A01;D07,24.55,30,24.55,False,False,,163955,data/raw/thpt/330_2024.json
+330,UTC,Trường Đại học Giao thông Vận tải,7480106,"Kỹ thuật máy tính (theo hướng chuyên sâu vi mạch bán dẫn, bao gồm lớp kỹ sư tài năng)",base,2025,THPT,A00; A01; D07; X06,23.95,30,23.95,False,False,,172541,data/raw/thpt/330_2025.json
+330,UTC,Trường Đại học Giao thông Vận tải,GHA-07,Ngành Công nghệ thông tin,base,2019,THPT,A00; A01; D07,21.5,30,21.5,False,False,,86322,data/raw/thpt/330_2019.json
+330,UTC,Trường Đại học Giao thông Vận tải,7480201,Ngành Công nghệ thông tin,base,2020,THPT,"A00, A01, D07",24.75,30,24.75,False,False,,94465,data/raw/thpt/330_2020.json
+330,UTC,Trường Đại học Giao thông Vận tải,7480201QT,Ngành Công nghệ thông tin (Chương trình chất lượng cao Công nghệ thông tin Việt - Anh),joint,2020,THPT,"A00, A01, D01, D07",23.3,30,23.3,False,False,,94490,data/raw/thpt/330_2020.json

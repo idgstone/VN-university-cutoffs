@@ -53,12 +53,35 @@ The silver layer may depart from bronze only via **sourced override CSVs**
 correction so far: HUS QHT98/2024 `34.0 → 34.7` (aggregator error, verified against the government
 portal and two independent outlets).
 
-## Deferred (not in this table yet)
+## Canonical identity & gold layer (Layer 2b)
 
-- **`canonical_major_id`** — Task 2 (entity matching + precision/recall eval). Until then, identity
-  is `source_major_code`; HUST's cross-year code churn (`IT2`→`IT2y`), block-variant codes
-  (`IT1x`), and name drift are the canonical-identity cases Task 2 resolves.
-- **Coverage grid & metrics** (dataset coverage vs comparison-readiness, at major×year grain) and the
-  **wide pivot (G2)** — Layer 2b, after canonical majors exist.
-- **Representative ~5–10% reliability reconciliation** across normal records — still owed
-  (the HUS check was mechanism-only cross-validation, sample #1).
+`canonical_major_id` groups source majors into **10 canonical CS majors** across schools/years
+(`data/processed/cutoffs_cs.csv` = silver + `canonical_major_id` + `canonical_major_name`). The map
+(`config/canonical_majors_draft.csv`, human-reviewable) was built by rule-based normalization +
+token-sort fuzzy clustering, then the owner's granularity rulings (#1–#6). **Matching was a
+rule/fuzzy problem, not ML:** fuzzy-only scored F1 0.991 / precision 1.000 vs the ground truth, with
+perfect separation of hard negatives (Kỹ thuật ↔ Khoa học máy tính, etc.). Its *only* structural
+failures were cross-string semantic synonyms — the cybersecurity cluster
+(`An toàn thông tin` / `An ninh mạng` / `An toàn không gian số`, per-cluster recall **0.27**) and one
+renamed base (`Kỹ thuật dữ liệu`→networks). Those are closed in the reviewed canonical map; whether a
+learned model (embeddings) should replace that hand-verification is an open ML-component decision.
+
+Bundled multi-major cutoff rows (`nhóm ngành …`) are **excluded-with-record** in
+`config/excluded_bundled.csv` (not deleted), so "why no data for school X year Y" is always answerable.
+
+## Coverage & wide pivot
+
+- `data/processed/coverage.csv` — one row per `(school, canonical_major, year)` **within each
+  major's active span** (first→last observed year, so "not yet offered" years aren't miscounted as
+  gaps), with `has_thpt` (any variant) and `has_base`. Headline: **99%** dataset coverage,
+  **88%** base-comparable; 2 genuine THPT gaps (HUST cybersecurity & AI+DS, 2022).
+- `data/processed/cutoffs_cs_wide.csv` — G2 pivot (canonical major × school, year columns) of
+  `mark_normalized_30`, using the base→english→clc→joint→advanced representative fallback; a trailing
+  `*` marks a non-base representative (annotate on charts, per the base-less-school rule).
+
+## Still owed
+
+- **Representative ~5–10% reliability reconciliation** across normal records — the HUS check was
+  mechanism-only cross-validation (sample #1).
+- **ML component decision** — leading validated candidate: embeddings on the cybersecurity synonym
+  residual (fuzzy's real, measured failure). Deferred until the dataset is complete.

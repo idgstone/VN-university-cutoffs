@@ -72,6 +72,13 @@ must never both claim credit for the same residual.
 Bundled multi-major cutoff rows (`nhóm ngành …`) are **excluded-with-record** in
 `config/excluded_bundled.csv` (not deleted), so "why no data for school X year Y" is always answerable.
 
+**Group membership is decided at the admission-unit (ngành) level, not the internal chuyên-ngành
+level.** A ngành is in-group by its own identity; specialisations chosen *after* admission do not
+change that. E.g. EPU admits a single ngành "Công nghệ thông tin" (code 7480201, one cutoff) whose
+four internal chuyên ngành include "Hệ thống thương mại điện tử" — this does **not** conflict with
+e-commerce being excluded from the CS group, because at EPU e-commerce is a track inside CNTT, not a
+separately-admitted ngành with its own code and cutoff.
+
 ## Coverage & wide pivot
 
 - `data/processed/coverage.csv` — one row per `(school, canonical_major, year)` **within each

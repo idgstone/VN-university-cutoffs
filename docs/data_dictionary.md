@@ -97,26 +97,51 @@ Two pivot views, each for one purpose (like `mark` vs `mark_normalized_30`) — 
   school, year columns, `mark_normalized_30`, using the base→english→clc→joint→advanced representative
   fallback so no school silently vanishes from a given year's comparison; a trailing `*` marks a
   non-base representative (annotate on charts, per the base-less-school rule).
-- `data/processed/cutoffs_cs_trend.csv` — **time series.** Same shape but **base-only, with explicit
-  gaps** (never filled by a variant). Use this for year-over-year trend lines. A blank cell means
-  **"no BASE offering that year", NOT "no program"** — a variant may still exist (see the compare
-  view). **An entire series absent from the trend view means the school offers that major only as a
-  non-base variant in every year** — e.g. **HANU Công nghệ thông tin is absent because HANU teaches
-  CNTT in English every year** (it is present, `*`-flagged, in the compare view). Reading an absent
-  trend series as "school doesn't teach this" is a mistake.
+- `data/processed/cutoffs_cs_trend.csv` — **time series (hybrid, single-variant lines).** Each series
+  is one variant only, chosen by rule: **base-preferred** — if the school ever offers a base program
+  for that major, the line is the base series *with explicit gaps* in years it wasn't offered (the
+  trajectory is preserved, not deleted); **otherwise** the line is the school's *consistent non-base
+  variant*, and the `variant` column labels it (`english`/`joint`/`advanced`/`clc`). A series with no
+  base whose variant *switches* mid-run is the genuine defect and is **excluded**. Columns:
+  `variant` and `n_points` precede the year columns.
+  - **Levels are NOT comparable across lines of different variants.** The trend view shows *shape over
+    time within a line*; cross-line *level* comparison is the compare view's job. Always plot each
+    line with its `variant` label visible.
+  - A blank cell = **"no offering of this line's variant that year", NOT "no program"** (a different
+    variant may exist — see the compare view). HANU CNTT appears here as an `english` line, not absent.
+  - **`n_points` < 3 ⇒ do not present as an ordinary trend line** (a 1–2 point "trend" is meaningless
+    and will be over-read). There are **8** such short series (e.g. EPU/UET Khoa học dữ liệu, several
+    2025-only firsts, HUST Hệ thống thông tin joint = 2019 only); filter or separate them.
 
-Why two views: the fallback representative is safe for a single year but **manufactures fake
-year-over-year jumps** in a series when base availability changes. Example: HUST Khoa học máy tính in
-the *compare* view reads 28.43 (2021, base) → 25.15\* (2022, *joint* Troy — no base that year) → 29.42
-(2023, base), a false +4.27; the *trend* view correctly shows 28.43 → (gap) → 29.42.
+Why the hybrid rule (and not the naive compare fallback for trends): the compare view's
+representative fallback is safe within one year but **manufactures fake year-over-year jumps** when a
+line's variant changes. Example: HUST Khoa học máy tính via the fallback reads 28.43 (2021, base) →
+25.15 (2022, *joint* Troy — no base that year) → 29.42 (2023, base), a false +4.27; the trend view
+keeps it a base line, 28.43 → (gap) → 29.42.
 
 Coverage caveat: the 2 gaps (HUST cybersecurity & AI+DS, 2022) are **genuine no-THPT-that-year** —
 those programs exist in the 2021 and 2023 raw data but weren't offered via THPT in 2022 (confirmed
 against bronze), not a matching miss.
 
-`program_variant` is assigned by a first-pass name rule plus sourced corrections in
-`config/program_variant_overrides.csv` (e.g. HANU 2019 CNTT, whose name omitted the "dạy bằng tiếng
-Anh" tag, is corrected to `english`).
+### `program_variant` — how it's assigned
+
+A first-pass rule over the (whitespace- and dash-normalized) major name, applied in a **fixed,
+deterministic precedence** — the first match wins:
+
+1. `joint` (liên kết / hợp tác / Việt-Nhật·Pháp·Anh / Troy / La Trobe / Victoria / Grenoble / PFIEV /
+   quốc tế / Global ICT)
+2. `english` (dạy bằng tiếng Anh / …TA)
+3. `clc` (chất lượng cao / CLC)
+4. `advanced` (chương trình tiên tiến / CTTT / (cử nhân) định hướng ứng dụng)
+5. `base` (none of the above)
+
+**`program_variant` records the *primary* attribute, not a complete description** — a program can
+carry several (e.g. HANU's "CNTT (dạy bằng tiếng Anh) - CLC" is both English-taught and CLC; the
+precedence records `english`). This precedence is load-bearing: it determines how a series appears in
+the trend view, so it must not change silently (e.g. via a refactor). Name-derived labels are
+corrected where needed via sourced overrides in `config/program_variant_overrides.csv` (HANU 2019
+CNTT → `english`; HUS QHT40 2019–20 → `clc`), and audited by `src/audit_variants.py` (year-stability
++ code-signal passes).
 
 ## Still owed
 

@@ -1,38 +1,43 @@
-canonical_major_name,abbr,2019,2020,2021,2022,2023,2024,2025
-An toàn thông tin / An ninh mạng,HaUI,,,,,,24.39,23.43
-An toàn thông tin / An ninh mạng,PTIT,23.35,26.25,26.55,26.7,26.04,25.85,25.21
-An toàn thông tin / An ninh mạng,TLU,,,,25.25,24.21,24.17,22.04
-Công nghệ thông tin,EPU,16.5,20.0,24.25,24.4,23.25,23.0,21.9
-Công nghệ thông tin,HUMG,15.0,17.0,20.0,23.0,24.0,23.75,21.5
-Công nghệ thông tin,HaUI,22.8,25.6,26.05,26.15,25.19,25.22,23.09
-Công nghệ thông tin,PTIT,24.1,26.65,26.9,27.25,26.59,26.4,25.8
-Công nghệ thông tin,TLU,,,25.25,26.6,25.89,25.25,23.23
-Công nghệ thông tin,UET,25.85,28.1,28.75,29.15,27.85,27.8,28.19
-Công nghệ thông tin,UTC,21.5,24.75,25.65,25.9,25.38,25.41,23.7
-Hệ thống thông tin,HaUI,20.2,23.5,25.25,25.15,24.31,24.44,21.1
-Hệ thống thông tin,TLU,,,24.45,25.55,24.31,24.54,21.75
-Hệ thống thông tin,UET,,,,25.0,26.95,26.87,26.38
-Khoa học dữ liệu,EPU,,,,,,,16.5
-Khoa học dữ liệu,HUMG,,,18.0,20.5,23.0,21.75,20.0
-Khoa học dữ liệu,HUS,,25.2,26.55,26.45,26.14,26.25,26.0
-Khoa học dữ liệu,UET,,,,,,,27.38
-Khoa học máy tính,HUS,23.5,26.1,,26.35,26.03,26.03,25.35
-Khoa học máy tính,HUST,27.42,29.04,28.43,,29.42,28.53,29.19
-Khoa học máy tính,HaUI,21.15,24.7,25.65,25.65,25.05,25.32,23.72
-Khoa học máy tính,PTIT,,,,26.9,26.55,26.31,26.21
-Khoa học máy tính,UET,,,,27.25,27.25,27.58,27.86
-Khoa học máy tính,UTC,,,,25.25,25.24,25.41,24.35
-Kỹ thuật máy tính,EPU,,,,,,,20.83
-Kỹ thuật máy tính,HUST,26.85,28.65,28.1,28.29,28.29,28.48,28.83
-Kỹ thuật máy tính,HaUI,20.5,24.0,25.1,24.7,24.3,24.55,21.85
-Kỹ thuật máy tính,UET,24.45,27.25,27.65,27.5,27.25,26.97,27.0
-Kỹ thuật máy tính,UTC,,,,,,24.55,23.95
-Kỹ thuật phần mềm,HaUI,21.05,24.3,25.4,25.35,24.54,24.68,21.75
-Kỹ thuật phần mềm,TLU,,,24.6,25.8,24.68,24.87,21.55
-Mạng máy tính và truyền thông dữ liệu,HaUI,19.65,23.1,25.05,24.65,24.17,24.35,21.7
-Mạng máy tính và truyền thông dữ liệu,PTIT,,,,,24.88,25.59,24.4
-Mạng máy tính và truyền thông dữ liệu,UET,,,,24.0,26.25,26.92,26.73
-Trí tuệ nhân tạo,EPU,,,,,,,20.5
-Trí tuệ nhân tạo,PTIT,,,,,,,25.67
-Trí tuệ nhân tạo,UET,,,,27.0,27.2,27.12,27.75
-Trí tuệ nhân tạo và Khoa học dữ liệu,TLU,,,23.8,25.2,23.9,24.2,22.12
+canonical_major_name,abbr,variant,n_points,2019,2020,2021,2022,2023,2024,2025
+An toàn thông tin / An ninh mạng,HUST,advanced,4,,,27.44,,28.05,27.9,28.69
+An toàn thông tin / An ninh mạng,HaUI,base,2,,,,,,24.39,23.43
+An toàn thông tin / An ninh mạng,PTIT,base,7,23.35,26.25,26.55,26.7,26.04,25.85,25.21
+An toàn thông tin / An ninh mạng,TLU,base,4,,,,25.25,24.21,24.17,22.04
+Công nghệ thông tin,EPU,base,7,16.5,20.0,24.25,24.4,23.25,23.0,21.9
+Công nghệ thông tin,HANU,english,7,22.15,24.65,26.05,25.45,24.7,24.17,26.02
+Công nghệ thông tin,HUMG,base,7,15.0,17.0,20.0,23.0,24.0,23.75,21.5
+Công nghệ thông tin,HUST,joint,7,26.0,28.38,27.85,27.25,28.16,28.01,28.66
+Công nghệ thông tin,HaUI,base,7,22.8,25.6,26.05,26.15,25.19,25.22,23.09
+Công nghệ thông tin,PTIT,base,7,24.1,26.65,26.9,27.25,26.59,26.4,25.8
+Công nghệ thông tin,TLU,base,5,,,25.25,26.6,25.89,25.25,23.23
+Công nghệ thông tin,UET,base,7,25.85,28.1,28.75,29.15,27.85,27.8,28.19
+Công nghệ thông tin,UTC,base,7,21.5,24.75,25.65,25.9,25.38,25.41,23.7
+Hệ thống thông tin,HUST,joint,1,20.0,,,,,,
+Hệ thống thông tin,HaUI,base,7,20.2,23.5,25.25,25.15,24.31,24.44,21.1
+Hệ thống thông tin,TLU,base,5,,,24.45,25.55,24.31,24.54,21.75
+Hệ thống thông tin,UET,base,4,,,,25.0,26.95,26.87,26.38
+Khoa học dữ liệu,EPU,base,1,,,,,,,16.5
+Khoa học dữ liệu,HUMG,base,5,,,18.0,20.5,23.0,21.75,20.0
+Khoa học dữ liệu,HUS,base,6,,25.2,26.55,26.45,26.14,26.25,26.0
+Khoa học dữ liệu,UET,base,1,,,,,,,27.38
+Khoa học máy tính,HUS,base,6,23.5,26.1,,26.35,26.03,26.03,25.35
+Khoa học máy tính,HUST,base,6,27.42,29.04,28.43,,29.42,28.53,29.19
+Khoa học máy tính,HaUI,base,7,21.15,24.7,25.65,25.65,25.05,25.32,23.72
+Khoa học máy tính,PTIT,base,4,,,,26.9,26.55,26.31,26.21
+Khoa học máy tính,UET,base,4,,,,27.25,27.25,27.58,27.86
+Khoa học máy tính,UTC,base,4,,,,25.25,25.24,25.41,24.35
+Kỹ thuật máy tính,EPU,base,1,,,,,,,20.83
+Kỹ thuật máy tính,HUST,base,7,26.85,28.65,28.1,28.29,28.29,28.48,28.83
+Kỹ thuật máy tính,HaUI,base,7,20.5,24.0,25.1,24.7,24.3,24.55,21.85
+Kỹ thuật máy tính,UET,base,7,24.45,27.25,27.65,27.5,27.25,26.97,27.0
+Kỹ thuật máy tính,UTC,base,2,,,,,,24.55,23.95
+Kỹ thuật phần mềm,HaUI,base,7,21.05,24.3,25.4,25.35,24.54,24.68,21.75
+Kỹ thuật phần mềm,TLU,base,5,,,24.6,25.8,24.68,24.87,21.55
+Mạng máy tính và truyền thông dữ liệu,HaUI,base,7,19.65,23.1,25.05,24.65,24.17,24.35,21.7
+Mạng máy tính và truyền thông dữ liệu,PTIT,base,3,,,,,24.88,25.59,24.4
+Mạng máy tính và truyền thông dữ liệu,UET,base,4,,,,24.0,26.25,26.92,26.73
+Trí tuệ nhân tạo,EPU,base,1,,,,,,,20.5
+Trí tuệ nhân tạo,PTIT,base,1,,,,,,,25.67
+Trí tuệ nhân tạo,UET,base,4,,,,27.0,27.2,27.12,27.75
+Trí tuệ nhân tạo và Khoa học dữ liệu,HUST,advanced,6,27.0,28.65,28.04,,28.8,28.22,29.39
+Trí tuệ nhân tạo và Khoa học dữ liệu,TLU,base,5,,,23.8,25.2,23.9,24.2,22.12

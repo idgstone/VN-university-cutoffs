@@ -29,8 +29,7 @@ CANON = REPO / "config" / "canonical_majors_draft.csv"
 GOLD = REPO / "data" / "processed" / "cutoffs_cs.csv"
 COVERAGE = REPO / "data" / "processed" / "coverage.csv"
 WIDE = REPO / "data" / "processed" / "cutoffs_cs_compare.csv"   # single-year cross-school (fallback rep.)
-TREND = REPO / "data" / "processed" / "cutoffs_cs_trend.csv"    # time-series (base-only, explicit gaps)
-TREND_VC = REPO / "data" / "processed" / "cutoffs_cs_trend_vc.csv"  # time-series (variant-consistent)
+TREND = REPO / "data" / "processed" / "cutoffs_cs_trend.csv"    # time-series (hybrid single-variant)
 YEARS = list(range(2019, 2026))
 VARIANT_RANK = {"base": 0, "english": 1, "clc": 2, "joint": 3, "advanced": 4}
 
@@ -117,22 +116,44 @@ def main() -> int:
                 row.append("" if v is None else (f"{v[0]}*" if v[1] != "base" else f"{v[0]}"))
             w.writerow(row)
 
-    # ---- TREND view: base-only, explicit gaps (never fills with a variant) ----
-    # A blank here means "no BASE offering that year", NOT "no program" (a variant may exist).
+    # ---- TREND view (hybrid, single-variant lines) ----
+    # base-preferred where a base offering exists (kept as a base line with explicit gaps, so the
+    # trajectory is preserved, not deleted); otherwise the school's consistent non-base variant,
+    # labelled. Every line is single-variant. Levels are NOT comparable across lines of different
+    # variants (compare view's job). A series with no base whose variant switches mid-series is
+    # excluded (the genuine defect).
     base_pivot = defaultdict(dict)
     for (abbr, cid), byyear in cells.items():
         for y, rs in byyear.items():
             base = [float(x["mark_normalized_30"]) for x in rs if x["program_variant"] == "base"]
             if base:
                 base_pivot[(abbr, cid)][y] = max(base)
-    dropped = [k for k in keys if k not in base_pivot]   # series with no base in ANY year
+    vc_recovered, vc_var, vc_excluded = {}, {}, []
+    for (abbr, cid) in keys:
+        if (abbr, cid) in base_pivot:            # has a base offering -> a base line handles it
+            continue
+        yv = {y: pivot[(abbr, cid, y)] for y in YEARS if (abbr, cid, y) in pivot}
+        variants = {v[1] for v in yv.values()}
+        if len(variants) == 1:                   # no base, but one consistent variant -> keep
+            vc_var[(abbr, cid)] = next(iter(variants))
+            vc_recovered[(abbr, cid)] = {y: val for y, (val, _) in yv.items()}
+        else:                                    # no base AND variant switches -> exclude
+            vc_excluded.append((abbr, cid))
+    hybrid, hybrid_var = {}, {}
+    for k, d in base_pivot.items():
+        hybrid[k], hybrid_var[k] = d, "base"
+    for k, d in vc_recovered.items():
+        hybrid[k], hybrid_var[k] = d, vc_var[k]
+    short = sorted([k for k, v in hybrid.items() if len(v) < 3],
+                   key=lambda k: (DISPLAY.get(k[1], k[1]), k[0]))
     with TREND.open("w", encoding="utf-8", newline="") as fh:
         w = csv.writer(fh)
-        w.writerow(["canonical_major_name", "abbr"] + [str(y) for y in YEARS])
-        for abbr, cid in sorted(base_pivot, key=lambda k: (DISPLAY.get(k[1], k[1]), k[0])):
-            row = [DISPLAY.get(cid, cid), abbr]
+        w.writerow(["canonical_major_name", "abbr", "variant", "n_points"] + [str(y) for y in YEARS])
+        for k in sorted(hybrid, key=lambda k: (DISPLAY.get(k[1], k[1]), k[0])):
+            abbr, cid = k
+            row = [DISPLAY.get(cid, cid), abbr, hybrid_var[k], len(hybrid[k])]
             for y in YEARS:
-                v = base_pivot[(abbr, cid)].get(y)
+                v = hybrid[k].get(y)
                 row.append("" if v is None else f"{v}")
             w.writerow(row)
 
@@ -142,54 +163,22 @@ def main() -> int:
     print(f"\nCOVERAGE (major x year, within active span):")
     print(f"   cells={tot}  present(any THPT)={present} ({present/tot:.0%})  "
           f"base-comparable={base_present} ({base_present/tot:.0%})  gaps={gaps}")
-    print(f"   wide-pivot non-base representatives (annotate on charts): {nonbase_flags}")
+    print(f"   compare-view non-base representatives (annotate on charts): {nonbase_flags}")
     if gap_list:
-        print("\n   THPT gap cells (major existed that span but no THPT that year):")
+        print("   THPT gap cells (major existed that span but no THPT that year):")
         for abbr, name, y in gap_list:
             print(f"      {abbr} {name} {y}")
-    # ---- TREND view (variant-consistent): include a series iff its per-year representative
-    # variant is CONSTANT across years (excludes base->joint->base defects, keeps consistent
-    # joint/english/advanced series). Each line labelled with its variant; levels NOT comparable
-    # across lines (that is the compare view's job). ----
-    vc_series, vc_variant = defaultdict(dict), {}
-    for (abbr, cid) in keys:
-        yv = {y: pivot[(abbr, cid, y)] for y in YEARS if (abbr, cid, y) in pivot}
-        variants = {v[1] for v in yv.values()}
-        if len(variants) == 1:                       # variant-consistent
-            vc_variant[(abbr, cid)] = next(iter(variants))
-            for y, (val, _) in yv.items():
-                vc_series[(abbr, cid)][y] = val
-    excluded_vc = [k for k in keys if k not in vc_series]   # variant changes across years
-    with TREND_VC.open("w", encoding="utf-8", newline="") as fh:
-        w = csv.writer(fh)
-        w.writerow(["canonical_major_name", "abbr", "variant"] + [str(y) for y in YEARS])
-        for (abbr, cid) in sorted(vc_series, key=lambda k: (DISPLAY.get(k[1], k[1]), k[0])):
-            row = [DISPLAY.get(cid, cid), abbr, vc_variant[(abbr, cid)]]
-            for y in YEARS:
-                v = vc_series[(abbr, cid)].get(y)
-                row.append("" if v is None else f"{v}")
-            w.writerow(row)
-
-    base_series = set(base_pivot)
-    vc_only = sorted(set(vc_series) - base_series, key=lambda k: (DISPLAY.get(k[1], k[1]), k[0]))
-    print(f"\nTREND comparison:")
-    print(f"   base-only view:          {len(base_pivot)} series")
-    print(f"   variant-consistent view: {len(vc_series)} series "
-          f"(+{len(vc_only)} recovered vs base-only; {len(excluded_vc)} excluded as variant-changing)")
-    print(f"   RECOVERED by variant-consistent (in VC, not in base-only):")
-    for abbr, cid in vc_only:
-        print(f"      {abbr:5} {DISPLAY.get(cid, cid):38} variant={vc_variant[(abbr, cid)]}")
-    print(f"   EXCLUDED by both (variant changes across years — the real defect):")
-    for abbr, cid in sorted(excluded_vc, key=lambda k: (DISPLAY.get(k[1], k[1]), k[0])):
-        yv = {y: pivot[(abbr, cid, y)][1] for y in YEARS if (abbr, cid, y) in pivot}
-        print(f"      {abbr:5} {DISPLAY.get(cid, cid):38} variants-by-year={yv}")
-
-    print(f"\nTREND view (base-only): {len(base_pivot)} series; "
-          f"{len(dropped)} (school,major) series have NO base offering in any year "
-          f"-> absent from the trend view (= 'no base', not 'no program'):")
-    for abbr, cid in sorted(dropped, key=lambda k: (DISPLAY.get(k[1], k[1]), k[0])):
-        print(f"      {abbr} {DISPLAY.get(cid, cid)}")
-    print(f"\nWrote {COVERAGE.name}, {WIDE.name} (cross-school compare), {TREND.name} (trend, base-only)")
+    print(f"\nTREND (hybrid): {len(hybrid)} single-variant series = {len(base_pivot)} base + "
+          f"{len(vc_recovered)} consistent non-base"
+          f"{f' ; {len(vc_excluded)} excluded (no base AND variant switches)' if vc_excluded else ''}.")
+    print(f"   non-base lines (labelled; levels not comparable to base lines):")
+    for abbr, cid in sorted(vc_recovered, key=lambda k: (DISPLAY.get(k[1], k[1]), k[0])):
+        print(f"      {abbr:5} {DISPLAY.get(cid, cid):38} variant={vc_var[(abbr, cid)]}")
+    print(f"   SHORT series (<3 points — flagged; do NOT present as ordinary trend lines): {len(short)}")
+    for abbr, cid in short:
+        print(f"      {abbr:5} {DISPLAY.get(cid, cid):38} [{hybrid_var[(abbr, cid)]}] "
+              f"{len(hybrid[(abbr, cid)])} pt(s)")
+    print(f"\nWrote {COVERAGE.name}, {WIDE.name} (compare), {TREND.name} (trend, hybrid single-variant)")
     return 0
 
 

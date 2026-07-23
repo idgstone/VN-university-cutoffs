@@ -79,6 +79,12 @@ four internal chuyên ngành include "Hệ thống thương mại điện tử" 
 e-commerce being excluded from the CS group, because at EPU e-commerce is a track inside CNTT, not a
 separately-admitted ngành with its own code and cutoff.
 
+**Data-quality finding — major codes are not stable identifiers.** UET reused code `CN8` for a
+*different* major across years: "Công nghệ thông tin (CLC)" in 2019–2021, then "Khoa học máy tính" in
+2022–2025. This is direct evidence for a core design decision: **canonical identity is name-based, not
+code-based** — keying identity on `(school, code)` would have silently merged two distinct majors.
+(Related: HUST reuses codes with `x`/`y`/`z` year-suffixes for the same major, the inverse problem.)
+
 ## Coverage & wide pivot
 
 - `data/processed/coverage.csv` — one row per `(school, canonical_major, year)` **within each

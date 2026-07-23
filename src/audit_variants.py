@@ -26,6 +26,24 @@ REPO = Path(__file__).resolve().parent.parent
 GOLD = REPO / "data" / "processed" / "cutoffs_cs.csv"
 
 
+def code_signal(code: str) -> str | None:
+    """High-confidence variant implied by the SOURCE CODE (corroborating signal only).
+    Covers the year-stability audit's blind spot: a program mislabeled the SAME wrong way every year
+    is stable, but if its code carries a variant marker the name never reflected, this catches it."""
+    c = code.upper()
+    if "TROY" in c or "LTU" in c or "VUW" in c or "GINP" in c:
+        return "joint"                       # HUST foreign-partner programs
+    if "VNH" in c:
+        return "joint"                       # Việt-Nhật
+    if "CLC" in c:
+        return "clc"
+    if "UDU" in c:
+        return "advanced"                    # (cử nhân) định hướng ứng dụng
+    if c.endswith("TA"):
+        return "english"                     # e.g. 7480101TA
+    return None
+
+
 def main() -> int:
     rows = list(csv.DictReader(GOLD.open(encoding="utf-8")))
 
@@ -54,6 +72,24 @@ def main() -> int:
     if not suspects:
         print("  none — every (school, code) has a constant variant label across its years.")
     print(f"\n  -> {suspects} suspect (school, code) series to rule on.")
+
+    # ---- second pass: code-signal vs name-derived label (catches consistent mislabels) ----
+    print("\n=== CODE-SIGNAL AUDIT: code implies a variant the name-derived label missed ===")
+    seen, mism = set(), 0
+    for r in rows:
+        sig = code_signal(r["source_major_code"])
+        lbl = r["program_variant"]
+        if sig and sig != lbl:
+            key = (r["abbr"], r["source_major_code"], sig, lbl)
+            if key in seen:
+                continue
+            seen.add(key)
+            mism += 1
+            print(f"  [{r['abbr']} {r['source_major_code']}] code implies '{sig}' but label='{lbl}'"
+                  f"  \"{r['raw_major_name'][:46]}\"")
+    if not mism:
+        print("  none — no code-signalled variant contradicts its name-derived label.")
+    print(f"\n  -> {mism} code-vs-label mismatch(es) to review.")
 
     # full trend dropped-series list
     cells = defaultdict(lambda: defaultdict(list))

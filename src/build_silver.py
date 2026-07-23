@@ -30,6 +30,7 @@ from __future__ import annotations
 
 import csv
 import json
+import re
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -53,10 +54,18 @@ def load_lookup(path, key, val):
 
 
 def program_variant(name: str) -> str:
-    """First-pass rule-based variant tag (refinable). Precedence: joint > english > clc > advanced."""
+    """First-pass rule-based variant tag (refinable). Precedence: joint > english > clc > advanced.
+
+    Names are whitespace- and dash-normalized before matching so spacing / newline / en-dash
+    variants (e.g. 'chất lượng\\ncao', 'Việt – Nhật') cannot defeat tag detection — this closes the
+    whole name-drift mislabel class, not just individual instances.
+    """
     n = name.lower()
-    joint = ("liên kết", "hợp tác", "việt - nhật", "việt-nhật", "việt - pháp", "việt-pháp",
-             "việt - anh", "việt-anh", "troy", "la trobe", "victoria", "grenoble", "pfiev",
+    n = re.sub(r"[–—‐]", "-", n)        # unify en/em/other dashes to hyphen
+    n = re.sub(r"\s+", " ", n)           # collapse newlines / multiple spaces
+    n = re.sub(r"\s*-\s*", "-", n)       # drop spaces around hyphens
+    joint = ("liên kết", "hợp tác", "việt-nhật", "việt-pháp", "việt-anh",
+             "troy", "la trobe", "victoria", "grenoble", "pfiev",
              "quốc tế", "định hướng thị trường nhật", "global ict")
     if any(t in n for t in joint):
         return "joint"

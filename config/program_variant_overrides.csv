@@ -1,0 +1,2 @@
+school_id,source_code,year,program_variant,reason
+336,7480201,2019,english,"HANU (Trường Đại học Hà Nội, the foreign-languages university) teaches CNTT in English every year; the 2019 record was named plain 'Công nghệ thông tin' (omitting the 'dạy bằng tiếng Anh' tag used 2020+), so the name-based classifier mislabeled it 'base'. Corrected to 'english' so the base-only trend view treats HANU CNTT as English-all-years (correctly absent), instead of showing a misleading phantom 2019 point."

@@ -28,7 +28,8 @@ SILVER = REPO / "data" / "processed" / "cutoffs_cs_thpt.csv"
 CANON = REPO / "config" / "canonical_majors_draft.csv"
 GOLD = REPO / "data" / "processed" / "cutoffs_cs.csv"
 COVERAGE = REPO / "data" / "processed" / "coverage.csv"
-WIDE = REPO / "data" / "processed" / "cutoffs_cs_wide.csv"
+WIDE = REPO / "data" / "processed" / "cutoffs_cs_compare.csv"   # single-year cross-school (fallback rep.)
+TREND = REPO / "data" / "processed" / "cutoffs_cs_trend.csv"    # time-series (base-only, explicit gaps)
 YEARS = list(range(2019, 2026))
 VARIANT_RANK = {"base": 0, "english": 1, "clc": 2, "joint": 3, "advanced": 4}
 
@@ -115,6 +116,25 @@ def main() -> int:
                 row.append("" if v is None else (f"{v[0]}*" if v[1] != "base" else f"{v[0]}"))
             w.writerow(row)
 
+    # ---- TREND view: base-only, explicit gaps (never fills with a variant) ----
+    # A blank here means "no BASE offering that year", NOT "no program" (a variant may exist).
+    base_pivot = defaultdict(dict)
+    for (abbr, cid), byyear in cells.items():
+        for y, rs in byyear.items():
+            base = [float(x["mark_normalized_30"]) for x in rs if x["program_variant"] == "base"]
+            if base:
+                base_pivot[(abbr, cid)][y] = max(base)
+    dropped = [k for k in keys if k not in base_pivot]   # series with no base in ANY year
+    with TREND.open("w", encoding="utf-8", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(["canonical_major_name", "abbr"] + [str(y) for y in YEARS])
+        for abbr, cid in sorted(base_pivot, key=lambda k: (DISPLAY.get(k[1], k[1]), k[0])):
+            row = [DISPLAY.get(cid, cid), abbr]
+            for y in YEARS:
+                v = base_pivot[(abbr, cid)].get(y)
+                row.append("" if v is None else f"{v}")
+            w.writerow(row)
+
     # ---- report ----
     print(f"GOLD: {len(gold)} rows ({excluded} bundled/unresolved excluded) -> {GOLD}")
     print(f"Canonical majors: {len(set(r['canonical_major_id'] for r in gold))}")
@@ -126,7 +146,12 @@ def main() -> int:
         print("\n   THPT gap cells (major existed that span but no THPT that year):")
         for abbr, name, y in gap_list:
             print(f"      {abbr} {name} {y}")
-    print(f"\nWrote {COVERAGE.name}, {WIDE.name}")
+    print(f"\nTREND view (base-only): {len(base_pivot)} series; "
+          f"{len(dropped)} (school,major) series have NO base offering in any year "
+          f"-> absent from the trend view (= 'no base', not 'no program'):")
+    for abbr, cid in sorted(dropped, key=lambda k: (DISPLAY.get(k[1], k[1]), k[0])):
+        print(f"      {abbr} {DISPLAY.get(cid, cid)}")
+    print(f"\nWrote {COVERAGE.name}, {WIDE.name} (cross-school compare), {TREND.name} (trend, base-only)")
     return 0
 
 

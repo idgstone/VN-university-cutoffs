@@ -78,19 +78,32 @@ Bundled multi-major cutoff rows (`nhóm ngành …`) are **excluded-with-record*
   major's active span** (first→last observed year, so "not yet offered" years aren't miscounted as
   gaps), with `has_thpt` (any variant) and `has_base`. Headline: **99%** dataset coverage,
   **88%** base-comparable; 2 genuine THPT gaps (HUST cybersecurity & AI+DS, 2022).
-- `data/processed/cutoffs_cs_wide.csv` — G2 pivot (canonical major × school, year columns) of
-  `mark_normalized_30`, using the base→english→clc→joint→advanced representative fallback; a trailing
-  `*` marks a non-base representative (annotate on charts, per the base-less-school rule).
+Two pivot views, each for one purpose (like `mark` vs `mark_normalized_30`) — **do not swap them**:
 
-**Two verified caveats for anyone plotting the pivot:**
-- The 2 coverage gaps (HUST cybersecurity & AI+DS, 2022) are **genuine no-THPT-that-year** — those
-  programs exist in the 2021 and 2023 raw data but were not offered via THPT in 2022 (confirmed
-  against bronze), not a matching miss.
-- A `*` (non-base representative) cell can create an **artificial year-over-year jump** even after
-  scale normalization, because it compares a variant to the base. Example: HUST Khoa học máy tính
-  reads 28.43 (2021, base) → 25.15\* (2022, *joint* Troy — no base offered that year) → 29.42 (2023,
-  base); the base series 28.43 → (gap) → 29.42 is smooth. **For trend lines, prefer base-only with
-  gaps shown; use the fallback pivot for "what was available" lookups.**
+- `data/processed/cutoffs_cs_compare.csv` — **single-year cross-school comparison.** Canonical major ×
+  school, year columns, `mark_normalized_30`, using the base→english→clc→joint→advanced representative
+  fallback so no school silently vanishes from a given year's comparison; a trailing `*` marks a
+  non-base representative (annotate on charts, per the base-less-school rule).
+- `data/processed/cutoffs_cs_trend.csv` — **time series.** Same shape but **base-only, with explicit
+  gaps** (never filled by a variant). Use this for year-over-year trend lines. A blank cell means
+  **"no BASE offering that year", NOT "no program"** — a variant may still exist (see the compare
+  view). **An entire series absent from the trend view means the school offers that major only as a
+  non-base variant in every year** — e.g. **HANU Công nghệ thông tin is absent because HANU teaches
+  CNTT in English every year** (it is present, `*`-flagged, in the compare view). Reading an absent
+  trend series as "school doesn't teach this" is a mistake.
+
+Why two views: the fallback representative is safe for a single year but **manufactures fake
+year-over-year jumps** in a series when base availability changes. Example: HUST Khoa học máy tính in
+the *compare* view reads 28.43 (2021, base) → 25.15\* (2022, *joint* Troy — no base that year) → 29.42
+(2023, base), a false +4.27; the *trend* view correctly shows 28.43 → (gap) → 29.42.
+
+Coverage caveat: the 2 gaps (HUST cybersecurity & AI+DS, 2022) are **genuine no-THPT-that-year** —
+those programs exist in the 2021 and 2023 raw data but weren't offered via THPT in 2022 (confirmed
+against bronze), not a matching miss.
+
+`program_variant` is assigned by a first-pass name rule plus sourced corrections in
+`config/program_variant_overrides.csv` (e.g. HANU 2019 CNTT, whose name omitted the "dạy bằng tiếng
+Anh" tag, is corrected to `english`).
 
 ## Still owed
 

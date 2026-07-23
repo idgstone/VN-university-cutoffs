@@ -1,50 +1,53 @@
 # Source reliability reconciliation
 
-tuyensinh247 is an **aggregator**, so a sample of its published values is checked against primary /
-independent-authoritative sources. Results are reported **separately by era** and never blended —
-verification is far easier for recent years, and the one error found was itself recent, so the claim
-must be scoped to what was actually checked (older records are plausibly *more* error-prone, not less).
+tuyensinh247 is an **aggregator**, so a sample of its published values is checked against other
+sources. Two axes of honesty are kept explicit and **never blended**:
 
-## Method
+1. **By era** — verification is far easier for recent years; older primary sources have largely
+   disappeared, so no claim is made where nothing could be checked.
+2. **By verification strength** — matching an *independent aggregator* is weaker than matching a
+   *primary source*: two aggregators can share an upstream feed or copy each other, so agreement does
+   not establish correctness. These are reported as separate strata, not summed.
 
-- Samples drawn by seeded scripts (`seed=42` for the anomaly follow-up, `seed=2025` for the
-  representative sample) over `data/processed/cutoffs_cs.csv`.
-- Each sampled record's **as-published tuyensinh247 `mark`** (bronze) is compared to an independent
-  source. Source type is labelled: *primary* (school/Ministry/government announcement) or
-  *independent aggregator* (vietjack — a separate transcription of the official announcements).
+Samples drawn by seeded scripts (`seed=42` anomaly follow-up, `seed=2025` representative) over
+`data/processed/cutoffs_cs.csv`; each record's **as-published tuyensinh247 `mark`** (bronze) is
+compared to the source.
 
-## Era 1 — 2021–2025 (fetchable): 16 / 16 exact matches, 0 discrepancies (random sample)
+## Random sample, 2021–2025 — 0 discrepancies / 16 checked
 
-| School·Year | records | result | source |
+Broken out by verification strength (this is the honest structure — do not read "16" as 16 primary
+confirmations):
+
+| Stratum | records | result | source |
 |---|---|---|---|
-| UET 2023 | 7 | 7/7 exact | independent (vietjack); UET is VNU-published |
-| PTIT 2024 | 7 | 7/7 exact | independent (vietjack) + **primary** (govt/news) for CNTT 26.4 & KHMT 26.31 |
-| HUMG 2022 | 2 | 2/2 exact | primary-citing news (CNTT 23.0, CLC 23.5) |
+| **Primary / official-announcement** | 4 | 4/4 match | PTIT 2024 CNTT 26.4 & KHMT 26.31 (govt portal / news reporting PTIT's official announcement); HUMG 2022 CNTT 23.0 & CLC 23.5 (news citing the school's announcement) |
+| **Independent-aggregator-corroborated only** | 12 | 12/12 match | vietjack (a *separate* aggregator): UET 2023 (7 majors) + the other 5 PTIT 2024 majors. Agreement ⇒ corroboration, **not** proof — possible shared upstream. |
+| **Unverifiable this pass** | 10 | — | HUST 2021 (8), HANU 2023 (2): source behind lazy-load |
 
-Not verifiable this pass (source rendered behind lazy-load): HUST 2021 (8), HANU 2023 (2).
+**Claim, scoped:** in the random 2021–2025 sample, **4/4 records checked against a primary source
+matched**, and **12/12 more matched an independent aggregator**. 0 discrepancies found — but only 4
+rest on primary confirmation.
 
-**Caveat — recent years are NOT assumed error-free:** a separate *targeted* check of the HUS 40-scale
-anomaly (below) found a genuine 2024 error. So the random recent sample was clean, but the overall
-observed error rate is **1 in 20 verified records (~5%)**, all in the verifiable (recent) era.
+## Targeted anomaly sample, HUS 2023–24 — 1 error / 4 (NOT extrapolable)
 
-## Era 2 — 2019–2020 (time-boxed best-effort): 0 verified, ~13 unverifiable
+Non-random (deliberately selected the 40-scale outliers), so its error rate **cannot be pooled** with
+the random sample. QHT93 2023 34.85 ✓ · QHT93 2024 35 ✓ · QHT98 2023 34.7 ✓ · **QHT98 2024 34.0 ✗ →
+34.7** (corrected in silver via `config/mark_corrections.csv`). This proves recent years are **not**
+assumed error-free — but it is a targeted finding, not a rate. (Earlier `~5% / 1-in-20` was an invalid
+pooling of a targeted sample with a random one; withdrawn.)
 
-Primary sources for 2019–2020 are **offline, 403-blocked, DNS-dead (government portal), image-based,
-or paginated behind JS**; the independent aggregator hides pre-2021 years behind "Xem thêm" lazy-load.
-Attempted: EPU 2020, HANU 2019, HUMG 2020, UET 2019 → none machine-verifiable within the effort ceiling.
-**No reliability claim is made for 2019–2020.** (One false alarm resolved: a "HANU 2019 = 20.6" figure
-was **ĐH Mở Hà Nội**, a different school; HANU's IT program is 30-scale — IT is exempt from HANU's
-foreign-language ×2 — consistent with our 22.15.) The disappearance of historical primary sources is
-itself a finding that motivates a maintained structured dataset.
+## 2019–2020 — not verifiable (time-boxed best-effort)
 
-## Anomaly cross-validation (sample #1, HUS 2023–24, targeted not random)
+Primary sources are **offline, 403-blocked, DNS-dead (government portal), image-based, or paginated
+behind JS**; even the independent aggregator hides pre-2021 years behind "Xem thêm" lazy-load.
+Attempted: EPU 2020, HANU 2019, HUMG 2020, UET 2019 → none machine-verifiable within the effort
+ceiling. **No reliability claim is made for 2019–2020.** (One false alarm resolved: a "HANU 2019 =
+20.6" figure is **ĐH Mở Hà Nội**, a different school; HANU's IT program is 30-scale — IT is exempt from
+HANU's foreign-language ×2 — consistent with our 22.15.) The disappearance of historical primary
+sources is itself a finding motivating a maintained structured dataset.
 
-QHT93 2023 34.85 ✓ · QHT93 2024 35 ✓ · QHT98 2023 34.7 ✓ · **QHT98 2024 34.0 ✗ → 34.7** (corrected in
-silver, see `config/mark_corrections.csv`). 3/4 match, 1 error — the error that sets the ~5% rate.
+## Still worth doing if sources surface
 
-## Bottom line (scope-honest)
-
-- **2021–2025:** 16/16 randomly-sampled records matched exactly; 1 error found by targeted check →
-  observed error rate ~5% (1/20) in the verifiable era.
-- **2019–2020:** not verifiable — primary sources no longer accessible; no claim made.
-- Still worth doing if sources surface: verify HUST 2021 / HANU 2023 and any recoverable 2019–2020.
+Primary confirmation for the 12 aggregator-only records; HUST 2021 / HANU 2023; any recoverable
+2019–2020. The reliability claim is deliberately scoped to what was actually checked, at the strength
+it was checked.

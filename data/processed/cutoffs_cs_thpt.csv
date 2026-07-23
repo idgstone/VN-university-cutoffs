@@ -10,7 +10,7 @@ school_id,abbr,school_canonical,source_major_code,raw_major_name,program_variant
 455,EPU,Trường Đại học Điện lực,7480106,Kỹ thuật máy tính,base,2025,THPT,A00; A01; D01; D07,20.83,30,20.83,False,False,,166106,data/raw/thpt/455_2025.json
 455,EPU,Trường Đại học Điện lực,7480107,Trí tuệ nhân tạo,base,2025,THPT,A00; A01; D01; D07,20.5,30,20.5,False,False,,166107,data/raw/thpt/455_2025.json
 336,HANU,Trường Đại học Hà Nội,7480201,Công nghệ Thông tin (dạy bằng tiếng Anh),english,2025,THPT,A01; D01; X26,26.02,30,26.02,False,False,,196072,data/raw/thpt/336_2025.json
-336,HANU,Trường Đại học Hà Nội,7480201,Công nghệ thông tin,base,2019,THPT,"A01, D01",22.15,30,22.15,False,False,,82006,data/raw/thpt/336_2019.json
+336,HANU,Trường Đại học Hà Nội,7480201,Công nghệ thông tin,english,2019,THPT,"A01, D01",22.15,30,22.15,False,False,,82006,data/raw/thpt/336_2019.json
 336,HANU,Trường Đại học Hà Nội,7480201,Công nghệ thông tin (dạy bằng tiếng Anh),english,2020,THPT,"A01, D01",24.65,30,24.65,False,False,,92238,data/raw/thpt/336_2020.json
 336,HANU,Trường Đại học Hà Nội,7480201,Công nghệ thông tin (dạy bằng tiếng Anh),english,2021,THPT,A01;D01,26.05,30,26.05,False,False,,108733,data/raw/thpt/336_2021.json
 336,HANU,Trường Đại học Hà Nội,7480201,Công nghệ thông tin (dạy bằng tiếng Anh),english,2022,THPT,A01;D01,25.45,30,25.45,False,False,,122386,data/raw/thpt/336_2022.json

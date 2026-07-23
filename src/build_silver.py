@@ -74,11 +74,15 @@ def main() -> int:
     ingroup = {(r["school_id"], r["source_code"]) for r in
                csv.DictReader((CFG / "cs_group_mapping.csv").open(encoding="utf-8"))
                if r["in_cs_group"] == "TRUE"}
-    scale_ov, corr = {}, {}
+    scale_ov, corr, var_ov = {}, {}, {}
     for r in csv.DictReader((CFG / "score_scale_overrides.csv").open(encoding="utf-8")):
         scale_ov[(r["school_id"], r["source_code"], r["year"])] = (int(r["mark_scale"]), r["source_note"])
     for r in csv.DictReader((CFG / "mark_corrections.csv").open(encoding="utf-8")):
         corr[(r["school_id"], r["source_code"], r["year"])] = (float(r["correct_mark"]), r["source_note"])
+    vpath = CFG / "program_variant_overrides.csv"
+    if vpath.exists():
+        for r in csv.DictReader(vpath.open(encoding="utf-8")):
+            var_ov[(r["school_id"], r["source_code"], r["year"])] = r["program_variant"]
 
     seen, rows = set(), []
     dup_count = 0
@@ -128,7 +132,7 @@ def main() -> int:
                 "school_id": sid, "abbr": sch.get("abbr", ""),
                 "school_canonical": sch.get("name_canonical", ""),
                 "source_major_code": code, "raw_major_name": name,
-                "program_variant": program_variant(name),
+                "program_variant": var_ov.get(ck, program_variant(name)),
                 "year": int(year), "method": "THPT", "block_group": block,
                 "mark": mark, "mark_scale": scale, "mark_normalized_30": norm,
                 "mark_corrected": corrected, "at_floor": mark <= FLOOR,

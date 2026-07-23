@@ -63,8 +63,11 @@ rule/fuzzy problem, not ML:** fuzzy-only scored F1 0.991 / precision 1.000 vs th
 perfect separation of hard negatives (Kỹ thuật ↔ Khoa học máy tính, etc.). Its *only* structural
 failures were cross-string semantic synonyms — the cybersecurity cluster
 (`An toàn thông tin` / `An ninh mạng` / `An toàn không gian số`, per-cluster recall **0.27**) and one
-renamed base (`Kỹ thuật dữ liệu`→networks). Those are closed in the reviewed canonical map; whether a
-learned model (embeddings) should replace that hand-verification is an open ML-component decision.
+renamed base (`Kỹ thuật dữ liệu`→networks). Those are closed in the reviewed canonical map **as an interim, hand-verified stopgap so v1 can
+ship** — this is *not* the ML component and does not count as solving the residual "with ML". If
+embeddings later become the ML component, they are the principled, *measured* solution to this same
+cybersecurity cluster (recall 0.27 → X), and they **replace** the interim map's role for it — the two
+must never both claim credit for the same residual.
 
 Bundled multi-major cutoff rows (`nhóm ngành …`) are **excluded-with-record** in
 `config/excluded_bundled.csv` (not deleted), so "why no data for school X year Y" is always answerable.
@@ -78,6 +81,16 @@ Bundled multi-major cutoff rows (`nhóm ngành …`) are **excluded-with-record*
 - `data/processed/cutoffs_cs_wide.csv` — G2 pivot (canonical major × school, year columns) of
   `mark_normalized_30`, using the base→english→clc→joint→advanced representative fallback; a trailing
   `*` marks a non-base representative (annotate on charts, per the base-less-school rule).
+
+**Two verified caveats for anyone plotting the pivot:**
+- The 2 coverage gaps (HUST cybersecurity & AI+DS, 2022) are **genuine no-THPT-that-year** — those
+  programs exist in the 2021 and 2023 raw data but were not offered via THPT in 2022 (confirmed
+  against bronze), not a matching miss.
+- A `*` (non-base representative) cell can create an **artificial year-over-year jump** even after
+  scale normalization, because it compares a variant to the base. Example: HUST Khoa học máy tính
+  reads 28.43 (2021, base) → 25.15\* (2022, *joint* Troy — no base offered that year) → 29.42 (2023,
+  base); the base series 28.43 → (gap) → 29.42 is smooth. **For trend lines, prefer base-only with
+  gaps shown; use the fallback pivot for "what was available" lookups.**
 
 ## Still owed
 

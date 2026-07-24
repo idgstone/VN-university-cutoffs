@@ -133,9 +133,16 @@ code-based** — keying identity on `(school, code)` would have silently merged 
 ## Coverage & wide pivot
 
 - `data/processed/coverage.csv` — one row per `(school, canonical_major, year)` **within each
-  major's active span** (first→last observed year, so "not yet offered" years aren't miscounted as
-  gaps), with `has_thpt` (any variant) and `has_base`. Headline: **99%** dataset coverage,
-  **88%** base-comparable; 2 genuine THPT gaps (HUST cybersecurity & AI+DS, 2022).
+  major's active span**, with `has_thpt` (any variant) and `has_base`.
+  - **Active span (exact definition, as `build_gold.py` implements it):** for each
+    `(school, canonical_major)`, every year from its **first to its last observed year, inclusive**
+    (`range(min(years), max(years)+1)`). Years before it first appears or after it is discontinued are
+    **not** counted — so "not yet offered" / "no longer offered" years are never miscounted as THPT
+    gaps. Summing these spans over all `(school, canonical_major)` pairs gives the **denominator = 210
+    cells**.
+  - **Headline (verified against the committed file):** **99%** dataset coverage (208/210 cells have a
+    THPT score in any variant) and **86%** base-comparable (181/210 have a `base` offering); 2 genuine
+    THPT gaps (HUST cybersecurity & AI+DS, 2022).
 Two pivot views, each for one purpose (like `mark` vs `mark_normalized_30`) — **do not swap them**:
 
 - `data/processed/cutoffs_cs_compare.csv` — **single-year cross-school comparison.** Canonical major ×

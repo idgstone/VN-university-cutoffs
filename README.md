@@ -78,9 +78,9 @@ its own.
    2023–2024 only — which would fake a ~9-point spike-and-drop in a flagship Data Science trend. I
    confirmed the mechanism from primary sources (VNU/government), normalized to the 30-scale via
    **×0.75**, and **triangulated**: the normalized values land on the same major's other-year cutoffs.
-2. **Entity resolution (the AI/ML problem).** The matcher resolves 82 distinct name strings → 11 canonical
-   majors (plus 2 bundled multi-major rows excluded-with-record). A rule-based normalizer + `difflib`
-   fuzzy matcher does the bulk; the **shipped map is
+2. **Entity resolution (the AI/ML problem).** The same major is written 82 distinct ways (84 distinct raw
+   strings total, 2 bundled multi-major rows excluded) → 11 canonical majors. A rule-based normalizer +
+   `difflib` fuzzy matcher does the bulk; the **shipped map is
    human-verified**. Fuzzy scores P 1.000 / R 0.924 at a **precision-favouring threshold (0.80)** —
    chosen deliberately because a false merge silently conflates two distinct ngành (undetectable by a
    user) while a miss is a visible, override-fixable split. Precision/recall are reported at two levels
@@ -102,8 +102,9 @@ its own.
 
 ### Reliability reconciliation — scoped honestly, never blended
 Reported by **era** and by **verification strength** ([`docs/reconciliation.md`](docs/reconciliation.md)):
-**2021–2025** random sample — 4/4 records matched against a *primary* source, 12/12 more matched an
-*independent aggregator*, 0 discrepancies. **2019–2020** — primary sources are offline / blocked /
+**2021–2025** random sample — 4/4 records matched against a *primary* source, and a further 12/12
+matched a second aggregator (corroboration only, not independent proof — aggregators may share an
+upstream source), 0 discrepancies across all 16. **2019–2020** — primary sources are offline / blocked /
 image-based / paginated, so **no reliability claim is made** for old years (the disappearance of
 historical primary sources is itself a finding that motivates a maintained dataset).
 
@@ -148,8 +149,21 @@ Standard-library-only core; immutable raw layer with sha256 + fetched-at manifes
 traces to its raw record; every non-source value is a flagged, sourced override. The optional
 [`ml/`](ml/) study pins its dependencies and is not needed to rebuild the dataset.
 
+## License
+
+- **Code** (`src/`, `ml/`, build scripts): **MIT**.
+- **Dataset & documentation** (`data/`, `docs/`, the canonical map and override tables): **CC-BY-4.0**.
+
+**What the dataset license covers — and what it doesn't.** CC-BY-4.0 applies to *this compilation*: the
+schema, the normalization and canonicalization, the human-verified canonical map, the sourced
+corrections, and the documentation — the original curatorial work of assembling and cleaning the data.
+It does **not** claim ownership of the **cutoff numbers themselves**: those are public facts published
+by the universities and the Ministry of Education & Training, and are not owned by anyone. Attribution
+under CC-BY is to this compilation; please also credit the underlying sources (see below).
+
 ## Credits
 
-Source data aggregated by **tuyensinh247**; cutoffs cross-checked against university / VNU / Ministry
-announcements where reachable (credited in `docs/reconciliation.md`). This repository redistributes a
-re-derived, restructured dataset with attribution, not the source's page layout.
+Source data aggregated by **tuyensinh247** (the aggregation source); cutoff figures are primary-source
+facts published by the **universities / VNU / Ministry of Education & Training**, cross-checked against
+their announcements where reachable (credited in `docs/reconciliation.md`). This repository
+redistributes a re-derived, restructured dataset with attribution, not the source's page layout.

@@ -72,7 +72,7 @@ def classify(name: str) -> tuple[bool, str]:
 
 def load_codes() -> dict:
     abbr = {}
-    with MANIFEST.open(encoding="utf-8") as fh:
+    with MANIFEST.open(encoding="utf-8-sig") as fh:
         for r in csv.DictReader(fh):
             abbr[r["school_id"]] = r["abbr"]
     # (school_id, code) -> {abbr, names:{year:name}, years:set}
@@ -93,7 +93,7 @@ def load_overrides() -> dict:
     """Explicit human corrections to the rule: (school_id, code) -> (in_cs_group, reason)."""
     ov = {}
     if OVERRIDES_CSV.exists():
-        with OVERRIDES_CSV.open(encoding="utf-8") as fh:
+        with OVERRIDES_CSV.open(encoding="utf-8-sig") as fh:
             for r in csv.DictReader(fh):
                 ov[(r["school_id"], r["source_code"])] = (r["in_cs_group"].strip().upper(), r["reason"])
     return ov
@@ -126,7 +126,7 @@ def main() -> int:
 
     fields = ["school_id", "abbr", "source_code", "name_repr", "in_cs_group",
               "review", "n_name_variants", "years_seen", "years_seen_max"]
-    with OUT_CSV.open("w", encoding="utf-8", newline="") as fh:
+    with OUT_CSV.open("w", encoding="utf-8-sig", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=fields)
         w.writeheader()
         w.writerows(rows)

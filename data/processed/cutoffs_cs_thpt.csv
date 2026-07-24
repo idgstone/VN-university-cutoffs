@@ -1,4 +1,4 @@
-school_id,abbr,school_canonical,source_major_code,raw_major_name,program_variant,year,method,block_group,mark,mark_scale,mark_normalized_30,mark_corrected,at_floor,mark_source_note,source_row_id,source_file
+﻿school_id,abbr,school_canonical,source_major_code,raw_major_name,program_variant,year,method,block_group,mark,mark_scale,mark_normalized_30,mark_corrected,at_floor,mark_source_note,source_row_id,source_file
 455,EPU,Trường Đại học Điện lực,7480201,Công nghệ thông tin,base,2019,THPT,"A00, A01, D01, D07",16.5,30,16.5,False,False,,81925,data/raw/thpt/455_2019.json
 455,EPU,Trường Đại học Điện lực,7480201,Công nghệ thông tin,base,2022,THPT,A00;A01;D01;D07,24.4,30,24.4,False,False,,124302,data/raw/thpt/455_2022.json
 455,EPU,Trường Đại học Điện lực,7480201,Công nghệ thông tin,base,2023,THPT,A00;A01;D01;D07,23.25,30,23.25,False,False,,133179,data/raw/thpt/455_2023.json

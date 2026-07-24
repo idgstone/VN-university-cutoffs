@@ -32,6 +32,14 @@ SILVER = REPO / "data" / "processed" / "cutoffs_cs_thpt.csv"
 OUT_MAP = REPO / "config" / "canonical_majors_draft.csv"
 OUT_BUNDLE = REPO / "config" / "excluded_bundled.csv"
 
+# Production operating point for the fuzzy candidate step: PRECISION-FAVOURING (owner ruling).
+# A false merge silently conflates two distinct ngành and is undetectable by a data user; a miss
+# leaves two separate clusters (visible, fixable by override). So favour precision and close the
+# recall gap with the auditable human-verified map, not by buying recall with wrong merges.
+# (The SHIPPED canonical assignment is the human-verified ground_truth map — threshold-independent —
+# so it contains none of the fuzzy false merges regardless.)
+PROD_THRESHOLD = 0.80
+
 # variant / program-type phrases removed during surface normalization (after parenthetical strip).
 VARIANT_PHRASES = [
     "chất lượng cao", "clc", "chương trình tiên tiến", "cttt", "chương trình", "tiên tiến",
@@ -65,28 +73,30 @@ def is_bundle(name: str) -> bool:
 
 
 def ground_truth(norm: str) -> str:
-    """Canonical id from owner rulings #1-#5 (ordered: specific/combined before generic)."""
+    """Canonical id (ASCII slug) from owner rulings (ordered: specific/combined before generic)."""
     n = norm
     if "trí tuệ nhân tạo" in n and "khoa học dữ liệu" in n:
-        return "TTNT & Khoa hoc du lieu"                                    # #2
+        return "ttnt-va-khoa-hoc-du-lieu"                                  # #2
     if "an toàn thông tin" in n or "an ninh mạng" in n or "an toàn không gian" in n or "cyber" in n:
-        return "An toan thong tin / An ninh mang"                          # #1 (cross-string synonyms)
+        return "an-toan-thong-tin"                                         # #1 (cross-string synonyms)
     if "kỹ thuật phần mềm" in n:
-        return "Ky thuat phan mem"
+        return "ky-thuat-phan-mem"
     if "hệ thống thông tin" in n:
-        return "He thong thong tin"
+        return "he-thong-thong-tin"
     if "mạng máy tính" in n or "kỹ thuật dữ liệu" in n:
-        return "Mang may tinh"                                             # #5
+        return "mang-may-tinh"                                             # #5
+    if "công nghệ kỹ thuật máy tính" in n:
+        return "cong-nghe-ky-thuat-may-tinh"      # applied-tech ngành 7480108 — SEPARATE from KTMT
     if "kỹ thuật máy tính" in n or "máy tính và robot" in n:
-        return "Ky thuat may tinh"                                         # incl. UET CN2 name drift
+        return "ky-thuat-may-tinh"                # engineering ngành 7480106; incl. UET CN2 rename
     if "khoa học máy tính" in n or "máy tính và khoa học thông tin" in n:
-        return "Khoa hoc may tinh"                                         # #3, #4
+        return "khoa-hoc-may-tinh"                                         # #3, #4
     if "trí tuệ nhân tạo" in n:
-        return "Tri tue nhan tao"
+        return "tri-tue-nhan-tao"
     if "khoa học dữ liệu" in n:
-        return "Khoa hoc du lieu"
+        return "khoa-hoc-du-lieu"
     if "công nghệ thông tin" in n:
-        return "Cong nghe thong tin"
+        return "cong-nghe-thong-tin"
     return "UNRESOLVED"
 
 
@@ -130,7 +140,7 @@ def prf(names, truth, pred):
 
 
 def main() -> int:
-    rows = list(csv.DictReader(SILVER.open(encoding="utf-8")))
+    rows = list(csv.DictReader(SILVER.open(encoding="utf-8-sig")))
     by_name = defaultdict(lambda: {"n": 0, "schools": set()})
     for r in rows:
         e = by_name[r["raw_major_name"]]
@@ -149,15 +159,21 @@ def main() -> int:
     print(f"Ground-truth canonical count: {len(set(truth.values()))}"
           f"{' | UNRESOLVED: ' + str(len(unresolved)) if unresolved else ''}\n")
     print("Fuzzy-only pair P/R/F1 vs ground truth, by threshold:")
-    best = None
+    preds = {}
     for thr in (0.70, 0.75, 0.80, 0.85, 0.90):
-        pred = cluster(norm, thr)
+        pred = preds[thr] = cluster(norm, thr)
         P, R, F, tp, fp, fn = prf(names, truth, pred)
-        print(f"   thr={thr:.2f}  P={P:.3f} R={R:.3f} F1={F:.3f}  (TP={tp} FP={fp} FN={fn})")
-        if best is None or F > best[1]:
-            best = (thr, F, pred)
-    thr, _, pred = best
-    print(f"\nBest F1 at thr={thr:.2f}. Residual analysis at that threshold:")
+        star = "  <- PRODUCTION (precision-favouring)" if abs(thr - PROD_THRESHOLD) < 1e-9 else \
+               ("  (best F1)" if thr == 0.70 else "")
+        print(f"   thr={thr:.2f}  P={P:.3f} R={R:.3f} F1={F:.3f}  (TP={tp} FP={fp} FN={fn}){star}")
+    print(f"\nPRODUCTION operating point = thr {PROD_THRESHOLD:.2f} (precision-favouring, owner ruling):")
+    print("   thr 0.70 gives best F1 (P 0.996) but merges Công nghệ kỹ thuật máy tính into Kỹ thuật")
+    print("   máy tính (false); thr >=0.80 gives P 1.000 (they separate). A wrong merge is invisible to")
+    print("   a data user; a miss is a visible, override-fixable split -> favour precision.")
+    print("   The SHIPPED map is the human-verified ground_truth assignment (threshold-independent);")
+    print("   it keeps those two ngành separate regardless of the fuzzy operating point.")
+    pred = preds[PROD_THRESHOLD]
+    print(f"\nResidual analysis at the production threshold {PROD_THRESHOLD:.2f}:")
 
     # residual FN (truth-same, fuzzy split) and FP (fuzzy-merged, truth-diff)
     fn_pairs, fp_pairs = [], []
@@ -174,7 +190,7 @@ def main() -> int:
 
     # write ground-truth draft for review
     OUT_MAP.parent.mkdir(parents=True, exist_ok=True)
-    with OUT_MAP.open("w", encoding="utf-8", newline="") as fh:
+    with OUT_MAP.open("w", encoding="utf-8-sig", newline="") as fh:
         w = csv.writer(fh)
         w.writerow(["raw_major_name", "normalized", "canonical_draft", "fuzzy_cluster",
                     "n_rows", "schools", "review"])
@@ -182,7 +198,7 @@ def main() -> int:
             rev = "UNRESOLVED" if truth[nm] == "UNRESOLVED" else ""
             w.writerow([nm, norm[nm], truth[nm], pred[nm], majors[nm]["n"],
                         ";".join(sorted(majors[nm]["schools"])), rev])
-    with OUT_BUNDLE.open("w", encoding="utf-8", newline="") as fh:
+    with OUT_BUNDLE.open("w", encoding="utf-8-sig", newline="") as fh:
         w = csv.writer(fh)
         w.writerow(["raw_major_name", "n_rows", "schools", "exclusion_reason"])
         for nm, v in sorted(bundles.items()):

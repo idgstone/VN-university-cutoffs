@@ -1,8 +1,9 @@
-canonical_major_name,abbr,variant,n_points,2019,2020,2021,2022,2023,2024,2025
-An toàn thông tin / An ninh mạng,HUST,advanced,4,,,27.44,,28.05,27.9,28.69
-An toàn thông tin / An ninh mạng,HaUI,base,2,,,,,,24.39,23.43
-An toàn thông tin / An ninh mạng,PTIT,base,7,23.35,26.25,26.55,26.7,26.04,25.85,25.21
-An toàn thông tin / An ninh mạng,TLU,base,4,,,,25.25,24.21,24.17,22.04
+﻿canonical_major_name,abbr,variant,n_points,2019,2020,2021,2022,2023,2024,2025
+An toàn thông tin,HUST,advanced,4,,,27.44,,28.05,27.9,28.69
+An toàn thông tin,HaUI,base,2,,,,,,24.39,23.43
+An toàn thông tin,PTIT,base,7,23.35,26.25,26.55,26.7,26.04,25.85,25.21
+An toàn thông tin,TLU,base,4,,,,25.25,24.21,24.17,22.04
+Công nghệ kỹ thuật máy tính,HaUI,base,7,20.5,24.0,25.1,24.7,24.3,24.55,21.85
 Công nghệ thông tin,EPU,base,7,16.5,20.0,24.25,24.4,23.25,23.0,21.9
 Công nghệ thông tin,HANU,english,7,22.15,24.65,26.05,25.45,24.7,24.17,26.02
 Công nghệ thông tin,HUMG,base,7,15.0,17.0,20.0,23.0,24.0,23.75,21.5
@@ -28,7 +29,6 @@ Khoa học máy tính,UET,base,4,,,,27.25,27.25,27.58,27.86
 Khoa học máy tính,UTC,base,4,,,,25.25,25.24,25.41,24.35
 Kỹ thuật máy tính,EPU,base,1,,,,,,,20.83
 Kỹ thuật máy tính,HUST,base,7,26.85,28.65,28.1,28.29,28.29,28.48,28.83
-Kỹ thuật máy tính,HaUI,base,7,20.5,24.0,25.1,24.7,24.3,24.55,21.85
 Kỹ thuật máy tính,UET,base,7,24.45,27.25,27.65,27.5,27.25,26.97,27.0
 Kỹ thuật máy tính,UTC,base,2,,,,,,24.55,23.95
 Kỹ thuật phần mềm,HaUI,base,7,21.05,24.3,25.4,25.35,24.54,24.68,21.75

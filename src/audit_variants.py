@@ -45,7 +45,7 @@ def code_signal(code: str) -> str | None:
 
 
 def main() -> int:
-    rows = list(csv.DictReader(GOLD.open(encoding="utf-8")))
+    rows = list(csv.DictReader(GOLD.open(encoding="utf-8-sig")))
 
     # (school, code) -> {year: set(variants)}, plus a representative name per year
     bykey = defaultdict(lambda: defaultdict(set))

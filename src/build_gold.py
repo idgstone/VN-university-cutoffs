@@ -33,24 +33,26 @@ TREND = REPO / "data" / "processed" / "cutoffs_cs_trend.csv"    # time-series (h
 YEARS = list(range(2019, 2026))
 VARIANT_RANK = {"base": 0, "english": 1, "clc": 2, "joint": 3, "advanced": 4}
 
+# canonical_major_id (ASCII slug, safe key) -> canonical_major_name (Vietnamese, display/source-of-truth)
 DISPLAY = {
-    "Cong nghe thong tin": "Công nghệ thông tin",
-    "Khoa hoc may tinh": "Khoa học máy tính",
-    "Ky thuat may tinh": "Kỹ thuật máy tính",
-    "Ky thuat phan mem": "Kỹ thuật phần mềm",
-    "He thong thong tin": "Hệ thống thông tin",
-    "Mang may tinh": "Mạng máy tính và truyền thông dữ liệu",
-    "Tri tue nhan tao": "Trí tuệ nhân tạo",
-    "Khoa hoc du lieu": "Khoa học dữ liệu",
-    "TTNT & Khoa hoc du lieu": "Trí tuệ nhân tạo và Khoa học dữ liệu",
-    "An toan thong tin / An ninh mang": "An toàn thông tin / An ninh mạng",
+    "cong-nghe-thong-tin": "Công nghệ thông tin",
+    "khoa-hoc-may-tinh": "Khoa học máy tính",
+    "ky-thuat-may-tinh": "Kỹ thuật máy tính",
+    "cong-nghe-ky-thuat-may-tinh": "Công nghệ kỹ thuật máy tính",
+    "ky-thuat-phan-mem": "Kỹ thuật phần mềm",
+    "he-thong-thong-tin": "Hệ thống thông tin",
+    "mang-may-tinh": "Mạng máy tính và truyền thông dữ liệu",
+    "tri-tue-nhan-tao": "Trí tuệ nhân tạo",
+    "khoa-hoc-du-lieu": "Khoa học dữ liệu",
+    "ttnt-va-khoa-hoc-du-lieu": "Trí tuệ nhân tạo và Khoa học dữ liệu",
+    "an-toan-thong-tin": "An toàn thông tin",
 }
 
 
 def main() -> int:
     canon = {r["raw_major_name"]: r["canonical_draft"]
-             for r in csv.DictReader(CANON.open(encoding="utf-8"))}
-    silver = list(csv.DictReader(SILVER.open(encoding="utf-8")))
+             for r in csv.DictReader(CANON.open(encoding="utf-8-sig"))}
+    silver = list(csv.DictReader(SILVER.open(encoding="utf-8-sig")))
 
     gold, excluded = [], 0
     for r in silver:
@@ -63,7 +65,7 @@ def main() -> int:
         gold.append(r)
 
     fields = list(silver[0].keys()) + ["canonical_major_id", "canonical_major_name"]
-    with GOLD.open("w", encoding="utf-8", newline="") as fh:
+    with GOLD.open("w", encoding="utf-8-sig", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=fields)
         w.writeheader(); w.writerows(gold)
 
@@ -88,7 +90,7 @@ def main() -> int:
                 gaps += 1; gap_list.append((abbr, DISPLAY.get(cid, cid), y))
             cov_rows.append({"abbr": abbr, "canonical_major_id": cid, "year": y,
                              "has_thpt": has_any, "has_base": has_base})
-    with COVERAGE.open("w", encoding="utf-8", newline="") as fh:
+    with COVERAGE.open("w", encoding="utf-8-sig", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=["abbr", "canonical_major_id", "year", "has_thpt", "has_base"])
         w.writeheader(); w.writerows(cov_rows)
 
@@ -106,7 +108,7 @@ def main() -> int:
             if rep["program_variant"] != "base":
                 nonbase_flags += 1
     keys = sorted({(abbr, cid) for (abbr, cid, _) in pivot})
-    with WIDE.open("w", encoding="utf-8", newline="") as fh:
+    with WIDE.open("w", encoding="utf-8-sig", newline="") as fh:
         w = csv.writer(fh)
         w.writerow(["canonical_major_name", "abbr"] + [str(y) for y in YEARS])
         for abbr, cid in sorted(keys, key=lambda k: (DISPLAY.get(k[1], k[1]), k[0])):
@@ -146,7 +148,7 @@ def main() -> int:
         hybrid[k], hybrid_var[k] = d, vc_var[k]
     short = sorted([k for k, v in hybrid.items() if len(v) < 3],
                    key=lambda k: (DISPLAY.get(k[1], k[1]), k[0]))
-    with TREND.open("w", encoding="utf-8", newline="") as fh:
+    with TREND.open("w", encoding="utf-8-sig", newline="") as fh:
         w = csv.writer(fh)
         w.writerow(["canonical_major_name", "abbr", "variant", "n_points"] + [str(y) for y in YEARS])
         for k in sorted(hybrid, key=lambda k: (DISPLAY.get(k[1], k[1]), k[0])):

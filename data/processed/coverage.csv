@@ -1,211 +1,211 @@
-abbr,canonical_major_id,year,has_thpt,has_base
-EPU,Cong nghe thong tin,2019,True,True
-EPU,Cong nghe thong tin,2020,True,True
-EPU,Cong nghe thong tin,2021,True,True
-EPU,Cong nghe thong tin,2022,True,True
-EPU,Cong nghe thong tin,2023,True,True
-EPU,Cong nghe thong tin,2024,True,True
-EPU,Cong nghe thong tin,2025,True,True
-EPU,Khoa hoc du lieu,2025,True,True
-EPU,Ky thuat may tinh,2025,True,True
-EPU,Tri tue nhan tao,2025,True,True
-HANU,Cong nghe thong tin,2019,True,False
-HANU,Cong nghe thong tin,2020,True,False
-HANU,Cong nghe thong tin,2021,True,False
-HANU,Cong nghe thong tin,2022,True,False
-HANU,Cong nghe thong tin,2023,True,False
-HANU,Cong nghe thong tin,2024,True,False
-HANU,Cong nghe thong tin,2025,True,False
-HUMG,Cong nghe thong tin,2019,True,True
-HUMG,Cong nghe thong tin,2020,True,True
-HUMG,Cong nghe thong tin,2021,True,True
-HUMG,Cong nghe thong tin,2022,True,True
-HUMG,Cong nghe thong tin,2023,True,True
-HUMG,Cong nghe thong tin,2024,True,True
-HUMG,Cong nghe thong tin,2025,True,True
-HUMG,Khoa hoc du lieu,2021,True,True
-HUMG,Khoa hoc du lieu,2022,True,True
-HUMG,Khoa hoc du lieu,2023,True,True
-HUMG,Khoa hoc du lieu,2024,True,True
-HUMG,Khoa hoc du lieu,2025,True,True
-HUS,Khoa hoc du lieu,2020,True,True
-HUS,Khoa hoc du lieu,2021,True,True
-HUS,Khoa hoc du lieu,2022,True,True
-HUS,Khoa hoc du lieu,2023,True,True
-HUS,Khoa hoc du lieu,2024,True,True
-HUS,Khoa hoc du lieu,2025,True,True
-HUS,Khoa hoc may tinh,2019,True,True
-HUS,Khoa hoc may tinh,2020,True,True
-HUS,Khoa hoc may tinh,2021,True,False
-HUS,Khoa hoc may tinh,2022,True,True
-HUS,Khoa hoc may tinh,2023,True,True
-HUS,Khoa hoc may tinh,2024,True,True
-HUS,Khoa hoc may tinh,2025,True,True
-HUST,An toan thong tin / An ninh mang,2021,True,False
-HUST,An toan thong tin / An ninh mang,2022,False,False
-HUST,An toan thong tin / An ninh mang,2023,True,False
-HUST,An toan thong tin / An ninh mang,2024,True,False
-HUST,An toan thong tin / An ninh mang,2025,True,False
-HUST,Cong nghe thong tin,2019,True,False
-HUST,Cong nghe thong tin,2020,True,False
-HUST,Cong nghe thong tin,2021,True,False
-HUST,Cong nghe thong tin,2022,True,False
-HUST,Cong nghe thong tin,2023,True,False
-HUST,Cong nghe thong tin,2024,True,False
-HUST,Cong nghe thong tin,2025,True,False
-HUST,He thong thong tin,2019,True,False
-HUST,Khoa hoc may tinh,2019,True,True
-HUST,Khoa hoc may tinh,2020,True,True
-HUST,Khoa hoc may tinh,2021,True,True
-HUST,Khoa hoc may tinh,2022,True,False
-HUST,Khoa hoc may tinh,2023,True,True
-HUST,Khoa hoc may tinh,2024,True,True
-HUST,Khoa hoc may tinh,2025,True,True
-HUST,Ky thuat may tinh,2019,True,True
-HUST,Ky thuat may tinh,2020,True,True
-HUST,Ky thuat may tinh,2021,True,True
-HUST,Ky thuat may tinh,2022,True,True
-HUST,Ky thuat may tinh,2023,True,True
-HUST,Ky thuat may tinh,2024,True,True
-HUST,Ky thuat may tinh,2025,True,True
-HUST,TTNT & Khoa hoc du lieu,2019,True,False
-HUST,TTNT & Khoa hoc du lieu,2020,True,False
-HUST,TTNT & Khoa hoc du lieu,2021,True,False
-HUST,TTNT & Khoa hoc du lieu,2022,False,False
-HUST,TTNT & Khoa hoc du lieu,2023,True,False
-HUST,TTNT & Khoa hoc du lieu,2024,True,False
-HUST,TTNT & Khoa hoc du lieu,2025,True,False
-HaUI,An toan thong tin / An ninh mang,2024,True,True
-HaUI,An toan thong tin / An ninh mang,2025,True,True
-HaUI,Cong nghe thong tin,2019,True,True
-HaUI,Cong nghe thong tin,2020,True,True
-HaUI,Cong nghe thong tin,2021,True,True
-HaUI,Cong nghe thong tin,2022,True,True
-HaUI,Cong nghe thong tin,2023,True,True
-HaUI,Cong nghe thong tin,2024,True,True
-HaUI,Cong nghe thong tin,2025,True,True
-HaUI,He thong thong tin,2019,True,True
-HaUI,He thong thong tin,2020,True,True
-HaUI,He thong thong tin,2021,True,True
-HaUI,He thong thong tin,2022,True,True
-HaUI,He thong thong tin,2023,True,True
-HaUI,He thong thong tin,2024,True,True
-HaUI,He thong thong tin,2025,True,True
-HaUI,Khoa hoc may tinh,2019,True,True
-HaUI,Khoa hoc may tinh,2020,True,True
-HaUI,Khoa hoc may tinh,2021,True,True
-HaUI,Khoa hoc may tinh,2022,True,True
-HaUI,Khoa hoc may tinh,2023,True,True
-HaUI,Khoa hoc may tinh,2024,True,True
-HaUI,Khoa hoc may tinh,2025,True,True
-HaUI,Ky thuat may tinh,2019,True,True
-HaUI,Ky thuat may tinh,2020,True,True
-HaUI,Ky thuat may tinh,2021,True,True
-HaUI,Ky thuat may tinh,2022,True,True
-HaUI,Ky thuat may tinh,2023,True,True
-HaUI,Ky thuat may tinh,2024,True,True
-HaUI,Ky thuat may tinh,2025,True,True
-HaUI,Ky thuat phan mem,2019,True,True
-HaUI,Ky thuat phan mem,2020,True,True
-HaUI,Ky thuat phan mem,2021,True,True
-HaUI,Ky thuat phan mem,2022,True,True
-HaUI,Ky thuat phan mem,2023,True,True
-HaUI,Ky thuat phan mem,2024,True,True
-HaUI,Ky thuat phan mem,2025,True,True
-HaUI,Mang may tinh,2019,True,True
-HaUI,Mang may tinh,2020,True,True
-HaUI,Mang may tinh,2021,True,True
-HaUI,Mang may tinh,2022,True,True
-HaUI,Mang may tinh,2023,True,True
-HaUI,Mang may tinh,2024,True,True
-HaUI,Mang may tinh,2025,True,True
-PTIT,An toan thong tin / An ninh mang,2019,True,True
-PTIT,An toan thong tin / An ninh mang,2020,True,True
-PTIT,An toan thong tin / An ninh mang,2021,True,True
-PTIT,An toan thong tin / An ninh mang,2022,True,True
-PTIT,An toan thong tin / An ninh mang,2023,True,True
-PTIT,An toan thong tin / An ninh mang,2024,True,True
-PTIT,An toan thong tin / An ninh mang,2025,True,True
-PTIT,Cong nghe thong tin,2019,True,True
-PTIT,Cong nghe thong tin,2020,True,True
-PTIT,Cong nghe thong tin,2021,True,True
-PTIT,Cong nghe thong tin,2022,True,True
-PTIT,Cong nghe thong tin,2023,True,True
-PTIT,Cong nghe thong tin,2024,True,True
-PTIT,Cong nghe thong tin,2025,True,True
-PTIT,Khoa hoc may tinh,2022,True,True
-PTIT,Khoa hoc may tinh,2023,True,True
-PTIT,Khoa hoc may tinh,2024,True,True
-PTIT,Khoa hoc may tinh,2025,True,True
-PTIT,Mang may tinh,2023,True,True
-PTIT,Mang may tinh,2024,True,True
-PTIT,Mang may tinh,2025,True,True
-PTIT,Tri tue nhan tao,2025,True,True
-TLU,An toan thong tin / An ninh mang,2022,True,True
-TLU,An toan thong tin / An ninh mang,2023,True,True
-TLU,An toan thong tin / An ninh mang,2024,True,True
-TLU,An toan thong tin / An ninh mang,2025,True,True
-TLU,Cong nghe thong tin,2021,True,True
-TLU,Cong nghe thong tin,2022,True,True
-TLU,Cong nghe thong tin,2023,True,True
-TLU,Cong nghe thong tin,2024,True,True
-TLU,Cong nghe thong tin,2025,True,True
-TLU,He thong thong tin,2021,True,True
-TLU,He thong thong tin,2022,True,True
-TLU,He thong thong tin,2023,True,True
-TLU,He thong thong tin,2024,True,True
-TLU,He thong thong tin,2025,True,True
-TLU,Ky thuat phan mem,2021,True,True
-TLU,Ky thuat phan mem,2022,True,True
-TLU,Ky thuat phan mem,2023,True,True
-TLU,Ky thuat phan mem,2024,True,True
-TLU,Ky thuat phan mem,2025,True,True
-TLU,TTNT & Khoa hoc du lieu,2021,True,True
-TLU,TTNT & Khoa hoc du lieu,2022,True,True
-TLU,TTNT & Khoa hoc du lieu,2023,True,True
-TLU,TTNT & Khoa hoc du lieu,2024,True,True
-TLU,TTNT & Khoa hoc du lieu,2025,True,True
-UET,Cong nghe thong tin,2019,True,True
-UET,Cong nghe thong tin,2020,True,True
-UET,Cong nghe thong tin,2021,True,True
-UET,Cong nghe thong tin,2022,True,True
-UET,Cong nghe thong tin,2023,True,True
-UET,Cong nghe thong tin,2024,True,True
-UET,Cong nghe thong tin,2025,True,True
-UET,He thong thong tin,2022,True,True
-UET,He thong thong tin,2023,True,True
-UET,He thong thong tin,2024,True,True
-UET,He thong thong tin,2025,True,True
-UET,Khoa hoc du lieu,2025,True,True
-UET,Khoa hoc may tinh,2022,True,True
-UET,Khoa hoc may tinh,2023,True,True
-UET,Khoa hoc may tinh,2024,True,True
-UET,Khoa hoc may tinh,2025,True,True
-UET,Ky thuat may tinh,2019,True,True
-UET,Ky thuat may tinh,2020,True,True
-UET,Ky thuat may tinh,2021,True,True
-UET,Ky thuat may tinh,2022,True,True
-UET,Ky thuat may tinh,2023,True,True
-UET,Ky thuat may tinh,2024,True,True
-UET,Ky thuat may tinh,2025,True,True
-UET,Mang may tinh,2022,True,True
-UET,Mang may tinh,2023,True,True
-UET,Mang may tinh,2024,True,True
-UET,Mang may tinh,2025,True,True
-UET,Tri tue nhan tao,2022,True,True
-UET,Tri tue nhan tao,2023,True,True
-UET,Tri tue nhan tao,2024,True,True
-UET,Tri tue nhan tao,2025,True,True
-UTC,Cong nghe thong tin,2019,True,True
-UTC,Cong nghe thong tin,2020,True,True
-UTC,Cong nghe thong tin,2021,True,True
-UTC,Cong nghe thong tin,2022,True,True
-UTC,Cong nghe thong tin,2023,True,True
-UTC,Cong nghe thong tin,2024,True,True
-UTC,Cong nghe thong tin,2025,True,True
-UTC,Khoa hoc may tinh,2022,True,True
-UTC,Khoa hoc may tinh,2023,True,True
-UTC,Khoa hoc may tinh,2024,True,True
-UTC,Khoa hoc may tinh,2025,True,True
-UTC,Ky thuat may tinh,2024,True,True
-UTC,Ky thuat may tinh,2025,True,True
+﻿abbr,canonical_major_id,year,has_thpt,has_base
+EPU,cong-nghe-thong-tin,2019,True,True
+EPU,cong-nghe-thong-tin,2020,True,True
+EPU,cong-nghe-thong-tin,2021,True,True
+EPU,cong-nghe-thong-tin,2022,True,True
+EPU,cong-nghe-thong-tin,2023,True,True
+EPU,cong-nghe-thong-tin,2024,True,True
+EPU,cong-nghe-thong-tin,2025,True,True
+EPU,khoa-hoc-du-lieu,2025,True,True
+EPU,ky-thuat-may-tinh,2025,True,True
+EPU,tri-tue-nhan-tao,2025,True,True
+HANU,cong-nghe-thong-tin,2019,True,False
+HANU,cong-nghe-thong-tin,2020,True,False
+HANU,cong-nghe-thong-tin,2021,True,False
+HANU,cong-nghe-thong-tin,2022,True,False
+HANU,cong-nghe-thong-tin,2023,True,False
+HANU,cong-nghe-thong-tin,2024,True,False
+HANU,cong-nghe-thong-tin,2025,True,False
+HUMG,cong-nghe-thong-tin,2019,True,True
+HUMG,cong-nghe-thong-tin,2020,True,True
+HUMG,cong-nghe-thong-tin,2021,True,True
+HUMG,cong-nghe-thong-tin,2022,True,True
+HUMG,cong-nghe-thong-tin,2023,True,True
+HUMG,cong-nghe-thong-tin,2024,True,True
+HUMG,cong-nghe-thong-tin,2025,True,True
+HUMG,khoa-hoc-du-lieu,2021,True,True
+HUMG,khoa-hoc-du-lieu,2022,True,True
+HUMG,khoa-hoc-du-lieu,2023,True,True
+HUMG,khoa-hoc-du-lieu,2024,True,True
+HUMG,khoa-hoc-du-lieu,2025,True,True
+HUS,khoa-hoc-du-lieu,2020,True,True
+HUS,khoa-hoc-du-lieu,2021,True,True
+HUS,khoa-hoc-du-lieu,2022,True,True
+HUS,khoa-hoc-du-lieu,2023,True,True
+HUS,khoa-hoc-du-lieu,2024,True,True
+HUS,khoa-hoc-du-lieu,2025,True,True
+HUS,khoa-hoc-may-tinh,2019,True,True
+HUS,khoa-hoc-may-tinh,2020,True,True
+HUS,khoa-hoc-may-tinh,2021,True,False
+HUS,khoa-hoc-may-tinh,2022,True,True
+HUS,khoa-hoc-may-tinh,2023,True,True
+HUS,khoa-hoc-may-tinh,2024,True,True
+HUS,khoa-hoc-may-tinh,2025,True,True
+HUST,an-toan-thong-tin,2021,True,False
+HUST,an-toan-thong-tin,2022,False,False
+HUST,an-toan-thong-tin,2023,True,False
+HUST,an-toan-thong-tin,2024,True,False
+HUST,an-toan-thong-tin,2025,True,False
+HUST,cong-nghe-thong-tin,2019,True,False
+HUST,cong-nghe-thong-tin,2020,True,False
+HUST,cong-nghe-thong-tin,2021,True,False
+HUST,cong-nghe-thong-tin,2022,True,False
+HUST,cong-nghe-thong-tin,2023,True,False
+HUST,cong-nghe-thong-tin,2024,True,False
+HUST,cong-nghe-thong-tin,2025,True,False
+HUST,he-thong-thong-tin,2019,True,False
+HUST,khoa-hoc-may-tinh,2019,True,True
+HUST,khoa-hoc-may-tinh,2020,True,True
+HUST,khoa-hoc-may-tinh,2021,True,True
+HUST,khoa-hoc-may-tinh,2022,True,False
+HUST,khoa-hoc-may-tinh,2023,True,True
+HUST,khoa-hoc-may-tinh,2024,True,True
+HUST,khoa-hoc-may-tinh,2025,True,True
+HUST,ky-thuat-may-tinh,2019,True,True
+HUST,ky-thuat-may-tinh,2020,True,True
+HUST,ky-thuat-may-tinh,2021,True,True
+HUST,ky-thuat-may-tinh,2022,True,True
+HUST,ky-thuat-may-tinh,2023,True,True
+HUST,ky-thuat-may-tinh,2024,True,True
+HUST,ky-thuat-may-tinh,2025,True,True
+HUST,ttnt-va-khoa-hoc-du-lieu,2019,True,False
+HUST,ttnt-va-khoa-hoc-du-lieu,2020,True,False
+HUST,ttnt-va-khoa-hoc-du-lieu,2021,True,False
+HUST,ttnt-va-khoa-hoc-du-lieu,2022,False,False
+HUST,ttnt-va-khoa-hoc-du-lieu,2023,True,False
+HUST,ttnt-va-khoa-hoc-du-lieu,2024,True,False
+HUST,ttnt-va-khoa-hoc-du-lieu,2025,True,False
+HaUI,an-toan-thong-tin,2024,True,True
+HaUI,an-toan-thong-tin,2025,True,True
+HaUI,cong-nghe-ky-thuat-may-tinh,2019,True,True
+HaUI,cong-nghe-ky-thuat-may-tinh,2020,True,True
+HaUI,cong-nghe-ky-thuat-may-tinh,2021,True,True
+HaUI,cong-nghe-ky-thuat-may-tinh,2022,True,True
+HaUI,cong-nghe-ky-thuat-may-tinh,2023,True,True
+HaUI,cong-nghe-ky-thuat-may-tinh,2024,True,True
+HaUI,cong-nghe-ky-thuat-may-tinh,2025,True,True
+HaUI,cong-nghe-thong-tin,2019,True,True
+HaUI,cong-nghe-thong-tin,2020,True,True
+HaUI,cong-nghe-thong-tin,2021,True,True
+HaUI,cong-nghe-thong-tin,2022,True,True
+HaUI,cong-nghe-thong-tin,2023,True,True
+HaUI,cong-nghe-thong-tin,2024,True,True
+HaUI,cong-nghe-thong-tin,2025,True,True
+HaUI,he-thong-thong-tin,2019,True,True
+HaUI,he-thong-thong-tin,2020,True,True
+HaUI,he-thong-thong-tin,2021,True,True
+HaUI,he-thong-thong-tin,2022,True,True
+HaUI,he-thong-thong-tin,2023,True,True
+HaUI,he-thong-thong-tin,2024,True,True
+HaUI,he-thong-thong-tin,2025,True,True
+HaUI,khoa-hoc-may-tinh,2019,True,True
+HaUI,khoa-hoc-may-tinh,2020,True,True
+HaUI,khoa-hoc-may-tinh,2021,True,True
+HaUI,khoa-hoc-may-tinh,2022,True,True
+HaUI,khoa-hoc-may-tinh,2023,True,True
+HaUI,khoa-hoc-may-tinh,2024,True,True
+HaUI,khoa-hoc-may-tinh,2025,True,True
+HaUI,ky-thuat-phan-mem,2019,True,True
+HaUI,ky-thuat-phan-mem,2020,True,True
+HaUI,ky-thuat-phan-mem,2021,True,True
+HaUI,ky-thuat-phan-mem,2022,True,True
+HaUI,ky-thuat-phan-mem,2023,True,True
+HaUI,ky-thuat-phan-mem,2024,True,True
+HaUI,ky-thuat-phan-mem,2025,True,True
+HaUI,mang-may-tinh,2019,True,True
+HaUI,mang-may-tinh,2020,True,True
+HaUI,mang-may-tinh,2021,True,True
+HaUI,mang-may-tinh,2022,True,True
+HaUI,mang-may-tinh,2023,True,True
+HaUI,mang-may-tinh,2024,True,True
+HaUI,mang-may-tinh,2025,True,True
+PTIT,an-toan-thong-tin,2019,True,True
+PTIT,an-toan-thong-tin,2020,True,True
+PTIT,an-toan-thong-tin,2021,True,True
+PTIT,an-toan-thong-tin,2022,True,True
+PTIT,an-toan-thong-tin,2023,True,True
+PTIT,an-toan-thong-tin,2024,True,True
+PTIT,an-toan-thong-tin,2025,True,True
+PTIT,cong-nghe-thong-tin,2019,True,True
+PTIT,cong-nghe-thong-tin,2020,True,True
+PTIT,cong-nghe-thong-tin,2021,True,True
+PTIT,cong-nghe-thong-tin,2022,True,True
+PTIT,cong-nghe-thong-tin,2023,True,True
+PTIT,cong-nghe-thong-tin,2024,True,True
+PTIT,cong-nghe-thong-tin,2025,True,True
+PTIT,khoa-hoc-may-tinh,2022,True,True
+PTIT,khoa-hoc-may-tinh,2023,True,True
+PTIT,khoa-hoc-may-tinh,2024,True,True
+PTIT,khoa-hoc-may-tinh,2025,True,True
+PTIT,mang-may-tinh,2023,True,True
+PTIT,mang-may-tinh,2024,True,True
+PTIT,mang-may-tinh,2025,True,True
+PTIT,tri-tue-nhan-tao,2025,True,True
+TLU,an-toan-thong-tin,2022,True,True
+TLU,an-toan-thong-tin,2023,True,True
+TLU,an-toan-thong-tin,2024,True,True
+TLU,an-toan-thong-tin,2025,True,True
+TLU,cong-nghe-thong-tin,2021,True,True
+TLU,cong-nghe-thong-tin,2022,True,True
+TLU,cong-nghe-thong-tin,2023,True,True
+TLU,cong-nghe-thong-tin,2024,True,True
+TLU,cong-nghe-thong-tin,2025,True,True
+TLU,he-thong-thong-tin,2021,True,True
+TLU,he-thong-thong-tin,2022,True,True
+TLU,he-thong-thong-tin,2023,True,True
+TLU,he-thong-thong-tin,2024,True,True
+TLU,he-thong-thong-tin,2025,True,True
+TLU,ky-thuat-phan-mem,2021,True,True
+TLU,ky-thuat-phan-mem,2022,True,True
+TLU,ky-thuat-phan-mem,2023,True,True
+TLU,ky-thuat-phan-mem,2024,True,True
+TLU,ky-thuat-phan-mem,2025,True,True
+TLU,ttnt-va-khoa-hoc-du-lieu,2021,True,True
+TLU,ttnt-va-khoa-hoc-du-lieu,2022,True,True
+TLU,ttnt-va-khoa-hoc-du-lieu,2023,True,True
+TLU,ttnt-va-khoa-hoc-du-lieu,2024,True,True
+TLU,ttnt-va-khoa-hoc-du-lieu,2025,True,True
+UET,cong-nghe-thong-tin,2019,True,True
+UET,cong-nghe-thong-tin,2020,True,True
+UET,cong-nghe-thong-tin,2021,True,True
+UET,cong-nghe-thong-tin,2022,True,True
+UET,cong-nghe-thong-tin,2023,True,True
+UET,cong-nghe-thong-tin,2024,True,True
+UET,cong-nghe-thong-tin,2025,True,True
+UET,he-thong-thong-tin,2022,True,True
+UET,he-thong-thong-tin,2023,True,True
+UET,he-thong-thong-tin,2024,True,True
+UET,he-thong-thong-tin,2025,True,True
+UET,khoa-hoc-du-lieu,2025,True,True
+UET,khoa-hoc-may-tinh,2022,True,True
+UET,khoa-hoc-may-tinh,2023,True,True
+UET,khoa-hoc-may-tinh,2024,True,True
+UET,khoa-hoc-may-tinh,2025,True,True
+UET,ky-thuat-may-tinh,2019,True,True
+UET,ky-thuat-may-tinh,2020,True,True
+UET,ky-thuat-may-tinh,2021,True,True
+UET,ky-thuat-may-tinh,2022,True,True
+UET,ky-thuat-may-tinh,2023,True,True
+UET,ky-thuat-may-tinh,2024,True,True
+UET,ky-thuat-may-tinh,2025,True,True
+UET,mang-may-tinh,2022,True,True
+UET,mang-may-tinh,2023,True,True
+UET,mang-may-tinh,2024,True,True
+UET,mang-may-tinh,2025,True,True
+UET,tri-tue-nhan-tao,2022,True,True
+UET,tri-tue-nhan-tao,2023,True,True
+UET,tri-tue-nhan-tao,2024,True,True
+UET,tri-tue-nhan-tao,2025,True,True
+UTC,cong-nghe-thong-tin,2019,True,True
+UTC,cong-nghe-thong-tin,2020,True,True
+UTC,cong-nghe-thong-tin,2021,True,True
+UTC,cong-nghe-thong-tin,2022,True,True
+UTC,cong-nghe-thong-tin,2023,True,True
+UTC,cong-nghe-thong-tin,2024,True,True
+UTC,cong-nghe-thong-tin,2025,True,True
+UTC,khoa-hoc-may-tinh,2022,True,True
+UTC,khoa-hoc-may-tinh,2023,True,True
+UTC,khoa-hoc-may-tinh,2024,True,True
+UTC,khoa-hoc-may-tinh,2025,True,True
+UTC,ky-thuat-may-tinh,2024,True,True
+UTC,ky-thuat-may-tinh,2025,True,True

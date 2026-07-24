@@ -55,12 +55,44 @@ portal and two independent outlets).
 
 ## Canonical identity & gold layer (Layer 2b)
 
-`canonical_major_id` groups source majors into **10 canonical CS majors** across schools/years
-(`data/processed/cutoffs_cs.csv` = silver + `canonical_major_id` + `canonical_major_name`). The map
+`canonical_major_id` (ASCII slug, e.g. `khoa-hoc-may-tinh`) groups source majors into **11 canonical
+CS majors** across schools/years; `canonical_major_name` holds the Vietnamese display name (the source
+of truth). `data/processed/cutoffs_cs.csv` = silver + these two columns. The map
 (`config/canonical_majors_draft.csv`, human-reviewable) was built by rule-based normalization +
-token-sort fuzzy clustering, then the owner's granularity rulings (#1–#6). **Matching was a
-rule/fuzzy problem, not ML:** fuzzy-only scored F1 0.991 / precision 1.000 vs the ground truth, with
-perfect separation of hard negatives (Kỹ thuật ↔ Khoa học máy tính, etc.). Its *only* structural
+token-sort fuzzy clustering, then the owner's granularity rulings. **Matching was a rule/fuzzy
+problem, not ML** — see the honest metrics restatement below.
+
+**Two same-looking majors that are NOT the same** (for non-Vietnamese readers): `Kỹ thuật máy tính`
+(engineering ngành, Ministry code **7480106**) and `Công nghệ kỹ thuật máy tính` (applied-technology
+ngành, code **7480108**) are *different* degrees and separate canonicals — the names cannot be told
+apart without this fact.
+
+**Eval metrics — honestly restated (a ground-truth error found in domain review).** An initial run
+reported precision **1.000 at every threshold**. Domain review then split `Công nghệ kỹ thuật máy tính`
+from `Kỹ thuật máy tính` (above), correcting the ground truth; fuzzy had merged them, so under the
+corrected labels those 4 pairs became **false positives** — the perfect precision was partly an
+artifact of the label error. Restated over **11** canonicals: best-F1 threshold 0.70 → **P=0.996,
+R=0.983, F1=0.989** (4 FP, all `Công nghệ kỹ thuật máy tính` ↔ `Kỹ thuật máy tính` near-misses);
+threshold ≥0.80 → **P=1.000, R=0.924** (the two families separate). Hard negatives that held at all
+thresholds: `Kỹ thuật ↔ Khoa học máy tính`, `Khoa học dữ liệu ↔ Khoa học máy tính`, `AI+DS ↔ AI`; the
+`Công nghệ kỹ thuật máy tính ↔ Kỹ thuật máy tính` pair is now in the labeled hard-negative set.
+
+**Threshold — a deliberate, precision-favouring choice.** The fuzzy candidate step runs at
+**threshold 0.80** (`PROD_THRESHOLD` in `canonical_match.py`), *not* the best-F1 0.70. Reasoning: a
+*false merge* silently conflates two distinct ngành and is **undetectable** by a data user, whereas a
+*miss* leaves two visible clusters that an **override fixes**. So favour precision (P 1.000 at 0.80)
+and close the recall gap (R 0.924) with the auditable human-verified map, rather than buying recall
+with merges known to be wrong. Both operating points are reported for transparency — 0.70
+(P 0.996 / R 0.983, best F1, but the 4 CNKT-máy-tính false merges) and 0.80 (P 1.000 / R 0.924). The
+**shipped `canonical_major_id` is the human-verified assignment — threshold-independent** — so it
+carries none of the fuzzy false merges (verified: `Công nghệ kỹ thuật máy tính` and `Kỹ thuật máy tính`
+are separate in the shipped map).
+
+**Carry-forward to the ML-component decision.** `Công nghệ kỹ thuật máy tính ↔ Kỹ thuật máy tính` is
+now a first-class evaluation case with a *two-sided* constraint: any embedding approach proposed for
+the cybersecurity synonym residual must **keep this pair separate** (different ngành) while still
+**bridging** the cybersecurity synonyms (`An toàn thông tin` / `An ninh mạng` / `An toàn không gian
+số`). Recall-on-synonyms alone is not sufficient evidence — the eval must confirm both. Its *only* structural
 failures were cross-string semantic synonyms — the cybersecurity cluster
 (`An toàn thông tin` / `An ninh mạng` / `An toàn không gian số`, per-cluster recall **0.27**) and one
 renamed base (`Kỹ thuật dữ liệu`→networks). Those are closed in the reviewed canonical map **as an interim, hand-verified stopgap so v1 can
@@ -142,6 +174,21 @@ the trend view, so it must not change silently (e.g. via a refactor). Name-deriv
 corrected where needed via sourced overrides in `config/program_variant_overrides.csv` (HANU 2019
 CNTT → `english`; HUS QHT40 2019–20 → `clc`), and audited by `src/audit_variants.py` (year-stability
 + code-signal passes).
+
+## Encoding, keys, and normalizer notes
+
+- **Encoding.** All published CSVs are written **UTF-8 with BOM (`utf-8-sig`)** so Excel on Windows
+  auto-detects them (it otherwise reads CSV as cp1252 and shows Vietnamese as mojibake, e.g.
+  `Khoa há»c mÃ¡y tÃ­nh`). The files are valid UTF-8 either way; pandas/`csv` read them unchanged. The
+  same cp1252 default is why console scripts set `PYTHONUTF8=1` / reconfigure stdout.
+- **Keys vs display.** `canonical_major_id` is an ASCII slug (safe join key, stable across tools);
+  `canonical_major_name` is Vietnamese **with diacritics — the source of truth**. There is no English
+  translation column by design (this data dictionary and the README, both English, cover that need).
+- **Normalizer residue (known, harmless).** `normalize()` strips *known* variant/parenthetical tokens
+  but leaves unrecognised trailing tokens in the normalized string — e.g. `… - TT` → `…tt`,
+  `ĐH Victoria Wellington` → `…wellington`. These rows still land in the correct canonical (via fuzzy
+  similarity / the reviewed map), not via clean normalization, so it is a cosmetic limitation of the
+  stripper, not a correctness bug.
 
 ## Still owed
 

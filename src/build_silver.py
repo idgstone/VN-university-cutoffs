@@ -47,7 +47,7 @@ NORM_FACTOR = 0.75    # thang-40 (Toan x2) -> thang-30, official VNU convention
 
 
 def load_lookup(path, key, val):
-    with (CFG / path).open(encoding="utf-8") as fh:
+    with (CFG / path).open(encoding="utf-8-sig") as fh:
         return {tuple(r[k] for k in key) if len(key) > 1 else r[key[0]]:
                 (r[val] if isinstance(val, str) else {k: r[k] for k in val})
                 for r in csv.DictReader(fh)}
@@ -79,18 +79,18 @@ def program_variant(name: str) -> str:
 
 
 def main() -> int:
-    schools = {r["school_id"]: r for r in csv.DictReader((CFG / "schools.csv").open(encoding="utf-8"))}
+    schools = {r["school_id"]: r for r in csv.DictReader((CFG / "schools.csv").open(encoding="utf-8-sig"))}
     ingroup = {(r["school_id"], r["source_code"]) for r in
-               csv.DictReader((CFG / "cs_group_mapping.csv").open(encoding="utf-8"))
+               csv.DictReader((CFG / "cs_group_mapping.csv").open(encoding="utf-8-sig"))
                if r["in_cs_group"] == "TRUE"}
     scale_ov, corr, var_ov = {}, {}, {}
-    for r in csv.DictReader((CFG / "score_scale_overrides.csv").open(encoding="utf-8")):
+    for r in csv.DictReader((CFG / "score_scale_overrides.csv").open(encoding="utf-8-sig")):
         scale_ov[(r["school_id"], r["source_code"], r["year"])] = (int(r["mark_scale"]), r["source_note"])
-    for r in csv.DictReader((CFG / "mark_corrections.csv").open(encoding="utf-8")):
+    for r in csv.DictReader((CFG / "mark_corrections.csv").open(encoding="utf-8-sig")):
         corr[(r["school_id"], r["source_code"], r["year"])] = (float(r["correct_mark"]), r["source_note"])
     vpath = CFG / "program_variant_overrides.csv"
     if vpath.exists():
-        for r in csv.DictReader(vpath.open(encoding="utf-8")):
+        for r in csv.DictReader(vpath.open(encoding="utf-8-sig")):
             var_ov[(r["school_id"], r["source_code"], r["year"])] = r["program_variant"]
 
     seen, rows = set(), []
@@ -101,7 +101,7 @@ def main() -> int:
     for path in sorted(RAW_DIR.glob("*.json")):
         sid, year = path.stem.split("_")
         sch = schools.get(sid, {})
-        for rec in json.load(path.open(encoding="utf-8")).get("data", []):
+        for rec in json.load(path.open(encoding="utf-8-sig")).get("data", []):
             code = (rec.get("code") or "").strip()
             if (sid, code) not in ingroup:
                 continue
@@ -156,7 +156,7 @@ def main() -> int:
               "program_variant", "year", "method", "block_group", "mark", "mark_scale",
               "mark_normalized_30", "mark_corrected", "at_floor", "mark_source_note",
               "source_row_id", "source_file"]
-    with OUT.open("w", encoding="utf-8", newline="") as fh:
+    with OUT.open("w", encoding="utf-8-sig", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=fields)
         w.writeheader()
         w.writerows(rows)

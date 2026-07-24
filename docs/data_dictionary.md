@@ -88,11 +88,18 @@ with merges known to be wrong. Both operating points are reported for transparen
 carries none of the fuzzy false merges (verified: `Công nghệ kỹ thuật máy tính` and `Kỹ thuật máy tính`
 are separate in the shipped map).
 
-**Carry-forward to the ML-component decision.** `Công nghệ kỹ thuật máy tính ↔ Kỹ thuật máy tính` is
-now a first-class evaluation case with a *two-sided* constraint: any embedding approach proposed for
-the cybersecurity synonym residual must **keep this pair separate** (different ngành) while still
-**bridging** the cybersecurity synonyms (`An toàn thông tin` / `An ninh mạng` / `An toàn không gian
-số`). Recall-on-synonyms alone is not sufficient evidence — the eval must confirm both. Its *only* structural
+**ML-component study — done, negative result (see `../ml/RESULTS.md`).** Embeddings were evaluated as
+a candidate for the cybersecurity synonym residual, against a *two-sided* criterion: bridge the
+synonyms (`An toàn thông tin` / `An ninh mạng` / `An toàn không gian số`) **and** keep the hard
+negatives separate — `Công nghệ kỹ thuật máy tính ↔ Kỹ thuật máy tính`, `Kỹ thuật ↔ Khoa học máy
+tính`, `Khoa học dữ liệu ↔ Khoa học máy tính`, `AI+DS ↔ AI` (0 false merges). Three models (multilingual
+MiniLM, multilingual E5, Vietnamese PhoBERT bi-encoder) × three systems (fuzzy S1 / embeddings S2 /
+hybrid S3) were run on the same 3,321-pair harness. **Outcome: the hybrid does not beat the fuzzy
+baseline for any model** — the synonyms are, to every model, no more similar than the STEM near-misses
+that must stay apart, so no global threshold satisfies both sides. Fuzzy + the human-verified map is
+the right tool at this scale; the core pipeline stays standard-library-only. The ML module
+(`../ml/`, pinned deps) is optional and reproduces this negative result. A targeted/supervised
+approach is possible **v2 scaling** work (587 schools), not evidenced here. Its *only* structural
 failures were cross-string semantic synonyms — the cybersecurity cluster
 (`An toàn thông tin` / `An ninh mạng` / `An toàn không gian số`, per-cluster recall **0.27**) and one
 renamed base (`Kỹ thuật dữ liệu`→networks). Those are closed in the reviewed canonical map **as an interim, hand-verified stopgap so v1 can

@@ -94,12 +94,18 @@ synonyms (`An toàn thông tin` / `An ninh mạng` / `An toàn không gian số`
 negatives separate — `Công nghệ kỹ thuật máy tính ↔ Kỹ thuật máy tính`, `Kỹ thuật ↔ Khoa học máy
 tính`, `Khoa học dữ liệu ↔ Khoa học máy tính`, `AI+DS ↔ AI` (0 false merges). Three models (multilingual
 MiniLM, multilingual E5, Vietnamese PhoBERT bi-encoder) × three systems (fuzzy S1 / embeddings S2 /
-hybrid S3) were run on the same 3,321-pair harness. **Outcome: the hybrid does not beat the fuzzy
-baseline for any model** — the synonyms are, to every model, no more similar than the STEM near-misses
-that must stay apart, so no global threshold satisfies both sides. Fuzzy + the human-verified map is
-the right tool at this scale; the core pipeline stays standard-library-only. The ML module
-(`../ml/`, pinned deps) is optional and reproduces this negative result. A targeted/supervised
-approach is possible **v2 scaling** work (587 schools), not evidenced here. Its *only* structural
+hybrid S3) were run on the same 3,321-pair harness. **Outcome (two findings, both reported):** (1) the *union* hybrid `fuzzy>t1 OR cos>t2` does **not**
+beat the baseline for any model — a global cosine threshold can't isolate the synonyms from the STEM
+near-misses; but (2) a **learned 2-feature classifier** on `[fuzzy, cosine]` (a depth-3 decision tree)
+**does** beat it on the two-sided test on full data — synonym recall 0.67 (vs fuzzy 0.13) with **zero
+hard-negative false merges** and F1 0.994 — because the two classes separate diagonally in the joint
+feature space (synonyms low-fuzzy/high-embedding; hard negatives high-fuzzy/high-embedding), which the
+union cannot represent but conjunctive tree splits can. Honest scope: 5-fold CV generalises overall
+(held-out F1 ≈ 0.97, 0 hard-neg FP) but held-out **synonym** pairs are n=1 — synonym-bridging
+*generalisation* is under-powered at 6 synonym strings and is exactly what the **v2 scale** (587
+schools) would confirm. The **shipped dataset uses the human-verified map regardless**; the matcher is
+a reproducible method that reproduces (and here sharpens) that judgment. Core pipeline stays
+standard-library-only; the ML study (`../ml/`, pinned deps) is optional. Full detail: `../ml/RESULTS.md`. Its *only* structural
 failures were cross-string semantic synonyms — the cybersecurity cluster
 (`An toàn thông tin` / `An ninh mạng` / `An toàn không gian số`, per-cluster recall **0.27**) and one
 renamed base (`Kỹ thuật dữ liệu`→networks). Those are closed in the reviewed canonical map **as an interim, hand-verified stopgap so v1 can

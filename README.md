@@ -57,7 +57,7 @@ plotting.
 - **THPT (national-exam) method only** — the one method comparable across schools and years. Where a
   school didn't admit a major via THPT in a year, the cell is **null, not dropped**, and a coverage
   metric reports it honestly (99% of major-year cells within a major's active span have a THPT score;
-  88% have a directly-comparable *base* offering).
+  86% have a directly-comparable *base* offering).
 
 ### Source & legality
 - Source: **tuyensinh247** (`diemthi.tuyensinh247.com`), an aggregator. I found and used its
@@ -78,8 +78,9 @@ its own.
    2023–2024 only — which would fake a ~9-point spike-and-drop in a flagship Data Science trend. I
    confirmed the mechanism from primary sources (VNU/government), normalized to the 30-scale via
    **×0.75**, and **triangulated**: the normalized values land on the same major's other-year cutoffs.
-2. **Entity resolution (the AI/ML problem).** The same major is written 84 different ways → 11 canonical
-   majors. A rule-based normalizer + `difflib` fuzzy matcher does the bulk; the **shipped map is
+2. **Entity resolution (the AI/ML problem).** The matcher resolves 82 distinct name strings → 11 canonical
+   majors (plus 2 bundled multi-major rows excluded-with-record). A rule-based normalizer + `difflib`
+   fuzzy matcher does the bulk; the **shipped map is
    human-verified**. Fuzzy scores P 1.000 / R 0.924 at a **precision-favouring threshold (0.80)** —
    chosen deliberately because a false merge silently conflates two distinct ngành (undetectable by a
    user) while a miss is a visible, override-fixable split. Precision/recall are reported at two levels

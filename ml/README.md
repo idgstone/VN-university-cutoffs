@@ -28,6 +28,19 @@ To keep this a comparison and not model-shopping, the following was decided **in
    beats fuzzy-alone (S1)** on the two-sided criterion below — same rule applied to forecasting: we do
    not ship a component that loses to its baseline just to have an "ML" box ticked.
 
+## Follow-up pre-commitment (added before running it)
+
+The union hybrid (S3) can only carve axis-aligned regions, so it cannot represent a boundary that runs
+diagonally across the (fuzzy, embedding) plane — yet that is exactly where the two classes separate
+(synonyms: low-fuzzy / high-embedding; hard negatives: high-fuzzy / high-embedding). One follow-up is
+therefore run and **reported regardless of outcome**: a **2-feature supervised classifier**
+(logistic regression + shallow decision tree) on `[fuzzy_score, embedding_cosine]`, same CV folds and
+same two-sided criterion, on the best embedder (Model C) plus one other (A) for robustness
+(`classify2feat.py`). If it beats fuzzy on the two-sided test → a genuine shipped ML component (neither
+signal alone works, a learned combination does). If it also fails → the negative result is *more*
+robust (raw embeddings failed, the union failed, and a learned combination of both signals failed).
+**Time-boxed to this one experiment** — no further model variants; then we ship.
+
 ## Systems, criterion, and reporting
 
 - **S1** fuzzy alone · **S2** embeddings alone (diagnostic) · **S3** hybrid = fuzzy ∪ embeddings

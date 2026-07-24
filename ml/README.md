@@ -4,9 +4,14 @@
 (`../src/*`) is standard-library only; cloning the repo to rebuild the dataset needs nothing
 installed. Only running *this study* needs the models below.
 
-> **Result: [`RESULTS.md`](RESULTS.md) — embeddings do NOT beat the fuzzy baseline on the two-sided
-> criterion (all three models). Fuzzy + the human-verified map stands for v1.** A genuine, measured
-> negative result, reported per the pre-commitment below.
+> **Result: [`RESULTS.md`](RESULTS.md) — four findings, in sequence:**
+> **(1)** raw embeddings fail the two-sided test across all 3 models; **(2)** the union hybrid fails too;
+> **(3)** the two signals ARE separable in 2D — a learned depth-3 tree on `[fuzzy, cosine]` bridges
+> synonyms (0.67) with 0 hard-negative false merges on full data, refuting the simple negative; **(4)**
+> but with exactly one synonym cluster in the data, that fix's *generalisation* cannot be validated
+> (held-out synonym pairs n=1) — itself a result: at this scale the dataset lacks enough instances of
+> the hard phenomenon to validate a solution to it. **So v1 ships fuzzy + the human-verified map; the
+> learned 2-feature method is the documented v2 approach, not a v1 shipped component.**
 
 ## The honest frame
 

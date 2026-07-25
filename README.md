@@ -6,11 +6,8 @@ across **2019–2025**, with the **fully reproducible, standard-library-only pip
 
 The thing people actually want — cutoffs by *university × major × year*, cleaned and unified across
 years — exists only behind lookup-only portals and scattered announcement PDFs/images. This assembles
-one meaningful slice of it, **cleanly, correctly, and documented**, with every non-obvious decision
-written down so it can be defended.
-
-> **Scope is deliberately narrow.** Depth over breadth: 10 schools, one field group, one admission
-> method, done carefully — not every school done sloppily. Other groups/regions are explicit *v2*.
+one meaningful slice of it, cleanly and documented, with every non-obvious decision written down so it
+can be defended.
 
 ---
 
@@ -25,8 +22,8 @@ python src/build_gold.py        # 5. gold: canonical ids, coverage grid, trend &
 ```
 
 Python 3.12, **standard library only** — nothing to install to rebuild the dataset. QA passes:
-`python src/sanity_raw.py` (content checks) and `python src/audit_variants.py` (variant audits). The
-optional ML study lives in [`ml/`](ml/) with its own pinned dependencies (see below).
+`python src/sanity_raw.py` and `python src/audit_variants.py`. The optional ML study lives in
+[`ml/`](ml/) with its own pinned dependencies.
 
 ## What you get
 
@@ -49,88 +46,143 @@ plotting.
 ## Key decisions (the interview story)
 
 ### Scope: why this slice
-- **Computing/IT group** — defined by a **uniform semantic rule** applied to all 10 schools (core
-  curriculum centers on computing/software/data), with the Ministry field code `748` as a *supporting
-  signal only*, not the definition. Membership is a hand-verified, auditable CSV.
-- **Public universities in Hà Nội** — a homogeneous admission mechanism, so cross-school comparison is
-  meaningful (private schools use more varied methods → deferred).
-- **THPT (national-exam) method only** — the one method comparable across schools and years. Where a
-  school didn't admit a major via THPT in a year, the cell is **null, not dropped**, and a coverage
-  metric reports it honestly (99% of major-year cells within a major's active span have a THPT score;
-  86% have a directly-comparable *base* offering).
+
+I work depth-first: one field group done carefully beats every school done sloppily. I chose
+**Computing/IT** specifically because it's the field I understand best — so when the group-membership
+rule or the name-matching goes wrong, I can catch it myself, which is an edge most candidates working
+this data wouldn't have. Starting with one group also meant that if something went wrong I could redo it
+quickly, instead of building everything and having to redo all of it.
+
+I limited it to **public universities in Hà Nội**: Hà Nội concentrates most of the public schools, and
+public schools lean on the THPT (national-exam) method with a more uniform scoring system, so
+cross-school comparison is actually meaningful — private schools use far more varied admission methods,
+which would make the comparison apples-to-oranges.
+
+And I kept a **single admission method, THPT**, because it's the one method comparable across both
+schools and years: other methods (ĐGNL, etc.) sit on entirely different score scales, so mixing them in
+would be comparing incomparable numbers. Where a school didn't admit a major via THPT in a year, the
+cell is **null, not dropped**, and a coverage metric reports it honestly (99% of major-year cells within
+a major's active span have a THPT score; 86% have a directly-comparable *base* offering).
+
+### Defining the CS group: code is a signal, not the definition
+
+The CS group is defined by a **semantic rule** applied uniformly to all 10 schools: a major is in-group
+if its core curriculum centers on computing/software/data, out if it centers on
+hardware/signals/geoscience/business. I deliberately **do not** use the Ministry field code `748` as the
+definition, because the code isn't trustworthy: 4 of the 10 schools use internal codes (`CN1`, `IT1`,
+`TLA106`, `QHT93`) rather than Ministry codes, and even the schools that use Ministry codes apply them
+inconsistently — the same kind of major coded `748` at one school and `732` at another. If the code
+decided membership, the same major would be counted at one school and excluded at another.
+
+So the code is only a **corroborating signal**: when it agrees with the content judgment it reinforces
+it, and when they conflict, the content wins. The clearest example: HUMG's geoinformatics (Địa tin học)
+carries code `748`, but I still excluded it — its core field is geoscience, with computing as an applied
+tool. The code said "in," the content said "out," and the content won.
 
 ### Source & legality
-- Source: **tuyensinh247** (`diemthi.tuyensinh247.com`), an aggregator. I found and used its
-  **undocumented JSON API** after confirming its `robots.txt` allows the path and its terms contain no
-  anti-automation clause; the collector is single-threaded and rate-limited. Every raw response is
-  saved verbatim (immutable "bronze") so results reproduce even if the API changes.
-- Because it's an aggregator, I **cross-validate a sample against primary sources** (below).
-- **No personal data** — only aggregate cutoffs, never individual scores.
 
-### Architecture: bronze → silver → gold, with sourced overrides
-Immutable raw layer; a cleaned per-record layer; a canonical/analytical layer. **Every departure from
-the source is driven by an auditable override CSV** (`config/*_overrides.csv`, `mark_corrections.csv`)
-and flagged + explained in the data itself — so any cell that differs from the source is defensible on
-its own.
+The data lives behind an aggregator, **tuyensinh247**. Rather than scraping their HTML, I found and used
+an **undocumented JSON API behind their interface** — cleaner, structured, and it exposes the major
+code (which helps with membership). Before collecting anything I checked their **robots.txt** (it allows
+the path) and their **terms of use** (no anti-automation clause), and kept the collector single-threaded
+and rate-limited.
 
-### The genuinely hard parts (and how they're solved)
-1. **Score-scale heterogeneity.** HUS reports four programs on a **thang điểm 40** (Toán ×2) in
-   2023–2024 only — which would fake a ~9-point spike-and-drop in a flagship Data Science trend. I
-   confirmed the mechanism from primary sources (VNU/government), normalized to the 30-scale via
-   **×0.75**, and **triangulated**: the normalized values land on the same major's other-year cutoffs.
-2. **Entity resolution (the AI/ML problem).** The same major is written 82 distinct ways (84 distinct raw
-   strings total, 2 bundled multi-major rows excluded) → 11 canonical majors. A rule-based normalizer +
-   `difflib` fuzzy matcher does the bulk; the **shipped map is
-   human-verified**. Fuzzy scores P 1.000 / R 0.924 at a **precision-favouring threshold (0.80)** —
-   chosen deliberately because a false merge silently conflates two distinct ngành (undetectable by a
-   user) while a miss is a visible, override-fixable split. Precision/recall are reported at two levels
-   (full 3,321-pair *and* per-cluster) — and a ground-truth error I made was caught in review, fixed,
-   and the metrics restated. See the ML study below.
-3. **Program variants & two chart views.** Programs carry variants (base / CLC / joint / English /
-   advanced) with genuinely different cutoffs. Identity = the base major; the variant is an attribute.
-   The **trend view** is base-preferred single-variant lines with honest gaps; the **compare view**
-   uses a representative fallback for single-year cross-school comparison. Variant labels are derived
-   from names, so a name-drift/whitespace/dash audit (`audit_variants.py`) plus sourced overrides keep
-   them consistent.
-4. **Codes are not stable identifiers.** One school reused a code for a *different* major across years
-   (UET `CN8`: CNTT-CLC → Khoa học máy tính); another appends `x`/`y` year-suffixes to the same major
-   (HUST). Keying identity on code would silently merge distinct majors — which is why identity is
-   **name-based**, not code-based.
-5. **A real aggregator error, caught and corrected.** Reconciliation surfaced HUS `Khoa học máy tính
-   và thông tin` 2024 published as **34.0** vs the official **34.7**; corrected in the silver layer with
-   a sourced note (bronze stays immutable).
+Because it's an aggregator and its numbers can be wrong, I **cross-validated a sample against primary
+sources** — and it paid off: I caught a real error, HUS "Khoa học máy tính và thông tin" 2024 published
+as **34.0** vs the official **34.7**, corrected in the cleaned layer with a sourced note while the raw
+layer keeps the original. **No personal data** — only aggregate cutoffs, never individual student scores.
+
+### Architecture: bronze → silver → gold
+
+Three layers: an **immutable raw layer** (bronze), a **cleaned layer** (silver), and a
+**canonical/analytical layer** (gold). Bronze is the source responses saved verbatim — 70 raw JSON files
+with a sha256 + fetched-at manifest, never modified. Silver reads from bronze and does all the cleaning:
+scale normalization, corrections, flags. Gold builds the canonical majors, the coverage grid, and the
+trend/compare views.
+
+The rule that matters: **every departure from the source happens in silver or gold, never by touching
+bronze.** If you edit the raw layer and get it wrong, the error propagates into every layer downstream
+and there's no original left to check against or roll back to — so bronze stays untouched, which is what
+makes every number traceable to its source and the whole pipeline reproducible by anyone who clones it.
+When I corrected 34.0 → 34.7, it happened in silver; bronze still holds the original.
+
+### The genuinely hard parts
+
+**1. Score-scale heterogeneity — the ×0.75 normalization.** Four HUS programs (including Data Science
+and Khoa học máy tính và thông tin) were scored on a **40-point scale** in 2023–2024 only, because HUS
+doubles the Maths subject (Toán ×2). So HUS's "Data Science 34.85" isn't comparable to another school's
+"27.86" — different scales. Left raw, HUS Data Science reads 26 → 26 → **34.85 → 35** → 26 across years:
+a fake 9-point spike-and-drop that's pure scale artifact.
+
+The fix: normalize the 40-scale values to 30 via **×0.75**. But the important part is how I *know* ×0.75
+is right, not just that I applied it. Two things: I **confirmed the mechanism from the primary source**
+(the VNU/Ministry announcement — Toán ×2 → max 40), and I **verified it by triangulation** — after
+×0.75, the 2023–2024 values land on ~26, right where the same major's other years (2020, 2021, 2025)
+sit. If the conversion were wrong, the normalized number would be off. It isn't. (×0.75 is an
+approximation — exact only when the three subjects score equally — so I state that, and the
+triangulation is the check.)
+
+**2. Entity resolution.** The same major is written 82 distinct ways (84 raw strings, 2 bundled rows
+excluded) and needs to collapse to 11 canonical majors. A rule-based normalizer plus a `difflib` fuzzy
+matcher handles the surface variants; the **shipped map is human-verified**. I chose a
+precision-favoring threshold (0.80): a false merge silently conflates two distinct ngành, which a user
+can't detect, whereas a miss is a visible split I can fix with an override. During review I caught a
+ground-truth error in my own labels, fixed it, and restated the metrics — reported at two levels (full
+3,321-pair *and* per-cluster, since a headline off ~15 pairs would be meaningless).
+
+**3. Program variants and two chart views.** A major at a school can have several variants (base / CLC /
+joint / English), each with a different cutoff. Identity is the *base* major; the variant is an
+attribute. This forces two views. The **trend view** keeps each line to a single consistent variant and
+leaves a **gap** where that variant is missing in a year — because an empty cell is the truth (the
+program wasn't offered that way that year), while filling it with a different variant creates a **fake
+jump**. HUST's Khoa học máy tính is the case: 2022 had no base program, only a joint Troy one (25.15), so
+filling it would read 28.43 → 25.15 → 29.42, a spike that isn't real. The **compare view** does allow a
+representative fallback, so no school vanishes from a single-year cross-school comparison.
+
+**4. Codes are not stable identifiers.** UET reused code `CN8` for a *different* major across years
+(CNTT-CLC → Khoa học máy tính); HUST appends `x`/`y` year-suffixes to the same major. Keying identity on
+code would silently merge distinct majors — which is exactly why identity is **name-based**, not
+code-based.
 
 ### Reliability reconciliation — scoped honestly, never blended
-Reported by **era** and by **verification strength** ([`docs/reconciliation.md`](docs/reconciliation.md)):
-**2021–2025** random sample — 4/4 records matched against a *primary* source, and a further 12/12
-matched a second aggregator (corroboration only, not independent proof — aggregators may share an
-upstream source), 0 discrepancies across all 16. **2019–2020** — primary sources are offline / blocked /
-image-based / paginated, so **no reliability claim is made** for old years (the disappearance of
-historical primary sources is itself a finding that motivates a maintained dataset).
+
+Reported by **era** and **verification strength** ([`docs/reconciliation.md`](docs/reconciliation.md)):
+for **2021–2025**, a random sample matched 4/4 against a *primary* source and a further 12/12 against a
+second aggregator (**corroboration only, not independent proof — aggregators may share an upstream
+source**), 0 discrepancies across all 16. For **2019–2020**, primary sources are offline / blocked /
+image-based / paginated, so **no reliability claim is made** — the disappearance of historical primary
+sources is itself a finding that motivates a maintained dataset.
 
 ---
 
 ## The ML investigation — four findings (closed)
 
-I treated entity resolution as the ML question and asked whether **embeddings** could replace my
-hand-verification, pre-committing to report the outcome either way ([`ml/`](ml/), optional module):
+I treated entity resolution as the ML question: could **embeddings** bridge synonyms that fuzzy string
+matching can't? The cybersecurity cluster is the case — `An toàn thông tin` ≈ `An ninh mạng` ≈ `An toàn
+không gian số` are the same program under three names that share almost no characters, so fuzzy (which
+compares characters) structurally can't reach them; embeddings (which compare meaning) should. I
+pre-committed to reporting the outcome either way ([`ml/`](ml/), optional module). Four findings, in
+order:
 
-1. **Raw embeddings fail the two-sided test** (bridge the cybersecurity synonyms `An toàn thông tin` ≈
-   `An ninh mạng` ≈ `An toàn không gian số` **and** keep hard negatives like `Khoa học máy tính` ↔
-   `Khoa học dữ liệu` separate) across all three models — to every model the synonyms are no more
-   similar than the near-misses that must stay apart.
-2. **The union of fuzzy + embedding thresholds fails too** — it can only carve axis-aligned regions.
-3. **But the two signals are separable in 2D** — a depth-3 decision tree on `[fuzzy, cosine]` bridges
-   the synonyms (recall 0.67 vs fuzzy's 0.13) with **zero** hard-negative false merges on full data.
-   This refutes the simple negative: neither signal alone works, a *learned combination* does.
-4. **At this scale, the fix can't be validated to generalise** — the data contains exactly one
-   synonym cluster (6 strings), so held-out synonym pairs are n=1. That is itself a result: *the
-   dataset doesn't contain enough instances of the hard phenomenon to validate a solution to it* —
-   precisely what a v2 at 587-school scale would fix.
+1. **Raw embeddings fail a two-sided test** — bridge those synonyms *and* keep hard negatives like
+   `Khoa học máy tính` ↔ `Khoa học dữ liệu` separate — across all three models. To every model the
+   synonyms are no more similar than the near-misses that must stay apart, so no global threshold
+   satisfies both.
+2. **The union of fuzzy + embedding thresholds fails too** — it can only carve axis-aligned regions, not
+   the diagonal boundary the structure needs.
+3. **But the two signals are separable in 2D.** Synonyms are low-fuzzy/high-embedding; hard negatives
+   are high-fuzzy/high-embedding. A depth-3 decision tree on `[fuzzy, cosine]` bridges the synonyms
+   (recall 0.67 vs fuzzy's 0.13) with **zero** hard-negative false merges. Neither signal alone works; a
+   *learned combination* does.
+4. **At this scale it can't be validated to generalize.** The data contains exactly one synonym cluster,
+   so held-out synonym pairs are n=1 — I can't prove the method transfers to unseen clusters. That's
+   itself a result: the dataset doesn't contain enough instances of the hard phenomenon to validate a
+   solution to it.
 
-**So v1 ships fuzzy + the human-verified map** (correct by construction); the learned 2-feature method
-is the documented **v2** approach, not a v1 shipped component. Full detail + reproduction:
-[`ml/RESULTS.md`](ml/RESULTS.md).
+**So v1 ships fuzzy + the human-verified map** — correct by construction at this scale. The learned
+2-feature method is documented as the **v2 approach** (587-school scale, where synonym clusters are many
+and human review is impossible), not a shipped v1 component. Shipping it now would be an overclaim I
+can't back with the data I have. Full detail: [`ml/RESULTS.md`](ml/RESULTS.md).
 
 ---
 
@@ -143,27 +195,19 @@ is the documented **v2** approach, not a v1 shipped component. Full detail + rep
 - `program_variant` records a program's **primary** attribute (fixed precedence), not a full
   description.
 
-## Reproducibility & provenance philosophy
+## License
+
+- **Code:** MIT.
+- **Dataset:** CC-BY-4.0.
+
+The license covers **my compilation** — the schema, normalization, canonical map, corrections, and
+documentation. It does **not** cover the cutoff numbers themselves: those are public facts published by
+the universities and the Ministry of Education & Training, and facts aren't owned by anyone. Please
+credit this repository for the compilation, tuyensinh247 as the aggregation source, and the
+universities/VNU/Ministry as the primary sources.
+
+## Reproducibility & provenance
 
 Standard-library-only core; immutable raw layer with sha256 + fetched-at manifest; every cleaned value
 traces to its raw record; every non-source value is a flagged, sourced override. The optional
 [`ml/`](ml/) study pins its dependencies and is not needed to rebuild the dataset.
-
-## License
-
-- **Code** (`src/`, `ml/`, build scripts): **MIT**.
-- **Dataset & documentation** (`data/`, `docs/`, the canonical map and override tables): **CC-BY-4.0**.
-
-**What the dataset license covers — and what it doesn't.** CC-BY-4.0 applies to *this compilation*: the
-schema, the normalization and canonicalization, the human-verified canonical map, the sourced
-corrections, and the documentation — the original curatorial work of assembling and cleaning the data.
-It does **not** claim ownership of the **cutoff numbers themselves**: those are public facts published
-by the universities and the Ministry of Education & Training, and are not owned by anyone. Attribution
-under CC-BY is to this compilation; please also credit the underlying sources (see below).
-
-## Credits
-
-Source data aggregated by **tuyensinh247** (the aggregation source); cutoff figures are primary-source
-facts published by the **universities / VNU / Ministry of Education & Training**, cross-checked against
-their announcements where reachable (credited in `docs/reconciliation.md`). This repository
-redistributes a re-derived, restructured dataset with attribution, not the source's page layout.

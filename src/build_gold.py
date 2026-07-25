@@ -53,6 +53,7 @@ def main() -> int:
     canon = {r["raw_major_name"]: r["canonical_draft"]
              for r in csv.DictReader(CANON.open(encoding="utf-8-sig"))}
     silver = list(csv.DictReader(SILVER.open(encoding="utf-8-sig")))
+    silver_fields = list(silver[0].keys())   # capture BEFORE the loop adds canonical_* to the dicts
 
     gold, excluded = [], 0
     for r in silver:
@@ -64,7 +65,7 @@ def main() -> int:
         r["canonical_major_name"] = DISPLAY.get(cid, cid)
         gold.append(r)
 
-    fields = list(silver[0].keys()) + ["canonical_major_id", "canonical_major_name"]
+    fields = silver_fields + ["canonical_major_id", "canonical_major_name"]
     with GOLD.open("w", encoding="utf-8-sig", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=fields)
         w.writeheader(); w.writerows(gold)
